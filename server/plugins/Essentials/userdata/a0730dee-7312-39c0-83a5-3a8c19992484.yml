@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1677782657800
+  login: 1677782250340
+money: '0'
+last-account-name: butttickler69
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 2.0
+  y: 70.0
+  z: 3.0
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -43.45701511727243
+  y: 72.0
+  z: 38.69999998807907
+  yaw: 7.155302047729492
+  pitch: -0.6285451650619507

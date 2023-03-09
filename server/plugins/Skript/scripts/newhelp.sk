@@ -1,0 +1,12 @@
+command /newhelp:
+    aliases: /nh
+    description: tell you what to do on the server
+    trigger:
+        send "&e&lHello, you are probably new to the server." to player
+        send "&e&lLet me explain what you need to do!" to player
+        send "&e&lSeason 2 features a new meta" to player
+        send "&e&lUse &6/dupe or /de&r &e&lto replicate items" to player
+        send "&e&lUse &6/toggle or /te&r &e&lto toggle random items" to player
+        send "&c&lNote: Even though you are able to duplicate your items there are some downsides" to player
+        send "&e&lTo get better items there is a shop that adds new things every week" to player
+        send "&b&lPlayer Shop coming soon!" to player

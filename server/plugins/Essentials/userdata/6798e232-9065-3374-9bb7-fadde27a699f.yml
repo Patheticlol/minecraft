@@ -1,0 +1,46 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1675192252610
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1675192511754
+  login: 1675192018878
+money: '0'
+last-account-name: creeper_aw_man
+lastlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: -1.5559365287580122
+  y: 73.0
+  z: 22.093839772457123
+  yaw: 214.28390502929688
+  pitch: 0.9000078439712524
+logoutlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: 1.036335730124397
+  y: 73.0
+  z: 13.491802110038547
+  yaw: 14.33392333984375
+  pitch: 5.850008487701416
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382521027
+  expire: 1675386120700

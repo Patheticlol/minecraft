@@ -1,0 +1,4 @@
+newbie-helper:
+  protected: true
+  protection-expire-time: 1676574653147
+punishment-count: 3

@@ -1,0 +1,13 @@
+command /update:
+    aliases: /ud
+    description: tells you the latest server updates
+    trigger:
+        send "&e&lAdded /pspawn or /ps to teleport to spawn during combat" to player
+        send "&e&lDisable permission to teleport to spawn during combat" to player
+        send "&e&lRemoved the ability to go to spawn during combat" to player
+        send "&e&lRemoved the ability to use bows in spawn/shop" to player
+        send "&e&lNerfed TNT cooldown from 5 > 3" to player
+        send "&e&lNerfed Ender Pearl cooldown from 5 > 3" to player
+        send "&e&lDisabled eternal daytime" to player
+        send "&e&lBows are enabled again" to player
+        send "&e&l+ Other mini fixes involving world guard that I forgot to add" to player

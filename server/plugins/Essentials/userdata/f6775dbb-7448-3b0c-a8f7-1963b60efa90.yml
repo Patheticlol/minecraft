@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1676739432584
+  login: 1676739055536
+money: '0'
+last-account-name: ZamadrA
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -18.338916470007838
+  y: 72.7531999805212
+  z: -17.70614108168059
+  yaw: -36.824462890625
+  pitch: 27.82292366027832
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 2.693739364734543
+  y: 70.0
+  z: 3.3499495971893545
+  yaw: 91.4339599609375
+  pitch: -0.7314324378967285

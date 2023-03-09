@@ -1,0 +1,32 @@
+{
+  "title": "&7[&bScoreboard++&7]&r",
+  "isSidebarEnabled": true,
+  "lines": [
+    "",
+    "&7>>&l&9 Rank:",
+    "&7>>&r <rank>",
+    "",
+    "&7>>&1&9 Coins:",
+    "&7>>&r&e <points>",
+    "",
+    "&7>>&1&9 Online:",
+    "&7>>&r&e <onlinePlayers>&7/&e<maxOnlinePlayers>",
+    "",
+    "&7>>&1&9 Ts:",
+    "&7>>&e teamspeak.server.com"
+  ],
+  "scoreboardPremiumSettings": {
+    "verticalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "bottom-top"
+    },
+    "horizontalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "left-right"
+    }
+  }
+}

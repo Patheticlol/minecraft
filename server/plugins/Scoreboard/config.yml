@@ -1,0 +1,92 @@
+#____________________________________________________________________________________________
+#                                                                                             |
+#                                                                                             |
+#                                    ~~~Scoreboard++~~~                                       |
+#                                     Created by Cilix                                        |
+#                                      Version 2.2.3                                          |
+#                                                                                             |
+#_____________________________________________________________________________________________|
+
+#----------------------------------------Scoreboard-------------------------------------------
+#
+# You can configure scoreboard templates in the template folder. The parameters listed below
+# are supported in scoreboard templates and the tablist.
+#_____________________________________________________________________________________________
+# Parameters:                                                                                 |
+#                                                                                             |
+# General parameters: <player> <onlinePlayers> <maxOnlinePlayers>                             |
+#                     <cpu> <os> <ramUsage> <freeRam> <allocatedRam> <maxRam> <totalFreeRam>  |
+# Bungee parameters:  <onlineBungeeCordPlayers>                                               |
+# Stat parameters:    <kills> <deaths> <kd>                                                   |
+# Clan parameters:    <clan> <clanTag> <clanMembers> <clanWins> <clanLosses> <clanElo>        |
+#                     <clanOwner>                                                             |
+# SavageFactions:     <fTag> <fKills> <fDescription> <fOnline> <fMembers> <fPower>            |
+# PlaceholderAPI:     https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders      |
+# Other parameters:   <rank> (Pex/LuckyPerms/GM)                                              |
+#                     <points> (PointsAPI)                                                    |
+#                     <balance> (Vault)                                                       |
+#_____________________________________________________________________________________________|
+# This template will be displayed whenever the server starts to all players
+defaultTemplate: "default"
+# Reloads configure when the scoreboard should be updated. Reloads can be player specific or
+# server wide. Depending on the size of the server you want to try to reduce the amount of
+# scoreboard reloads/updates
+reloads:
+  fixedReloads:
+    enabled: true
+    ticks: 100
+  onDeath:
+    enabled: true
+    wholeServer: false
+  onKill:
+    enabled: true
+    wholeServer: false
+  onPointsChange:
+    enabled: true
+    wholeServer: false
+  onJoin:
+    enabled: true
+    wholeServer: true
+  onLeave:
+    enabled: true
+    wholeServer: true
+  onRank:
+    enabled: true
+    wholeServer: true
+  onUserPermissionRecalculation:
+    enabled: true
+    wholeServer: true
+  onTemplateChange:
+    enabled: true
+    wholeServer: true
+
+#-----------------------------------------Tablist-------------------------------------------
+enableTabList: true
+header: "&7&l>>>&aserver-ip.com&7&l<<< \n &7---&eWelcome &c<player>&7--- \n&6&l<onlinePlayers>&8/&6&l<maxOnlinePlayers> &e Players online"
+footer: "&6Scoreboard++ &7by &8&lCilix"
+#Higher groups get used first. If the user has no defined groups the last prefix will be used.
+groups:
+  Owner: "[&4Owner&r]"
+  Admin: "[&cAdmin&r]"
+  Premium: "[&6Premium&r]"
+  Default: "[&aUser&r]"
+#-------------------------------------World Blacklist----------------------------------------
+#Worlds on the blacklist won't have any sidebar scoreboard
+blacklistedWorlds:
+  - no_scoreboard_world
+#If you want you can disable the sidebar for all worlds of a dimension
+blacklistOverworld: false
+blacklistNether: false
+blacklistEnd: false
+
+#------------------------------------------Other---------------------------------------------
+joinMsg: "(&a+&r) <player> &djoined the server."
+leaveMsg: "(&c-&r) <player> &dleft the server."
+enablePexChatPrefixes: true
+language: english
+disableSchemaCheck: false
+#-----------------------------------------Database--------------------------------------------
+databaseHost: ""
+databaseName: ""
+databaseUserName: ""
+databasePassword: ""

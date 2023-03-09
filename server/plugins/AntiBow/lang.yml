@@ -1,0 +1,60 @@
+#-----------------------------------------------------------------------------------------------------------------------#
+#                                                _                                                                      #
+#                                               | |                                                                     #
+#                                               | |     __ _ _ __   __ _                                                #
+#                                               | |    / _` | "_ \ / _` |                                               #
+#                                               | |___| (_| | | | | (_| |                                               #
+#                                               \_____/\__,_|_| |_|\__, |                                               #
+#                                                                   __/ |                                               #
+#                                                                  |___/                                                #
+#                                                                                                                       #
+#-----------------------------------------------------------------------------------------------------------------------#
+
+#Customize the prefix of plugin messages.
+prefix: "&8&l[&9&lAntiBow&8&l]"
+
+#Messages that appears when you shoot an arrow in an area where bows are disabled.
+message-system:
+  chat: "%prefix &7You can't use your bow inside this area."
+  actionbar: "&c&lYOU CANNOT SHOOT ARROWS HERE!"
+
+#Help output message.
+help:
+  - "&8&l&m---------------------------------------------"
+  - "&9&l                      AntiBow v%version"
+  - "&8&l&m---------------------------------------------"
+  - "&c/ab list &7- Get list of denied worlds"
+  - ""
+  - "&c/ab toggle [worldName]"
+  - ""
+  - "&c/ab reload &7-  Reload the configuration file"
+  - "&8&l&m---------------------------------------------"
+
+#List of enabled conditions in every world.
+list:
+  header:
+    - "&8&l&m------------------------------------"
+    - "&9&l                    AntiBow"
+    - "&8&l&m------------------------------------"
+  body:
+    worlds: "&cWorlds:"
+  footer:
+    - "&8&l&m------------------------------------"
+
+#Message output when there are no conditions.
+empty-list: "%prefix &7Couldn't find any set condition. Use /ab to start setting!"
+
+#When you send a player command though console pannel.
+only-player: "%prefix &cThis command can be executed only by players."
+
+#When you do not have enough permission to execute a command.
+no-permission: "%prefix &cYou don't have permissions to do this!"
+
+#When you reload AntiBow plugin though the command.
+plugin-reloaded: "%prefix &7Plugin reloaded &asuccessfully&7!"
+
+world:
+  added: "%prefix &7World added to disabled ones."
+  removed: "%prefix &7World removed from disabled ones."
+  not-exists: "%prefix &7Selected world doesn't exist."
+  not-enabled: "%prefix &cThe world %world isn't enabled! Type the command '/ab toggle %world' to start setting up."

@@ -1,0 +1,18 @@
+location: world:0:74.500:0
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&lHello, welcome to Season 2 of the &c&lSPMS Minecraft Server'
+    height: 0.3
+  - content: "&lUse &6&l/newhelp&r &lif you have no idea what you're doing"
+    height: 0.3
+  - content: '&lServer is expected to be released on &b&lFeb 1st, 2023'
+    height: 0.3
+  - content: '&lIf you want to join the &d&lDiscord &r&ldo &5&l/discord'
+    height: 0.3
+  actions: {}

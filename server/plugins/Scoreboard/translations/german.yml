@@ -1,0 +1,170 @@
+pluginPrefix: "&7[&bScoreboard++&7]&r"
+
+messages:
+  noPermission:
+    message: "&cDu besitzt keine Berechtigung für diesen Command."
+    usePluginPrefix: true
+  playerOnly:
+    message: "&cDieser Command ist nur für Spieler."
+    usePluginPrefix: true
+  languageChoosen:
+    message: "&aSprache wurde auf Deutsch gesetzt."
+  unknownMessage:
+    message: "&cNachricht wurde nicht gefunden."
+    usePluginPrefix: true
+  playerNotFound:
+    message: "&cDieser Spieler konnte nicht gefunden werden."
+    usePluginPrefix: true
+  unknownCommand:
+    message: "&cUnbekannter Command"
+    usePluginPrefix: true
+  stats:
+    noDatabase:
+      message: "&cEs wurde keine &6Datenbank &ckonfiguriert, &bstats &sind deaktiviert."
+      usePluginPrefix: true
+    ownStats:
+      message: "&6Du hast &c<kills> &6kill(s) und &8<deaths> &6death(s). &6KD:&e <kd>"
+      usePluginPrefix: true
+    playerStats:
+      message: "&d<player> &6hat &c<kills> &6kill(s) und &8<deaths> &6deaths(e). &6KD:§e <kd>"
+      usePluginPrefix: true
+  reset:
+    help:
+      message: "&eDu kannst &6Stats resetten &emit &8/&bstats &7<&6player&7>&7/&c@all"
+      usePluginPrefix: true
+    noDatabase:
+      message: "&cEs wurde keine &6Datenbank &ckonfiguriert, &bstats &sind deaktiviert."
+      usePluginPrefix: true
+    resetAllStats:
+      message: "&aAlle Spieler &6Stats &awurden zurückgesetzt."
+      usePluginPrefix: true
+    resetPlayerStats:
+      message: "&d<player>'s &6Stats &awurden zurückgesetzt."
+      usePluginPrefix: true
+  scoreboard:
+    help:
+      message: "&7/&bscoreboard &6help"
+      usePluginPrefix: true
+    helpHeader:
+      message: "&9Verfügbare commands &aSite:<site>&7/&a<sites>"
+      usePluginPrefix: true
+    helpInvalidSite:
+      message: "&cDie Hilfe Seiten starten bei 1."
+      usePluginPrefix: true
+    help0:
+      message: "&7/&bscoreboard &6reload &8Lädt das Plugin neu"
+      usePluginPrefix: false
+    help1:
+      message: "&7/&bscoreboard &6set/remove/blank &d<line> <content> &8Modifiziert die Scoreboard Zeilen"
+      usePluginPrefix: false
+    help2:
+      message: "&7/&bscoreboard &6dependencies &8Zeigt dir alle dependencies und ob sie geladen sind."
+      usePluginPrefix: false
+    help3:
+      message: "&7/&bupdates &8Ein Analyse tool das dir zeigt, was wie oft Scoreboard updates auslöst."
+      usePluginPrefix: false
+    help4:
+      message: "&7/&bstats &d<player> &8Zeigt dir die Stats eines Spielers."
+      usePluginPrefix: false
+    help5:
+      message: "&7/&breset &d<player/@all> &8Setzt die Stats zurück."
+      usePluginPrefix: false
+    help6:
+      message: "&7/&btop &6Zeigt dir die besten Spieler auf dem Server."
+      usePluginPrefix: false
+    help7:
+      message: "&7/&bsbupdate &d<download> &8Läd automatisch die aktuellste Version der Plugins herunter."
+      usePluginPrefix: false
+    beforeReload:
+      message: "&aLade &bScoreboard++ &a..."
+      usePluginPrefix: true
+    reload:
+      message: "&aPlugin wurde neu geladen."
+      usePluginPrefix: true
+    dependencies:
+      message: "&bDependencies&7: <dependencies>"
+      usePluginPrefix: true
+    setScoreboardLine:
+      message: "&aZeile gesetzt."
+      usePluginPrefix: true
+    setScoreboardLineHelp:
+      message: "&3Setze eine Scoreboard Zeile mit: &7/&bscoreboard &d<set> <line> <content>"
+      usePluginPrefix: true
+    setScoreboardLineToBlankHelp:
+      message: "&3Setze eine leere Zeile mit: &7/&bscoreboard &dblank <line>"
+      usePluginPrefix: true
+    removeScoreboardLineHelp:
+      message: "&3Lösche eine Zeile mit: &7/&bscoreboard &dremove <line>"
+      usePluginPrefix: true
+    removedScoreboardLine:
+      message: "&aZeile wurde gelöscht."
+    setScoreboardLineInvalidNumber:
+      message: "&cZeilennummern starten bei 0."
+      usePluginPrefix: true
+    setScoreboardLineToBlank:
+      message: "&aLeerzeile wurde gesetzt."
+      usePluginPrefix: true
+  top:
+    noDatabase:
+      message: "&cEs wurde keine &6Datenbank &ckonfiguriert, &bstats &sind deaktiviert."
+      usePluginPrefix: true
+    topMessage:
+      message: "&aTop &65&a Spieler:"
+      usePluginPrefix: true
+    topEntry:
+      message: "&6<place>&7. &d<player> &7(&3<kill> &6kill(s)&7)"
+      usePluginPrefix: true
+  update:
+    totalUpdates:
+      message: "&aUpdates aus den letzten 1m, 5m, 15m &7(Gesamt: <totalUpdates>) &aSeite:<site>&7/&a<sites>."
+      usePluginPrefix: true
+    updateType:
+      message: "&a<type> &3<1min>, <5min>, <15min> &7(Gesamt:<totalUpdates>)"
+      usePluginPrefix: false
+    invalidSite:
+      message: "&3<site> &cist keine zulässige Seite."
+      usePluginPrefix: true
+  sbUpdate:
+    pluginIsUpToDate:
+      message: "&aDu verwendest die aktuellste Version: &6&l<latest>"
+      usePluginPrefix: true
+    pluginIsOutdated:
+      message: "&eEs ist ein Update verfügbar! &7[&6<latest>&7] &eBenutze: &7/&bsbupdate &d<download> &cum es herunterzuladen."
+      usePluginPrefix: true
+    cantCheckForUpdates:
+      message: "&cDer Update-Server ist aktuell nicht verfügbar."
+      usePluginPrefix: true
+    autoUpdateDisabled:
+      message: "&eYou are running a java version that is not fully compatible. &5&lAuto updates &r&eare disabled!"
+    downloadingUpdate:
+      message: "&bDownloading the update&8..."
+      usePluginPrefix: true
+    downloadComplete:
+      message: "&2Download wurde fertiggestellt! &eGeh sicher, dass du die Update Notizen gelesen hast und deine &dConfig/Sprachdateien &egeupdated sind."
+      usePluginPrefix: true
+    downloadFail:
+      message: "&cDownload fehlgeschlagen. Bitte lade das Update manuell runter."
+      usePluginPrefix: true
+  templates:
+    site:
+      message: "&9Verfügbare Templates &7(&a<number>&7) &aSeite:<site>&7/&a<sites>"
+      usePluginPrefix: true
+    template:
+      message: "&9Template &6<template>"
+      usePluginPrefix: false
+    load:
+      message: "&9Template: &6<template> &9wurde geladen"
+      usePluginPrefix: true
+    loadHelp:
+      message: "&cLade ein template mit &7/&bscoreboard &d<load> &e<name>"
+      usePluginPrefix: true
+    notFound:
+      message: "&cTemplate existiert nicht."
+      usePluginPrefix: true
+    errorLoaded:
+      message: "&cBeim laden des Templates ist ein Fehler aufgetreten."
+      usePluginPrefix: true
+  placeholders:
+    list:
+      message: "&9Geladene Platzhalter: &a<placeholders>"
+      usePluginPrefix: true

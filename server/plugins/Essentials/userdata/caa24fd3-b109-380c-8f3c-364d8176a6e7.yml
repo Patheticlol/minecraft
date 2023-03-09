@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1677872482596
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1677873060914
+  login: 1677871478870
+money: '0'
+last-account-name: IM_THE_GOAT1
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 55.72556926237613
+  y: 90.0
+  z: -14.502055314571992
+  yaw: 280.3503112792969
+  pitch: 60.45001220703125
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 86.53476148743758
+  y: 68.0
+  z: -34.38078190001113
+  yaw: -357.8997802734375
+  pitch: 60.30001449584961
+homes:
+  home:
+    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world-name: world
+    x: 99.440760030245
+    y: 67.0
+    z: -24.535227478332033
+    yaw: 85.35028076171875
+    pitch: 0.9000071287155151

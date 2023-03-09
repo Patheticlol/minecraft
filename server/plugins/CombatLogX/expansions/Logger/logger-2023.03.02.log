@@ -1,0 +1,29 @@
+[March 02, 2023 19:36:46.703PM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER IM_THE_GOAT1, damager ARROW Arrow and cancelled false.
+[March 02, 2023 19:36:50.455PM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER IM_THE_GOAT1, damager ARROW Arrow and cancelled false.
+[March 02, 2023 19:39:37.998PM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[March 02, 2023 19:39:38.005PM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[March 02, 2023 19:39:38.030PM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[March 02, 2023 19:39:38.031PM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[March 02, 2023 19:39:38.035PM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER IM_THE_GOAT1, damager PLAYER monkey_fucker69 and cancelled false.
+[March 02, 2023 19:39:48.290PM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[March 02, 2023 19:39:48.296PM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[March 02, 2023 19:39:48.299PM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[March 02, 2023 19:39:48.299PM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[March 02, 2023 19:42:02.395PM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER monkey_fucker69, damager ARROW Arrow and cancelled false.
+[March 02, 2023 19:42:04.096PM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER monkey_fucker69, damager ARROW Arrow and cancelled false.
+[March 02, 2023 19:42:04.295PM GMT] EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager PLAYER monkey_fucker69 and cancelled false.
+[March 02, 2023 19:42:06.091PM GMT] EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager PLAYER monkey_fucker69 and cancelled false.
+[March 02, 2023 19:42:07.691PM GMT] EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager PLAYER monkey_fucker69 and cancelled false.
+[March 02, 2023 19:42:08.192PM GMT] EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager PLAYER monkey_fucker69 and cancelled false.
+[March 02, 2023 19:42:14.190PM GMT] EntityDamageByEntityEvent was triggered by damaged COW Cow, damager PLAYER monkey_fucker69 and cancelled false.
+[March 02, 2023 19:42:15.091PM GMT] EntityDamageByEntityEvent was triggered by damaged COW Cow, damager PLAYER monkey_fucker69 and cancelled false.
+[March 02, 2023 19:49:55.110PM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[March 02, 2023 19:49:55.111PM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[March 02, 2023 19:49:55.113PM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[March 02, 2023 19:49:55.113PM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[March 02, 2023 19:49:55.114PM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER matt____, damager PLAYER monkey_fucker69 and cancelled false.
+[March 02, 2023 19:50:05.413PM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[March 02, 2023 19:50:05.413PM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[March 02, 2023 19:50:05.415PM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[March 02, 2023 19:50:05.415PM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[March 02, 2023 19:59:25.062PM GMT] EntityDamageByEntityEvent was triggered by damaged HORSE Horse, damager LIGHTNING unknown and cancelled false.

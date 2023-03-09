@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1678211147559
+  login: 1678211141156
+money: '0'
+last-account-name: real_dream
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 2.0
+  y: 70.0
+  z: 3.0
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 2.5
+  y: 70.0
+  z: 3.5
+  yaw: 91.4339599609375
+  pitch: -0.7500081062316895

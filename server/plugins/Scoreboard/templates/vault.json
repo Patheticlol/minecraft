@@ -1,0 +1,27 @@
+{
+  "title": "&7[&bScoreboard++&7]&r",
+  "isSidebarEnabled": true,
+  "lines": [
+    "",
+    "&7>>&l&9 Top Players:",
+    "&7>>&61. &9<vTop1> &b<vTop1Balance>",
+    "&7>>&72. &9<vTop2> &b<vTop2Balance>",
+    "&7>>&83. &9<vTop3> &b<vTop3Balance>",
+    "&7>>&84. &9<vTop4> &b<vTop4Balance>",
+    "&7>>&85. &9<vTop5> &b<vTop5Balance>"
+  ],
+  "scoreboardPremiumSettings": {
+    "verticalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "bottom-top"
+    },
+    "horizontalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "left-right"
+    }
+  }
+}

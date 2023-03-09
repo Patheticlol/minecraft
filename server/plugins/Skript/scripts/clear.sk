@@ -1,0 +1,9 @@
+command /cclear [<material>] [<offline player>] [<text>]:
+    trigger:
+        arg 1 is not set
+        arg 2 is not set
+        set {_i} to 0
+        loop items in player's inventory:
+            add item amount of loop-value to {_i}
+        clear player's inventory
+        message "&cInventory &5- &fItems removed: &c%{_i}%&f!"

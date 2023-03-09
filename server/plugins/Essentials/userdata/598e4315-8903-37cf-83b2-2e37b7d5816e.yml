@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1677078959595
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1677078998372
+  login: 1677078865130
+money: '0'
+last-account-name: Funky
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 2.693739364734543
+  y: 70.0
+  z: 3.3499495971893545
+  yaw: 91.4339599609375
+  pitch: -0.7500081062316895
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -514.5317245490363
+  y: 114.0
+  z: 33.516242910750414
+  yaw: 18.286754608154297
+  pitch: 48.749996185302734
+homes:
+  home:
+    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world-name: world
+    x: -502.4663020215538
+    y: 73.0
+    z: 5.635245780485714
+    yaw: 266.38671875
+    pitch: 90.0
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382521014
+  expire: 1675386120700

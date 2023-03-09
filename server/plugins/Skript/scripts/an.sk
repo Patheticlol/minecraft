@@ -1,0 +1,13 @@
+#----------------------------#
+#							 #
+#							 #
+#      Auto Mob kill!     #
+#         By CharDino        #
+#							 #
+#							 #
+#----------------------------#
+
+on Skript start:
+	loop 4000000 times:
+		wait 5 minutes
+		broadcast "&6&l[&bAutoTip&6&l] Use /pspawn during combat so you don't die in the void!"

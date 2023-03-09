@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1676296789591
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1676296992432
+  login: 1676296330078
+money: '0'
+last-account-name: THEGOOFYGRIEFER
+lastlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: 72.97561351183697
+  y: -72.14855628130869
+  z: 49.65411777992926
+  yaw: 358.97894287109375
+  pitch: 87.9985580444336
+homes:
+  home:
+    world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+    world-name: world
+    x: -101.5
+    y: 2.0
+    z: -497.5
+    yaw: 219.3682403564453
+    pitch: 69.48524475097656
+logoutlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: -117.05735678214911
+  y: 59.0
+  z: 111.9718142849463
+  yaw: 154.40281677246094
+  pitch: 85.17877960205078

@@ -1,0 +1,47 @@
+#Written by MineVid
+#Enables this if you want to auto check for updates.
+updatechecker: true
+
+#These commands will be allowed during combat
+command-whitelist:
+- help
+- ci
+
+#Amount of seconds before tag expires
+tag-time: 15
+
+#Whether or not you want to allow the timer to go down when people are moving
+allow-running: false
+
+#If a player is given this permission he can't be combat tagged
+bypass-permission: "acl.bypass"
+
+#When a player is hit in one of these regions they won't get combat tagged.
+#Make sure these regions are a higher priority as a pvp region (if you use overlapping regions)
+disabled-regions: []
+
+#When a player is hit in one of these words he won't get combat tagged.
+disabled-worlds: []
+
+#Whether or not you want to punish players when they combat log.
+allow-punishments: true
+
+#This is the amount of warning a player will get before being banned (use -1 for infinite warnings)
+amount-warnings: 2
+
+#Whether or not you want your players to be banned after the amount of warnings is received
+allow-banning: true
+
+#Amount of days the player will be banned (Only if you use LiteBans this value will be seen. Otherwise it will use the Minecraft ban system)
+#You can use -1 to ban the person permanently
+days-banned: -1
+
+Messages:
+  prefix: '&cAntiCombatLog &e> &a'
+  player-tagged: '&c&lYou have been tagged!'
+  player-tagtime: '&8&lCombat Timer&7&l: &c&l%time% &8&lseconds left.'
+  player-untagged: '&c&lYou can logout or go to spawn now.'
+  player-moved: '&c&lYou need to stand still if you want your tag to go away!'
+  command-blacklisted: '&c&lYou may not use that command while in combat.'
+  warning: '&cYou are not allowed to combat log.'
+  ban: '&cYou are banned for Combat Logging'

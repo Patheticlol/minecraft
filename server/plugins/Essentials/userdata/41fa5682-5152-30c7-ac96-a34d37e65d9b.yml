@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1674654482429
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1674740835028
+  login: 1674740834813
+money: '0'
+last-account-name: redstoneDealer
+lastlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: -822.1823493542286
+  y: 62.0
+  z: -764.0327736689098
+  yaw: 68.63787841796875
+  pitch: 61.05496597290039
+logoutlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: -794.7442648162049
+  y: 53.0
+  z: -799.2761502031024
+  yaw: 151.30406188964844
+  pitch: 7.652503490447998
+homes:
+  home:
+    world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+    world-name: world
+    x: -795.4213937783393
+    y: 53.0
+    z: -803.3000000119209
+    yaw: 183.2603759765625
+    pitch: 85.28801727294922
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520988
+  expire: 1675386120700

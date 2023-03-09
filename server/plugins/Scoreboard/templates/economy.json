@@ -1,0 +1,29 @@
+{
+  "title": "&7[&bScoreboard++&7]&r",
+  "isSidebarEnabled": true,
+  "lines": [
+    "",
+    "&7>>&l&9 Welcome:",
+    "&7>>&r <player>",
+    "",
+    "&7>>&1&9 Online:",
+    "&7>>&r&e <onlinePlayers>&7/&e<maxOnlinePlayers>",
+    "",
+    "&7>>&1&9 Balance:",
+    "&7>>&r&e <balance>"
+  ],
+  "scoreboardPremiumSettings": {
+    "verticalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "bottom-top"
+    },
+    "horizontalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "left-right"
+    }
+  }
+}

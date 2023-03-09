@@ -1,0 +1,15 @@
+command /pspawn:
+    aliases: /ps
+    cooldown: 5 seconds
+    cooldown message: &cPlease wait 5 seconds before teleporting again.
+    trigger:
+        teleport player to location at 0, 74, -16 in world "world"
+        send "&6Teleporting..."
+        make console execute command "setblock 0 74 -16 air"
+        make console execute command "setblock 0 74 -16 air"
+        make console execute command "setblock 0 73 -17 air"
+        make console execute command "setblock 0 74 -17 air"
+        wait 5 ticks
+        make console execute command "setblock 0 73 -16 water"
+        wait 15 ticks
+        make console execute command "setblock 0 73 -16 air"

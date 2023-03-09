@@ -1,0 +1,32 @@
+{
+  "title": "&7[&bScoreboard++&7]&r",
+  "isSidebarEnabled": true,
+  "lines": [
+    "",
+    "&7>>&l&9 IP:",
+    "&7>>&r %player_ip%",
+    "",
+    "&7>>&1&9 x:",
+    "&7>>&r&e %player_x%",
+    "",
+    "&7>>&1&9 y:",
+    "&7>>&r&e %player_y%",
+    "",
+    "&7>>&1&9 z:",
+    "&7>>&e %player_z%"
+  ],
+  "scoreboardPremiumSettings": {
+    "verticalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "bottom-top"
+    },
+    "horizontalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "left-right"
+    }
+  }
+}

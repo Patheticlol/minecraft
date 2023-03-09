@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1674839645547
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1675172357960
+  login: 1675172187734
+money: '0'
+last-account-name: phillips_mother1
+lastlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: -8.238766659102705
+  y: 73.58230961125521
+  z: -28.322817036377224
+  yaw: 182.63389587402344
+  pitch: 14.250008583068848
+homes:
+  home:
+    world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+    world-name: world
+    x: 842.3235657707324
+    y: 62.0
+    z: 705.8828630692572
+    yaw: -334.87762451171875
+    pitch: 12.449993133544922
+logoutlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: 5.962287006251967
+  y: 73.0
+  z: 23.19626877311685
+  yaw: 300.9839172363281
+  pitch: 22.200010299682617
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520980
+  expire: 1675386120700

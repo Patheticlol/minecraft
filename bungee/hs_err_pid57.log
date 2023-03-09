@@ -1,0 +1,67 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0x7) at pc=0x00007feac393093d, pid=57, tid=0x00007feaa62ce640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_322) (build 1.8.0_322-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.322-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libc.so.6+0x15f93d]  __strncpy_avx2+0x2bd
+#
+# Core dump written. Default location: /home/runner/enderdragon/bungee/core or core.57
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007feabc185000):  JavaThread "C2 CompilerThread0" daemon [_thread_in_vm, id=81, stack(0x00007feaa61cf000,0x00007feaa62cf000)]
+
+siginfo: si_signo: 7 (SIGBUS), si_code: 2 (BUS_ADRERR), si_addr: 0x00007feac004cf13
+
+Registers:
+RAX=0x00007feac004cf13, RBX=0x00007feabc16fa50, RCX=0x0000000000000030, RDX=0x0000000000000000
+RSP=0x00007feaa62cd2d8, RBP=0x00007feaa62cd2f0, RSI=0x00007feaa62cd330, RDI=0x00007feac004cf13
+R8 =0x00000000000000a1, R9 =0x00007feaa62cd228, R10=0x0000000000000000, R11=0x00000000ffffffff
+R12=0x00007feabc184ac0, R13=0x00007feabc1859a0, R14=0x00007feabc185d88, R15=0x00007feabc185960
+RIP=0x00007feac393093d, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000007
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007feaa62cd2d8)
+0x00007feaa62cd2d8:   00007feac0d59b97 00007feaa62cd550
+0x00007feaa62cd2e8:   00007feaa62cd330 00007feaa62cd410
+0x00007feaa62cd2f8:   00007feac084cb70 00007feabc1859c0
+0x00007feaa62cd308:   00007feabc185000 00000000000003d8
+0x00007feaa62cd318:   0000000497a703c3 00007feabc1859a0
+0x00007feaa62cd328:   00007feabc1859b0 6974752f6176616a
+0x00007feaa62cd338:   7275636e6f632f6c 636f6c2f746e6572
+0x00007feaa62cd348:   746e6565522f736b 6b636f4c746e6172
+0x00007feaa62cd358:   727420636e795324 657361656c655279
+0x00007feaa62cd368:   0000000000000000 0000000000000000
+0x00007feaa62cd378:   00007feaa777b080 00007feaa62cd550
+0x00007feaa62cd388:   00007feaa777b080 00007feaa62cd550
+0x00007feaa62cd398:   0000000000000000 00007feaa62cd3f0
+0x00007feaa62cd3a8:   00007feac084b439 ffffffffa62cd3c0
+0x00007feaa62cd3b8:   0000000000000004 00007feaa62cd410
+0x00007feaa62cd3c8:   00007feabc185000 00007feabc2cfbd0
+0x00007feaa62cd3d8:   364197f126108b00 00007feabc099c40
+0x00007feaa62cd3e8:   00007feabc185000 00007feabc2cfbd0
+0x00007feaa62cd3f8:   00007feaa62cd550 00007feabc185ec0
+0x00007feaa62cd408:   00007feabc185000 00007feaa62cd770
+0x00007feaa62cd418:   00007feac0851e34 00007feabc008550
+0x00007feaa62cd428:   00007feaa777b080 00000000000003d8
+0x00007feaa62cd438:   00007fea00000000 00007feabc1859a0
+0x00007feaa62cd448:   00007feabc1859b0 00007feabc1859a0
+0x00007feaa62cd458:   00007feabc185d88 ffffffff0000092d
+0x00007feaa62cd468:   00007feaa777b000 00007feabc185960
+0x00007feaa62cd478:   00007feaa62cd400 00007fea00000004
+0x00007feaa62cd488:   0000000000000000 0000000000000000
+0x00007feaa62cd498:   00007feac08578fd 00007feabc008500
+0x00007feaa62cd4a8:   00007feac0da2bd1 00007feaa62c0001
+0x00007feaa62cd4b8:   000000001307fa55 00000000a591dd06
+0x00007feaa62cd4c8:   00007feabc185900 00007feaa62cd490 
+
+Instructions: (pc=0x00007feac393093d)
+0x00007feac393091d:   00 c5 fe 6f 1e c5 fe 6f 56 20 c5 fd 74 cb c5 fd
+0x00007feac393092d:   d7 d1 49 83 

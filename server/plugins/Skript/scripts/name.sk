@@ -1,0 +1,12 @@
+command /itemeditor <text> [<text>]:
+  permission: itemeditor.use
+  trigger:
+    if arg-1 is "name":
+      set name of player's held item to colored arg-2
+
+#use || in between text to use multiple lines
+    if arg-1 is "lore": 
+      set lore of player's tool to colored arg-2 
+  
+    if arg-1 is "clearenchants":
+      disenchant the player's tool

@@ -1,0 +1,8 @@
+03.02.2023 - 19:25:04 - [TAB v3.2.4] Failed to schedule task due to java.lang.OutOfMemoryError: Java heap space. Threads created by TAB: 4
+03.02.2023 - 21:51:12 - [TAB v3.2.4] An error occurred when creating PacketPlayOutPlayerListHeaderFooter
+03.02.2023 - 21:51:45 - java.lang.OutOfMemoryError: Java heap space
+07.02.2023 - 01:34:48 - [TAB v3.2.4] An error occurred when creating PacketPlayOutPlayerListHeaderFooter
+07.02.2023 - 01:35:08 - java.lang.OutOfMemoryError: Java heap space
+16.02.2023 - 19:29:11 - [TAB v3.2.4] Failed to schedule task due to java.lang.OutOfMemoryError: Java heap space. Threads created by TAB: 5
+16.02.2023 - 22:30:38 - [TAB v3.2.4] Failed to schedule task due to java.lang.OutOfMemoryError: Java heap space. Threads created by TAB: 5
+22.02.2023 - 17:50:45 - [TAB v3.2.4] Failed to schedule task due to java.lang.OutOfMemoryError: Java heap space. Threads created by TAB: 4

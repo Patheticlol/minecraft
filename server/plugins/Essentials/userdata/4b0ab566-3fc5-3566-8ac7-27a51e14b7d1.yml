@@ -1,0 +1,46 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1675293000784
+  login: 1675292931995
+money: '0'
+last-account-name: Mr_Beast
+lastlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: 1.5912847336670108
+  y: 239.0625
+  z: 4.804440045478086
+  yaw: 212.51028442382812
+  pitch: 41.249996185302734
+logoutlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: 15.156396281775619
+  y: 73.0
+  z: -6.4446363894324294
+  yaw: 228.533935546875
+  pitch: 6.300008296966553
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520999
+  expire: 1675386120700

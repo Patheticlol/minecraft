@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1674870307309
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1674951416841
+  login: 1674951341265
+money: '0'
+last-account-name: Baked_bean3773
+lastlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: -3.6815753692225375
+  y: 73.0
+  z: -22.140081724642826
+  yaw: 314.784423828125
+  pitch: 54.30001449584961
+logoutlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: -1.712592306813816
+  y: 73.0
+  z: 8.365178798860992
+  yaw: 329.7839660644531
+  pitch: 9.900006294250488
+homes:
+  home:
+    world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+    world-name: world
+    x: -0.08756898455203278
+    y: 73.0
+    z: 0.6147634129171802
+    yaw: 185.934326171875
+    pitch: 53.100013732910156
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520917
+  expire: 1675386120700

@@ -1,0 +1,46 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1675268435473
+  login: 1675268326977
+money: '0'
+last-account-name: jahsir
+lastlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: -13.52285740126823
+  y: -92.18917083026514
+  z: -27.049982005196238
+  yaw: -31.866117477416992
+  pitch: 16.35000991821289
+logoutlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: -0.15005333296362056
+  y: 73.0
+  z: 65.48653378439673
+  yaw: 185.16859436035156
+  pitch: 4.116758346557617
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520842
+  expire: 1675386120700

@@ -1,0 +1,16 @@
+location: voidworld:-1.603:58.300:0.386
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e⭐ New ⭐'
+    height: 0.3
+  - content: '&2&lOneBlockSMP'
+    height: 0.3
+  - content: '&4&lSEMI-ANARCHY'
+    height: 0.3
+  actions: {}

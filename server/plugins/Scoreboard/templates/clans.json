@@ -1,0 +1,29 @@
+{
+  "title": "&7[&bScoreboard++&7]&r",
+  "isSidebarEnabled": true,
+  "lines": [
+    "",
+    "&7>>&l&9 Clan:",
+    "&7>> &e<clan> &7[&a<clanTag>&7]",
+    "",
+    "&7>>&9 Owner:",
+    "&7>>&c <clanOwner>",
+    "",
+    "&7>>&l&9 Wins/Losses:",
+    "&7>>&e <clanWins>&7/&e<clanLosses>"
+  ],
+  "scoreboardPremiumSettings": {
+    "verticalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "bottom-top"
+    },
+    "horizontalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "left-right"
+    }
+  }
+}

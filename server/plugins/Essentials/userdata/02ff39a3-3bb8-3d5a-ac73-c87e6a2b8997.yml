@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1676473941912
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1677166870051
+  login: 1677166441998
+money: '0'
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520907
+  expire: 1675386120700
+last-account-name: Dripz_
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -152.0
+  y: 64.0
+  z: 212.0
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -545.7287547856935
+  y: 86.0
+  z: 21.395963331299047
+  yaw: 147.90011596679688
+  pitch: 16.199995040893555
+homes:
+  home:
+    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world-name: world
+    x: -65.5
+    y: 137.0
+    z: -19.5
+    yaw: 86.18404388427734
+    pitch: 13.049991607666016

@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1674744877569
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1674745069499
+  login: 1674742595702
+money: '0'
+last-account-name: aiden_james_111
+lastlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: 449.6347321320443
+  y: 62.0
+  z: 522.5866308029119
+  yaw: 171.75006103515625
+  pitch: 14.849994659423828
+nickname: aiden
+logoutlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: -261.9915118506485
+  y: 61.0
+  z: 620.727301636533
+  yaw: 120.30001068115234
+  pitch: 24.60000228881836
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520970
+  expire: 1675386120700

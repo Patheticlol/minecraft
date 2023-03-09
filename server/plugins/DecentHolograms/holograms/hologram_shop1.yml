@@ -1,0 +1,20 @@
+location: voidworld:-1.434:58.200:16.417
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e⭐ New ⭐'
+    height: 0.3
+  - content: '&b&lShop'
+    height: 0.3
+  - content: '&2&l[Both Worlds]'
+    height: 0.3
+  - content: '&4&l[Closed]'
+    height: 0.3
+  - content: '&4&lUntil July 3rd, 2022'
+    height: 0.3
+  actions: {}

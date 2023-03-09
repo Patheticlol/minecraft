@@ -1,0 +1,46 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1674839867995
+  login: 1674839842997
+money: '0'
+last-account-name: Demoi_
+lastlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: 457.16472289338265
+  y: 63.0
+  z: 530.9251336716864
+  yaw: 88.80001068115234
+  pitch: 9.600001335144043
+logoutlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: 494.35460000902714
+  y: 63.0
+  z: 537.5645499581141
+  yaw: 25.200002670288086
+  pitch: 26.700002670288086
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382521036
+  expire: 1675386120700

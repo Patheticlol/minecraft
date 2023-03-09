@@ -1,0 +1,24 @@
+#----------------------------#
+#							 #
+#							 #
+#      Auto Mob kill!     #
+#         By CharDino        #
+#							 #
+#							 #
+#----------------------------#
+
+on Skript start:
+	loop 4000000 times:
+		wait 10 minutes
+		broadcast "&8&l[&bAutokill&8&l] &7killing mobs in 2 minutes"
+		wait 1 minute
+		broadcast "&8&l[&bAutokill&8&l] &7killing mobs in 1 minute"
+		wait 30 seconds
+		broadcast "&8&l[&bAutokill&8&l] &7killing mobs in 30 seconds"
+		wait 20 seconds
+		broadcast "&8&l[&bAutokill&8&l] &7killing mobs in 10 seconds"
+		wait 9 seconds
+		broadcast "&8&l[&bAutokill&8&l] &7All mobs have been killed!"
+		wait 1 second
+		make console execute command "butcher"
+		make console execute command "mobkill irongolem"

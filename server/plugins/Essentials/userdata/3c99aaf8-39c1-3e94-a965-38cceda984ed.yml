@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1676662809583
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1677094395288
+  login: 1677094095638
+money: '0'
+last-account-name: Darkknight
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -259.90263116195393
+  y: 64.0
+  z: 347.14251881649176
+  yaw: 93.90028381347656
+  pitch: 6.449992656707764
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -0.6441809929440749
+  y: 70.0
+  z: -0.5408560800772116
+  yaw: 129.6839599609375
+  pitch: 20.9999942779541
+homes:
+  home:
+    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world-name: world
+    x: 348.5
+    y: 92.0
+    z: 1084.5
+    yaw: 93.18575286865234
+    pitch: 12.899992942810059
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520981
+  expire: 1675386120700

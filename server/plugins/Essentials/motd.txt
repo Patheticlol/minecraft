@@ -1,0 +1,4 @@
+&6Welcome, {PLAYER}&6!
+&6Type &c/newhelp&6 if your new.
+&6Type &c/update&6 for the latest server update information.
+&6If you have any problems feel free to contact a staff member.

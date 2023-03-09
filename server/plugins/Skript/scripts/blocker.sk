@@ -1,0 +1,57 @@
+on drop of bedrock:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to drop is banned." to player
+    remove bedrock from player's inventory
+
+on drop of end portal frame:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to drop is banned." to player
+    remove end portal frame from player's inventory
+
+on drop of any spawn egg:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to drop is banned." to player
+
+on drop of barrier:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to drop is banned." to player
+    remove barrier from player's inventory
+
+on drop of command block:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to drop is banned." to player
+    remove command block from player's inventory
+
+on drop of spawner:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to drop is banned." to player
+    remove spawner from player's inventory
+
+on block place of bedrock:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to place is banned." to player
+    remove bedrock from player's inventory
+
+on block place of end portal frame:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to place is banned." to player
+    remove end portal frame from player's inventory
+
+on block place of any spawn egg:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to place is banned." to player
+
+on block place of barrier:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to place is banned." to player
+    remove barrier from player's inventory
+
+on block place of command block:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to place is banned." to player
+    remove command block from player's inventory
+
+on block place of spawner:
+    cancel event
+    send action bar "&4&l✕ The item you're trying to place is banned." to player
+    remove spawner from player's inventory

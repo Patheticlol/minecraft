@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1674752646923
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1674853315600
+  login: 1674853328782
+money: '0'
+last-account-name: GIGA_NIGA
+logoutlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: -692.5
+  y: 20.0
+  z: -237.5
+  yaw: -340.4400939941406
+  pitch: 20.54999351501465
+lastlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: 494.0
+  y: 63.0
+  z: 537.0
+  yaw: 0.0
+  pitch: 0.0
+homes:
+  home:
+    world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+    world-name: world
+    x: -634.0315207573846
+    y: 11.0
+    z: -282.8755126603972
+    yaw: 63.8099365234375
+    pitch: 31.199995040893555
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520924
+  expire: 1675386120700

@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1674668176460
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1674665812099
+  login: 1674667372345
+money: '0'
+last-account-name: YeeishEagl314
+lastlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: 494.0
+  y: 63.0
+  z: 537.0
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: 789.924143086226
+  y: 63.0
+  z: 588.6958200341919
+  yaw: -60.72172927856445
+  pitch: 46.658023834228516
+nickname: §1§lAidan
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520831
+  expire: 1675386120700

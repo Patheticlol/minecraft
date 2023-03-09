@@ -1,0 +1,32 @@
+{
+  "title": "&7[&bScoreboard++&7]&r",
+  "isSidebarEnabled": true,
+  "lines": [
+    "",
+    "&7>>&l&9 Free Ram:",
+    "&7>> &e<freeRam> &6Mb",
+    "",
+    "&7>>&l&9 Allocated Ram:",
+    "&7>> &e<allocatedRam> &6Mb",
+    "",
+    "&7>>&l&9 Ram used:",
+    "&7>> &e<ramUsage>&6%",
+    "",
+    "&7>>&l&9 Os/Cpu:",
+    "&7>> &e<os> &7/ &e<cpu>&6%"
+  ],
+  "scoreboardPremiumSettings": {
+    "verticalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "bottom-top"
+    },
+    "horizontalScrolling": {
+      "enabled": true,
+      "always": false,
+      "ifTooLong": true,
+      "direction": "left-right"
+    }
+  }
+}

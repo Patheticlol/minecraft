@@ -1,0 +1,19 @@
+#
+# Skript Made By KimpiegamesYT#2370
+#
+
+
+options:
+	cooldown: 0.1
+
+
+
+# Do not edit this code if you dont know what you are doing!
+
+command /dupe:
+  aliases: /de
+  cooldown: {@cooldown} seconds
+  cooldown message: &6&lDupe &fYou are on &c%remaining time% &fcooldown! 
+  trigger:
+    send action bar "&a&l✔ Duped Succesfully" to player
+    give player's tool to player

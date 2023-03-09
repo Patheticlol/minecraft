@@ -1,0 +1,35 @@
+# Enderpearl Cooldown by malachiel
+
+# Change the options behind, edit Enderpearl Cooldown time as you like, also the message is configurable!
+# In WorldEnabled add or remove the world where you want ENABLE the limitation!
+# Add the permission ec.bypass to people that you DON'T want the limitation!
+
+on rightclick with ender pearl:
+	{epcd.%player%.lastused} was less than 3 seconds ago:
+		set {_epdiff} to difference between {epcd.%player%.lastused} and now
+		if {_epdiff} is less than 3 seconds:
+			set {_epdiff} to difference between {_epdiff} and 3 seconds
+			send action bar "&6You cannot throw another enderpearl for &e&L%{_epdiff}%&f" to player
+			cancel event
+			stop
+	set {epcd.%player%.lastused} to now
+
+on consume of notch apple:
+	{notchapple.%player%.lastused} was less than 60 seconds ago:
+		set {_epdiff} to difference between {notchapple.%player%.lastused} and now
+		if {_epdiff} is less than 60 seconds:
+			set {_epdiff} to difference between {_epdiff} and 60 seconds
+			send action bar "&6You cannot eat another Notch Apple for &e&L%{_epdiff}%&f" to player
+			cancel event
+			stop
+	set {notchapple.%player%.lastused} to now
+
+on block place of tnt:
+	{tnt.%player%.lastused} was less than 3 seconds ago:
+		set {_epdiff} to difference between {tnt.%player%.lastused} and now
+		if {_epdiff} is less than 3 seconds:
+			set {_epdiff} to difference between {_epdiff} and 3 seconds
+			send action bar "&6You cannot place another tnt for &e&L%{_epdiff}%&f &6due to lag" to player
+			cancel event
+			stop
+	set {tnt.%player%.lastused} to now

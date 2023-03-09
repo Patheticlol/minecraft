@@ -1,0 +1,895 @@
+'2':
+  uniqueId: ad9ae5b1-b132-4a23-af03-696e9c52267b
+  name: '&6&lMr. Fisher'
+  world: world
+  x: -7
+  y: 73
+  z: 0
+  type: admin
+  object:
+    type: villager
+    uuid: 222ef708-1fdc-4e6d-a841-7bc7074eb2d0
+    prof: PRIEST
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_BLOCK
+        amount: 64
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: SKULL_ITEM
+        damage: 3
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          display-name: §d§lShulker Box
+          lore:
+          - §7A special portable bag with
+          - §627 §7slots!
+          - ' '
+          - §cBackpack is empty!
+          - ' '
+          internal: H4sIAAAAAAAAAO3Yy5KaQBQG4DZTSRmTLLLIKpssspuyClBUFrNovKCOoKBy20HDjEI3UgjeKu8zmzzFPFnaTM0kb9CbtspC0AN0f6LnpwFAHbyTpNqvYi5A1TXOUM0PiKDKy+wikLAwy2whcI5V4PQquzXdoLGK0WFqWreX05D0RvARqisIB6EzOkYQLlZavonI8BC5Vh72FcNzYTceqxf0CEVPUsoZiQ6hFO39pZyEkliGUrui2/ehZidRX56GjihG2mhL16+16Vqyz4Ez2gdujv2hT89NgP8eEwjxHqpaiWPXoAMwwtfjh9qo8s/KwiM59lpm1zlCLSKjfeTYF2SqtxBabTS2z//VVC818ltNqstedlIv986xD6HaRn+POaUnMFEWrgnVsSUjzRZf9udd3+zTOYjD1jSbkakYSGVOx5SHmY/DzDqgLK2WroVD2xA8xyjoZwfmGi+vBC1OwJqgzQlYE8icgDVBhxOwJGiAz8u0wnhR7B62OKYikwj87KBu3At6D80O6qBmWxRRU5HRQ1PuBR2pLSuxonQboEGL8rgot/H+I6iX8amsinjfAADU6uC9HeAqBr/jloXjsSUiYl/mWblaCnhOl3T92JmQjRCNYWd2VgTfpa/dKUZnuQwcmU7CdONnZhUSW5i97WN90BM7MTTzbGgj4hMrNQaPJ30wkfQEXoxkKOpJlOp0aZD1aa7pZz0xtp6zFvXVo+w5uqBf0ra+WkvGwCC6ZBA/wekkE5UH8+4OXNuTD1aQRTsCvt1PNkV1ku/1UQfvCnG7NLuCSidIFPhXlvGvhihyAtYEvIlnTsCbeOYEvIlnTsCbeOYEvIlnTtDlBKwJepyANYHCCVgS3ICGGqA0p8/J4Hof4AZ8WuJduYdkV2Ul3fK9Dmo8PzO+Tmo8PrMW4OmZtQAPz6wFeHZmLPDl9c96taVDAV+fn6LnJ7zcVDiNix/q7kSReLpmfZnwcM1agGdr1gI8WrMW4Mma9c0Niedm5gQ8ODMlAH8AWpgPbEEqAAA=
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §b§lCompressed Diamond Block
+          enchants:
+            KNOCKBACK: 4
+          repair-cost: 1
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: PAPER
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §3§lOffice Referral
+          enchants:
+            KNOCKBACK: 4
+          repair-cost: 1
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: OBSIDIAN
+        amount: 2
+'5':
+  uniqueId: b82acc50-5d4e-465a-ad47-49aeaaa7d8d2
+  name: Chain Armourer
+  world: world
+  x: -10
+  y: 239
+  z: 4
+  type: admin
+  object:
+    type: villager
+    uuid: 6a4cb5b4-a979-4dd2-ae28-b1472769967c
+    prof: PRIEST
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: CHAINMAIL_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+            DURABILITY: 1
+          repair-cost: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: CHAINMAIL_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+            DURABILITY: 1
+          repair-cost: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: CHAINMAIL_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+            DURABILITY: 1
+          repair-cost: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: CHAINMAIL_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+            DURABILITY: 1
+          repair-cost: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+'6':
+  uniqueId: 2f0edbb0-9c97-46c8-bf4e-45605c380191
+  name: Lapis Compressor
+  world: world
+  x: -10
+  y: 239
+  z: 8
+  type: admin
+  object:
+    type: villager
+    uuid: 92fc373d-126c-4ea6-a9d0-bac8c676412e
+    prof: LIBRARIAN
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: LAPIS_BLOCK
+        amount: 64
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: LAPIS_BLOCK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §9§lCompressed Lapis Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+'7':
+  uniqueId: df9bdc06-831c-47a8-85ed-1db78e5e009f
+  name: Gold Tools
+  world: world
+  x: -10
+  y: 239
+  z: 0
+  type: admin
+  object:
+    type: villager
+    uuid: 6d0de5ef-d8ce-4afa-b9c1-54330f2465c3
+    prof: FARMER
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_PICKAXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 5
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_AXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 5
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_SPADE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 5
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 5
+'8':
+  uniqueId: f8c78a38-e92c-48c3-a502-0d9ef4d38ddd
+  name: Sword Crafter
+  world: world
+  x: -10
+  y: 239
+  z: -4
+  type: admin
+  object:
+    type: villager
+    uuid: f8333758-726f-4a81-b25a-0201e404de07
+    prof: FARMER
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: LAPIS_BLOCK
+        amount: 60
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §9§lCompressed Lapis Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: PRISMARINE_SHARD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §b§lDiamond Shard
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: PRISMARINE_SHARD
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §b§lDiamond Shard
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 6
+          Unbreakable: true
+'9':
+  uniqueId: 8ecc3024-d7a1-4524-a00f-8ce0cc0014be
+  name: Misc
+  world: world
+  x: -10
+  y: 239
+  z: -8
+  type: admin
+  object:
+    type: villager
+    uuid: 405681cf-26eb-449a-b8bb-754838f9b67b
+    prof: FARMER
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: LAPIS_BLOCK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §9§lCompressed Lapis Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: SAPLING
+        damage: 1
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: SAPLING
+        damage: 3
+'10':
+  uniqueId: 23965bdb-281c-41c8-b440-81272785dab5
+  name: Iron Compressor
+  world: world
+  x: -10
+  y: 239
+  z: 9
+  type: admin
+  object:
+    type: villager
+    uuid: f454dc5c-2534-427c-b343-ed0e8f555100
+    prof: LIBRARIAN
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+'11':
+  uniqueId: 9b829c03-7d2f-4d8e-9788-299827c43a1c
+  name: Redstone Compressor
+  world: world
+  x: -10
+  y: 239
+  z: 7
+  type: admin
+  object:
+    type: villager
+    uuid: c3ebaaca-7009-49b6-be35-b2dcb6dd5566
+    prof: LIBRARIAN
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        amount: 64
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: REDSTONE_BLOCK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §4§lCompressed Redstone Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+'12':
+  uniqueId: 2f28df0f-cc08-4fc8-9fa6-d991b9a55246
+  name: Leather Armorer
+  world: world
+  x: -10
+  y: 239
+  z: 5
+  type: admin
+  object:
+    type: villager
+    uuid: 1fc7ce39-55e9-4f20-91b3-4c5a8896da0d
+    prof: PRIEST
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+          Unbreakable: true
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+          Unbreakable: true
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+          Unbreakable: true
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+          Unbreakable: true
+'13':
+  uniqueId: 30fb0f36-e10c-4efe-830c-48362323014b
+  name: Gold Armorer
+  world: world
+  x: -10
+  y: 239
+  z: 3
+  type: admin
+  object:
+    type: villager
+    uuid: 19f4be7c-9154-4032-ab5e-7c4b55bd1081
+    prof: PRIEST
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: LAPIS_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §9§lCompressed Lapis Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+          repair-cost: 1
+          Unbreakable: true
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: LAPIS_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §9§lCompressed Lapis Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+          repair-cost: 1
+          Unbreakable: true
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: LAPIS_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §9§lCompressed Lapis Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+          repair-cost: 1
+          Unbreakable: true
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §f§lCompressed Iron Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: LAPIS_BLOCK
+        amount: 64
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §9§lCompressed Lapis Block
+          enchants:
+            DURABILITY: 1
+          Unbreakable: true
+          ItemFlags: !!set
+            HIDE_ENCHANTS: null
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            PROTECTION_ENVIRONMENTAL: 4
+          repair-cost: 1
+          Unbreakable: true
+'23':
+  uniqueId: 2721bb1f-ea57-4414-ac38-34ac119b208d
+  name: '&3&lDiamond Keeper'
+  world: world
+  x: 1
+  y: 240
+  z: -31
+  type: admin
+  object:
+    type: villager
+    uuid: a79f6fe1-8ee5-4aee-8ff7-8137fa695b47
+    prof: BLACKSMITH
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 6
+          Unbreakable: true
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_BLOCK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §b§lCompressed Diamond Block
+          enchants:
+            KNOCKBACK: 4
+          repair-cost: 1
+          Unbreakable: true
+'26':
+  uniqueId: 2a2dbb7d-5445-4af9-9e8d-710f398718df
+  name: Edward
+  world: world
+  x: 6
+  y: 73
+  z: -5
+  type: admin
+  object:
+    type: villager
+    uuid: 48493ea8-bd14-41ef-928c-26b1495e9f33
+    prof: LIBRARIAN
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: COMMAND
+        amount: 64
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: FIREBALL
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §6Fireball
+          lore:
+          - §7right click to throw
+          - §7grief extreme ;)
+          ItemFlags: !!set
+            HIDE_ATTRIBUTES: null

@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1677872258283
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1678302797221
+  login: 1678302804320
+money: '0'
+last-account-name: monkey_fucker69
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 2.693739364734543
+  y: 70.0
+  z: 3.3499495971893545
+  yaw: 91.4339599609375
+  pitch: -0.7500081062316895
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 75.74409678794922
+  y: 108.92159999847412
+  z: -46.294878571352726
+  yaw: -352.8642578125
+  pitch: 27.7499942779541
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520838
+  expire: 1675386120700
+homes:
+  home:
+    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world-name: world
+    x: 44.29989071135669
+    y: 109.0
+    z: -43.338774078058265
+    yaw: 126.08564758300781
+    pitch: 18.150009155273438

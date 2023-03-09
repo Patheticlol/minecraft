@@ -1,0 +1,1807 @@
+[14:20:02] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[14:20:02] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[14:20:02] [Server thread/INFO]: Loading properties
+[14:20:02] [Server thread/INFO]: Default game type: SURVIVAL
+[14:20:02] [Server thread/INFO]: This server is running CraftBukkit version git-PaperSpigot-445 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[14:20:02] [Server thread/INFO]: Spigot Timings: true - Verbose: true - Interval: 5m - Length: 60m
+[14:20:02] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:20:02] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:20:02] [Server thread/INFO]: Debug logging is disabled
+[14:20:03] [Server thread/INFO]: Data value allowed items: 
+[14:20:03] [Server thread/INFO]: Generating keypair
+[14:20:04] [Server thread/INFO]: Starting Minecraft server on localhost:25565
+[14:20:04] [Server thread/INFO]: Using default channel type
+[14:20:05] [Server thread/ERROR]: Ambiguous plugin name `EssentialsChat' for files `plugins/EssentialsXChat-2.20.0-dev+40-996285c.jar' and `plugins/EssentialsXChat-2.19.7.jar' in `plugins'
+[14:20:06] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[14:20:09] [Server thread/ERROR]: Could not load 'plugins/SecureOP.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: club/hardcoreminecraft/javase/secureop/main has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:331) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:254) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:293) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:202) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_322]
+Caused by: java.lang.UnsupportedClassVersionError: club/hardcoreminecraft/javase/secureop/main has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756) ~[?:1.8.0_322]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74) ~[?:1.8.0_322]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369) ~[?:1.8.0_322]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363) ~[?:1.8.0_322]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:102) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:87) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_322]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_322]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:65) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	... 6 more
+[14:20:09] [Server thread/ERROR]: Could not load 'plugins/EaglerMOTD.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Listener
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:331) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:254) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:293) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:202) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_322]
+Caused by: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Listener
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756) ~[?:1.8.0_322]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74) ~[?:1.8.0_322]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369) ~[?:1.8.0_322]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363) ~[?:1.8.0_322]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:102) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:87) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_322]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_322]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:65) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	... 6 more
+Caused by: java.lang.ClassNotFoundException: net.md_5.bungee.api.plugin.Listener
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:102) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:87) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756) ~[?:1.8.0_322]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74) ~[?:1.8.0_322]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369) ~[?:1.8.0_322]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363) ~[?:1.8.0_322]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:102) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:87) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_322]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_322]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:65) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	... 6 more
+[14:20:09] [Server thread/INFO]: UnbreakableEnch on books will have 1:19 chance when enough XP
+[14:20:11] [Server thread/ERROR]: Could not load 'plugins/Multiverse-Portals-2.5.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Multiverse-Core
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:222) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:293) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:202) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_322]
+[14:20:12] [Server thread/ERROR]: Could not load 'plugins/skRayFall+v1.9.28.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: net/rayfall/eyesniper2/skrayfall/Core has been compiled by a more recent version of the Java Runtime (class file version 60.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:331) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:254) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:293) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:202) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_322]
+Caused by: java.lang.UnsupportedClassVersionError: net/rayfall/eyesniper2/skrayfall/Core has been compiled by a more recent version of the Java Runtime (class file version 60.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756) ~[?:1.8.0_322]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74) ~[?:1.8.0_322]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369) ~[?:1.8.0_322]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363) ~[?:1.8.0_322]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:102) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:87) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_322]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_322]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:65) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	... 6 more
+[14:20:12] [Server thread/ERROR]: Could not load 'plugins/SkBee-2.1.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/shanebeestudios/skbee/SkBee has been compiled by a more recent version of the Java Runtime (class file version 60.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:331) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:254) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:293) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:202) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_322]
+Caused by: java.lang.UnsupportedClassVersionError: com/shanebeestudios/skbee/SkBee has been compiled by a more recent version of the Java Runtime (class file version 60.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756) ~[?:1.8.0_322]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74) ~[?:1.8.0_322]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369) ~[?:1.8.0_322]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363) ~[?:1.8.0_322]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_322]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:102) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:87) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_322]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_322]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_322]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_322]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:65) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	... 6 more
+[14:20:12] [Server thread/INFO]: [CoreProtect] Loading CoreProtect v2.12.0
+[14:20:12] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.58
+[14:20:14] [Server thread/INFO]: [InventoryRollbackPlus] Loading InventoryRollbackPlus v1.6.8
+[14:20:14] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.7;dd00bb1
+[14:20:14] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.2
+[14:20:14] [Server thread/INFO]: [ClearLag] Loading ClearLag v2.3.1
+[14:20:14] [Server thread/INFO]: [FancyBags] Loading FancyBags v1.8.4
+[14:20:14] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.3.0
+[14:20:16] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1.3-SNAPSHOT;c904242
+[14:20:16] [Server thread/INFO]: [LibsDisguises] Loading LibsDisguises v8.6.7
+[14:20:16] [Server thread/INFO]: [Unbreakable] Loading Unbreakable v4.9.1
+[14:20:16] [Server thread/INFO]: [antiRedstoneClock] Loading antiRedstoneClock v1.5.0
+[14:20:16] [Server thread/WARN]: [antiRedstoneClock] WorldGuard 6 is not supported
+[14:20:16] [Server thread/INFO]: [Blue Slime Core] Loading BlueSlimeCore v2.6.1.222-Beta
+[14:20:16] [Server thread/INFO]: [HeadDrops] Loading HeadDrops v1.5.6
+[14:20:16] [Server thread/INFO]: [ThrowableFireballs] Loading ThrowableFireballs vLegacy-1.0.2
+[14:20:16] [Server thread/INFO]: [AutoSave] Loading AutoSave v1.0
+[14:20:16] [Server thread/INFO]: [WGCustomFlags] Loading WGCustomFlags v1.0
+[14:20:16] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[14:20:16] [Server thread/INFO]: [SimplePortals] Loading SimplePortals v1.7.1
+[14:20:16] [Server thread/INFO]: [CrazyEnchantments] Loading CrazyEnchantments v1.8-Dev-Build-v9-RELEASE
+[14:20:16] [Server thread/INFO]: [Skript] Loading Skript v2.6.4-for-1.8
+[14:20:16] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.7.9
+[14:20:16] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.7
+[14:20:16] [Server thread/INFO]: [AuthMe] Loading AuthMe v2.7.11
+[14:20:16] [Server thread/INFO]: [skDragon] Loading skDragon v0.16
+[14:20:16] [Server thread/INFO]: [AntiBow] Loading AntiBow v3.1.2
+[14:20:16] [Server thread/INFO]: [Shopkeepers] Loading Shopkeepers v2.2.4
+[14:20:16] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.20.0-dev+40-996285c
+[14:20:16] [Server thread/INFO]: [TAB] Loading TAB v3.2.4
+[14:20:16] [Server thread/INFO]: [skript-mirror] Loading skript-mirror v0.19.1
+[14:20:16] [Server thread/INFO]: [SuperVanish] Loading SuperVanish v6.2.14
+[14:20:16] [Server thread/INFO]: [CombatLogX] Loading CombatLogX v11.1.0.7.1025
+[14:20:16] [Server thread/INFO]: [CombatLogX] Configuration version is recent, no major changes necessary.
+[14:20:16] [Server thread/INFO]: [CombatLogX] Loading expansions...
+[14:20:16] [Server thread/INFO]: [CombatLogX] Loading expansion 'Action Bar v17.0'...
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:16] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/AngelChest Compatibility.jar' because a plugin dependency was not loaded: AngelChest
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:16] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/ASkyBlock Compatibility.jar' because a plugin dependency was not loaded: ASkyBlock
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:16] [Server thread/INFO]: [CombatLogX] Loading expansion 'Boss Bar v16.9'...
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:16] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/BSkyBlock Compatibility.jar' because a plugin dependency was not loaded: BentoBox
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:16] [Server thread/INFO]: [CombatLogX] Loading expansion 'Cheat Prevention v16.23'...
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:16] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/Citizens Compatibility.jar' because a plugin dependency was not loaded: Citizens
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:16] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/CMI Compatibility.jar' because a plugin dependency was not loaded: CMI
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:16] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/CrackShot Compatibility.jar' because a plugin dependency was not loaded: CrackShot
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:16] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/CrashClaim Compatibility.jar' because a plugin dependency was not loaded: Lands
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:16] [Server thread/INFO]: [CombatLogX] Loading expansion 'Damage Tagger v16.7'...
+[14:20:16] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'Death Effects v16.4'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'EssentialsX Compatibility v16.3'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/FabledSkyBlock Compatibility.jar' because a plugin dependency was not loaded: FabledSkyBlock
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'Factions Compatibility v16.3'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/FeatherBoard Compatibility.jar' because a plugin dependency was not loaded: FeatherBoard
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'Force Field v17.1'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'Glowing v16.5'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/GriefDefender Compatibility.jar' because a plugin dependency was not loaded: GriefDefender
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/GriefPrevention Compatibility.jar' because a plugin dependency was not loaded: GriefPrevention
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/HuskSync Compatibility.jar' because a plugin dependency was not loaded: HuskSync
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/HuskTowns Compatibility.jar' because a plugin dependency was not loaded: HuskTowns
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/iDisguise Compatibility.jar' because a plugin dependency was not loaded: iDisguise
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/IridiumSkyblock Compatibility.jar' because a plugin dependency was not loaded: IridiumSkyblock
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/KingdomsX Compatibility.jar' because a plugin dependency was not loaded: Kingdoms
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/Konquest Compatibility.jar' because a plugin dependency was not loaded: Konquest
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/Lands Compatibility.jar' because a plugin dependency was not loaded: Lands
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'LibsDisguises Compatibility v16.3'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'Logger v16.3'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'Loot Protection v16.6'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/MarriageMaster Compatibility.jar' because a plugin dependency was not loaded: MarriageMaster
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/MythicMobs Compatibility.jar' because a plugin dependency was not loaded: MythicMobs
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'Newbie Helper v16.12'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'PlaceholderAPI Compatibility v16.9'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/PlayerParticles Compatibility.jar' because a plugin dependency was not loaded: PlayerParticles
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/PreciousStones Compatibility.jar' because a plugin dependency was not loaded: PreciousStones
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/ProtectionStones Compatibility.jar' because a plugin dependency was not loaded: ProtectionStones
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/RedProtect Compatibility.jar' because a plugin dependency was not loaded: RedProtect
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/Residence Compatibility.jar' because a plugin dependency was not loaded: Residence
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'Rewards v16.7'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'Scoreboard v16.12'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/SuperiorSkyblock Compatibility.jar' because a plugin dependency was not loaded: SuperiorSkyblock2
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'SuperVanish/PremiumVanish Compatibility v16.2'...
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/Towny Compatibility.jar' because a plugin dependency was not loaded: Towny
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/UltimateClaims Compatibility.jar' because a plugin dependency was not loaded: UltimateClaims
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/uSkyBlock Compatibility.jar' because a plugin dependency was not loaded: uSkyBlock
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/WARN]: [CombatLogX] Failed to load expansion 'plugins/CombatLogX/expansions/VanishNoPacket Compatibility.jar' because a plugin dependency was not loaded: VanishNoPacket
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Loading expansion 'WorldGuard Compatibility v16.4'...
+[14:20:18] [Server thread/INFO]: [CombatLogX] [WorldGuard Compatibility] Successfully found a dependency: WorldGuard v6.1.3-SNAPSHOT;c904242
+[14:20:18] [Server thread/INFO]: [CombatLogX]  
+[14:20:18] [Server thread/INFO]: [CombatLogX] Successfully loaded 18 expansions.
+[14:20:18] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn v2.20.0-dev+40-996285c
+[14:20:18] [Server thread/INFO]: [MongoSK] Loading MongoSK v2.3.0
+[14:20:18] [Server thread/INFO]: [EssentialsDiscord] Loading EssentialsDiscord v2.20.0-dev+40-996285c
+[14:20:18] [Server thread/INFO]: [HoloMobHealth] Loading HoloMobHealth v2.3.2.0
+[14:20:18] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.58
+[14:20:20] [Server thread/INFO]:         __    
+[14:20:20] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.58
+[14:20:20] [Server thread/INFO]:   |___ |      Running on Bukkit - CraftBukkit
+[14:20:20] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[14:20:23] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[14:20:30] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[14:20:31] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[14:20:33] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 15011ms)
+[14:20:33] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.3.0
+[14:20:33] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[14:20:34] [Server thread/INFO]: [Blue Slime Core] Enabling BlueSlimeCore v2.6.1.222-Beta
+[14:20:35] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[14:20:35] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[14:20:35] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[14:20:35] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[14:20:35] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[14:20:35] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:20:35] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[14:20:35] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[14:20:35] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[14:20:35] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:20:35] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[14:20:35] [Server thread/INFO]: Preparing level "world"
+[14:20:35] [Server thread/INFO]: -------- World Settings For [world] --------
+[14:20:36] [Server thread/INFO]: Mob Spawn Range: 4
+[14:20:36] [Server thread/INFO]: Anti X-Ray: true
+[14:20:36] [Server thread/INFO]: 	Engine Mode: 1
+[14:20:36] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[14:20:36] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[14:20:36] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:20:36] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[14:20:36] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:20:36] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[14:20:36] [Server thread/INFO]: Random Lighting Updates: false
+[14:20:36] [Server thread/INFO]: Structure Info Saving: true
+[14:20:36] [Server thread/INFO]: Sending up to 10 chunks per packet
+[14:20:36] [Server thread/INFO]: Max Entity Collisions: 8
+[14:20:36] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[14:20:36] [Server thread/INFO]: Max TNT Explosions: 100
+[14:20:36] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:20:36] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[14:20:36] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:20:36] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:20:36] [Server thread/INFO]: View Distance: 4
+[14:20:36] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[14:20:36] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:20:36] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[14:20:36] [Server thread/INFO]: Clear tick list: false
+[14:20:36] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:20:36] [Server thread/INFO]: -------- World Settings For [world] --------
+[14:20:36] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[14:20:36] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[14:20:36] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[14:20:36] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[14:20:36] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[14:20:36] [Server thread/INFO]: Water over lava flow speed: 5
+[14:20:36] [Server thread/INFO]: Fix TNT cannons: false
+[14:20:36] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[14:20:36] [Server thread/INFO]: Keep spawn chunk loaded: true
+[14:20:36] [Server thread/INFO]: World async lighting: false
+[14:20:36] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[14:20:36] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[14:20:36] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[14:20:36] [Server thread/INFO]: Mob Spawn Range: 4
+[14:20:36] [Server thread/INFO]: Anti X-Ray: true
+[14:20:36] [Server thread/INFO]: 	Engine Mode: 1
+[14:20:36] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[14:20:36] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[14:20:36] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:20:36] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:20:36] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[14:20:36] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:20:36] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[14:20:36] [Server thread/INFO]: Random Lighting Updates: false
+[14:20:36] [Server thread/INFO]: Structure Info Saving: true
+[14:20:36] [Server thread/INFO]: Sending up to 10 chunks per packet
+[14:20:36] [Server thread/INFO]: Max Entity Collisions: 8
+[14:20:36] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[14:20:36] [Server thread/INFO]: Max TNT Explosions: 100
+[14:20:36] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:20:36] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[14:20:36] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:20:36] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:20:36] [Server thread/INFO]: View Distance: 4
+[14:20:36] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[14:20:36] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:20:36] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[14:20:36] [Server thread/INFO]: Clear tick list: false
+[14:20:36] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:20:36] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[14:20:36] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[14:20:36] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[14:20:36] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[14:20:36] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[14:20:36] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[14:20:36] [Server thread/INFO]: Water over lava flow speed: 5
+[14:20:36] [Server thread/INFO]: Fix TNT cannons: false
+[14:20:36] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[14:20:36] [Server thread/INFO]: Keep spawn chunk loaded: true
+[14:20:36] [Server thread/INFO]: World async lighting: false
+[14:20:36] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[14:20:36] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[14:20:37] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3616)
+[14:20:38] [Server thread/INFO]: Preparing spawn area: 0%
+[14:20:39] [Server thread/INFO]: Preparing spawn area: 3%
+[14:20:40] [Server thread/INFO]: Preparing spawn area: 9%
+[14:20:41] [Server thread/INFO]: Preparing spawn area: 20%
+[14:20:42] [Server thread/INFO]: Preparing spawn area: 40%
+[14:20:43] [Server thread/INFO]: Preparing spawn area: 61%
+[14:20:45] [Server thread/INFO]: Preparing spawn area: 74%
+[14:20:46] [Server thread/INFO]: Preparing spawn area: 97%
+[14:20:46] [Server thread/INFO]: Preparing start region for level 1 (Seed: 3205561501290130692)
+[14:20:47] [Server thread/INFO]: Preparing spawn area: 50%
+[14:20:47] [Server thread/INFO]: [CoreProtect] Enabling CoreProtect v2.12.0
+[14:20:47] [Server thread/INFO]: CoreProtect version 2.12.0 is enabled!
+[14:20:47] [Server thread/INFO]: [CoreProtect] Using SQLite for data storage.
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus] Enabling InventoryRollbackPlus v1.6.8
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus] Inventory backup data is set to save to: YAML
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus] bStats are enabled
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus] ====================================================
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]  InventoryRollbackPlus works better if you use Paper 
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]  as your server software. 
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]   
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]  Paper offers significant performance improvements,
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]  bug fixes, security enhancements and optional
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]  features for server owners to enhance their server.
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]   
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]  Paper includes Timings v2, which is significantly
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]  better at diagnosing lag problems over v1.
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]   
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]  All of your plugins should still work, and the
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]  Paper community will gladly help you fix any issues.
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]   
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus]  Join the Paper Community @ https://papermc.io
+[14:20:48] [Server thread/INFO]: [InventoryRollbackPlus] ====================================================
+[14:20:48] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.7;dd00bb1
+[14:20:50] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[14:20:51] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R3 as the Bukkit adapter
+[14:20:51] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.2
+[14:20:51] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[14:20:51] [Server thread/INFO]: [ClearLag] Enabling ClearLag v2.3.1
+[14:20:52] [Server thread/INFO]: [ClearLag] Checking for a new update...
+[14:20:52] [Thread-13/WARN]: [ClearLag] Could not reach BukkitDev file stream for update checking. Is dev.bukkit.org offline?
+[14:20:52] [Server thread/INFO]: [ClearLag] Update found! Downloading...
+[14:20:52] [Server thread/INFO]: [ClearLag] New clearlag will be enabled on restart!
+[14:20:52] [Server thread/INFO]: [ClearLag] ClearLag is now enabled.
+[14:20:52] [Server thread/INFO]: [FancyBags] Enabling FancyBags v1.8.4
+[14:20:52] [Server thread/INFO]: FancyBags >>> NMS Version Detected: v1_8_R3
+[14:20:52] [Server thread/INFO]: FancyBags >>> loaded 1 recipes!
+[14:20:52] [Server thread/INFO]: FancyBags plugin has been enabled!
+[14:20:52] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1.3-SNAPSHOT;c904242
+[14:20:53] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[14:20:53] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[14:20:53] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
+[14:20:53] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[14:20:53] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[14:20:53] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[14:20:53] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[14:20:53] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is blocked.
+[14:20:53] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[14:20:53] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[14:20:53] [Server thread/INFO]: [WorldGuard] Loading region data...
+[14:20:55] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v8.6.7
+[14:20:56] [Server thread/INFO]: [Unbreakable] Enabling Unbreakable v4.9.1
+[14:20:56] [Server thread/INFO]: [Unbreakable] Unbreakable in force, protecting tools and armor; by Filbert66
+[14:20:56] [Server thread/INFO]: [antiRedstoneClock] Enabling antiRedstoneClock v1.5.0
+[14:20:56] [Server thread/INFO]: [antiRedstoneClock] Enabling Metrics
+[14:20:56] [Server thread/INFO]: [antiRedstoneClock] An error occured while trying to enable metrics. Skipping...
+[14:20:56] [Server thread/WARN]: [antiRedstoneClock] PlotSquared hasn't been found!
+[14:20:56] [Server thread/INFO]: [antiRedstoneClock] Plugin loaded in 59 ms
+[14:20:56] [Server thread/INFO]: [HeadDrops] Enabling HeadDrops v1.5.6
+[14:20:57] [Server thread/INFO]: [ThrowableFireballs] Enabling ThrowableFireballs vLegacy-1.0.2
+[14:20:57] [Server thread/INFO]: (Fireballs) Invalid Material name for Recipe Material 'A'
+[14:20:57] [Server thread/INFO]: (Fireballs) Invalid Material name for Recipe Material 'B'
+[14:20:57] [Server thread/INFO]: Fireball Recipe has been updated!
+[14:20:57] [Server thread/INFO]:  
+[14:20:57] [Server thread/INFO]: ThrowableFireballs vLegacy-1.0.2
+[14:20:57] [Server thread/INFO]:   by FlailoftheLord
+[14:20:57] [Server thread/INFO]:  Grief Extreme!?!?
+[14:20:57] [Server thread/INFO]:  
+[14:20:57] [Server thread/INFO]: [AutoSave] Enabling AutoSave v1.0
+[14:20:57] [Server thread/INFO]: [AutoSave] Enable
+[14:20:57] [Server thread/INFO]: [WGCustomFlags] Enabling WGCustomFlags v1.0
+[14:20:57] [Server thread/INFO]: [WGCustomFlags] Loading configuration...
+[14:20:57] [Server thread/INFO]: [WGCustomFlags] Configuration loaded.
+[14:20:57] [Server thread/INFO]: [SimplePortals] Enabling SimplePortals v1.7.1
+[14:20:57] [Server thread/INFO]: [SimplePortals] Everything inside the configuration seems to be up to date. (Took 3ms)
+[14:20:57] [Server thread/INFO]: [SimplePortals] Packets have been setup for v1_8_R3!
+[14:20:58] [Server thread/INFO]: [SimplePortals] Everything looks like it is up to date!
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Enabling CrazyEnchantments v1.8-Dev-Build-v9-RELEASE
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Loading the config.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded config.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Loading the BlockList.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded BlockList.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Loading the Data.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Data.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Loading the Enchantments.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Enchantments.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Loading the GKitz.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded GKitz.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Loading the Messages.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Messages.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Loading the Enchantment-Types.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Enchantment-Types.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Loading the Signs.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Signs.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Loading the Tinker.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Tinker.yml
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] The sound BLOCK_ANVIL_PLACE is not a sound found in this minecraft version.
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] The sound BLOCK_ANVIL_PLACE is not a sound found in this minecraft version.
+[14:20:58] [Server thread/INFO]: [CrazyEnchantments] The sound BLOCK_ANVIL_PLACE is not a sound found in this minecraft version.
+[14:20:58] [Server thread/INFO]: [NBTAPI] Found Spigot: v1_8_R3! Trying to find NMS support
+[14:20:58] [Server thread/INFO]: [NBTAPI] NMS support 'MC1_8_R3' loaded!
+[14:20:58] [Server thread/INFO]: [NBTAPI] Found Gson: class com.google.gson.Gson
+[14:20:59] [Thread-15/WARN]: [NBTAPI] The NBT-API at 'package me.badbones69.crazyenchantments.nbtapi' seems to be outdated!
+[14:20:59] [Thread-15/WARN]: [NBTAPI] Current Version: '2.7.1' Newest Version: 2.11.1'
+[14:20:59] [Thread-15/WARN]: [NBTAPI] Please update the nbt-api or the plugin that contains the api!
+[14:21:00] [Server thread/INFO]: §4§lCrazy Enchantment Hooks
+[14:21:00] [Server thread/INFO]: §6§lVAULT: §a§lEnabled
+[14:21:00] [Server thread/INFO]: §6§lWORLD_EDIT: §a§lEnabled
+[14:21:00] [Server thread/INFO]: §6§lWORLD_GUARD: §a§lEnabled
+[14:21:01] [Server thread/INFO]: [Skript] Enabling Skript v2.6.4-for-1.8
+[14:21:03] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript-1.8.
+[14:21:17] [Server thread/INFO]: [Skript] Loaded 12848 aliases in 14315ms
+[14:21:19] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[14:21:19] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.7.9
+[14:21:19] [Server thread/INFO]: [DecentHolograms] Using ProtocolLib for packet listening.
+[14:21:20] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.7
+[14:21:20] [Server thread/INFO]: You are running a server with limited API functionality. EssentialsX will still work, but certain features may be disabled.
+[14:21:20] [Server thread/WARN]: §4Version mismatch! Please update EssentialsChat to the same version.
+[14:21:20] [Server thread/WARN]: §4Version mismatch! Please update EssentialsSpawn to the same version.
+[14:21:20] [Server thread/WARN]: §4Version mismatch! Please update EssentialsDiscord to the same version.
+[14:21:22] [Server thread/INFO]: Attempting to convert old kits in config.yml to new kits.yml
+[14:21:22] [Server thread/INFO]: No kits found to migrate.
+[14:21:23] [Server thread/INFO]: Loaded 853 items from items.csv.
+[14:21:23] [Server thread/INFO]: Using locale en_US
+[14:21:23] [Server thread/INFO]: ServerListPingEvent: Spigot iterator API
+[14:21:24] [Server thread/INFO]: Starting Metrics. Opt-out using the global bStats config.
+[14:21:24] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[14:21:24] [Server thread/INFO]: Using Vault based permissions (LuckPerms)
+[14:21:24] [Server thread/INFO]: [AuthMe] Enabling AuthMe v2.7.11
+[14:21:24] [Server thread/INFO]: [AuthMe] Loading Configuration File...
+[14:21:24] [Server thread/INFO]: [AuthMe] Merge new Config Options if needed..
+[14:21:24] [Server thread/INFO]: [AuthMe] Set Language: en
+[14:21:25] [Server thread/INFO]: [AuthMe] Authme 2.7.11 enabled
+[14:21:25] [Server thread/INFO]: [skDragon] Enabling skDragon v0.16
+[14:21:25] [Server thread/INFO]: §3[§bskDragon§3] §aPlugin has been Enabled
+[14:21:27] [Server thread/INFO]: [AntiBow] Enabling AntiBow v3.1.2
+[14:21:28] [Server thread/INFO]: 
+
+                ===================================================
+                                      AntiBow
+                ===================================================
+
+                              Current version: 3.1.2
+                        You are running the latest version!
+
+                ===================================================
+
+[14:21:28] [Server thread/INFO]: [AntiBow] Developed by EndlessGames.
+[14:21:28] [Server thread/INFO]: [Shopkeepers] Enabling Shopkeepers v2.2.4
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': POLAR_BEAR
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': STRAY
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': WITHER_SKELETON
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': ZOMBIE_VILLAGER
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': HUSK
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': EVOKER
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': VEX
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': VINDICATOR
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': ILLUSIONER
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': PARROT
+[14:21:28] [Server thread/WARN]: [Shopkeepers] Config: All existing entity type names can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+[14:21:29] [Server thread/INFO]: [Shopkeepers] Loading data of 12 shopkeepers..
+[14:21:30] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.20.0-dev+40-996285c
+[14:21:30] [Server thread/WARN]: §4Version mismatch! Please update all Essentials jars to the same version.
+[14:21:30] [Server thread/INFO]: Starting Metrics. Opt-out using the global bStats config.
+[14:21:30] [Server thread/INFO]: [TAB] Enabling TAB v3.2.4
+[14:21:30] [Server thread/INFO]: [TAB] Server version: 1.8.8 (v1_8_R3)
+[14:21:31] [Server thread/INFO]: [TAB] Loaded NMS hook in 326ms
+[14:21:33] [Server thread/INFO]: [TAB] Enabled in 1524ms
+[14:21:33] [Server thread/INFO]: [skript-mirror] Enabling skript-mirror v0.19.1
+[14:21:33] [Server thread/INFO]: [Skript] Skript's parameters field could not be resolved. Class proxies will not work.
+[14:21:33] [Server thread/INFO]: [Skript] Skript's handlers field could not be resolved. Some Skript warnings may not be available.
+[14:21:33] [Server thread/INFO]: [Skript] Skript's options field could not be resolved.
+[14:21:33] [Server thread/ERROR]: Error occurred while enabling skript-mirror v0.19.1 (Is it up to date?)
+java.lang.NullPointerException: null
+	at com.btk5h.skriptmirror.util.SkriptReflection.replaceSkriptLogger(SkriptReflection.java:214) ~[?:?]
+	at com.btk5h.skriptmirror.SkriptMirror.onEnable(SkriptMirror.java:24) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:321) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:332) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:407) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugin(CraftServer.java:359) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.enablePlugins(CraftServer.java:318) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.s(MinecraftServer.java:408) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.k(MinecraftServer.java:372) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.a(MinecraftServer.java:327) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:267) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_322]
+[14:21:33] [Server thread/INFO]: [skript-mirror] Disabling skript-mirror v0.19.1
+[14:21:33] [Server thread/INFO]: [SuperVanish] Enabling SuperVanish v6.2.14
+[14:21:33] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: supervanish [6.2.14]
+[14:21:33] [Server thread/INFO]: [SuperVanish] Hooked into PlaceholderAPI
+[14:21:33] [Server thread/INFO]: [SuperVanish] Hooked into Essentials
+[14:21:33] [Server thread/INFO]: [CombatLogX] Enabling CombatLogX v11.1.0.7.1025
+[14:21:34] [Server thread/INFO]: CombatLogX was loaded successfully.
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansions...
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Action Bar v17.0'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Boss Bar v16.9'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Cheat Prevention v16.23'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'EssentialsX Compatibility v16.3'...
+[14:21:34] [Server thread/INFO]: [CombatLogX] [EssentialsX Compatibility] Successfully found a dependency: Essentials v2.19.7
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Factions Compatibility v16.3'...
+[14:21:34] [Server thread/WARN]: [CombatLogX] Failed to find any of the following plugins:
+[14:21:34] [Server thread/WARN]: [CombatLogX] [Factions, FactionsX, LegacyFactions]
+[14:21:34] [Server thread/WARN]: [CombatLogX] Please contact SirBlobman if you believe this is mistake.
+[14:21:34] [Server thread/WARN]: [CombatLogX] https://github.com/SirBlobman/BlueSlimeCore/issues/new/choose
+[14:21:34] [Server thread/INFO]: [CombatLogX] [Factions Compatibility] Some dependencies for this expansion are missing!
+[14:21:34] [Server thread/INFO]: [CombatLogX] Disabling expansion 'Factions Compatibility v16.3'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'LibsDisguises Compatibility v16.3'...
+[14:21:34] [Server thread/INFO]: [CombatLogX] [LibsDisguises Compatibility] Successfully found a dependency: LibsDisguises v8.6.7
+[14:21:34] [Server thread/INFO]: [CombatLogX] [LibsDisguises Compatibility] Dependency 'LibsDisguises' is not the correct version!
+[14:21:34] [Server thread/INFO]: [CombatLogX] Disabling expansion 'LibsDisguises Compatibility v16.3'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'PlaceholderAPI Compatibility v16.9'...
+[14:21:34] [Server thread/INFO]: [CombatLogX] [PlaceholderAPI Compatibility] Successfully found a dependency: PlaceholderAPI v2.11.2
+[14:21:34] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: combatlogx [16.9]
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'SuperVanish/PremiumVanish Compatibility v16.2'...
+[14:21:34] [Server thread/INFO]: [CombatLogX] [SuperVanish/PremiumVanish Compatibility] Successfully found a dependency: SuperVanish v6.2.14
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'WorldGuard Compatibility v16.4'...
+[14:21:34] [Server thread/INFO]: [CombatLogX] [WorldGuard Compatibility] Successfully found a dependency: WorldGuard v6.1.3-SNAPSHOT;c904242 with custom flags plugin.
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Damage Tagger v16.7'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Death Effects v16.4'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Force Field v17.1'...
+[14:21:34] [Server thread/INFO]: [CombatLogX] [Force Field] Successfully found a dependency: ProtocolLib v4.3.0
+[14:21:34] [Server thread/INFO]: [CombatLogX] [Force Field] Dependency 'ProtocolLib' is not the correct version!
+[14:21:34] [Server thread/INFO]: [CombatLogX] Disabling expansion 'Force Field v17.1'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Glowing v16.5'...
+[14:21:34] [Server thread/WARN]: [CombatLogX] [Glowing] This expansion is made for 1.9+
+[14:21:34] [Server thread/INFO]: [CombatLogX] Disabling expansion 'Glowing v16.5'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Logger v16.3'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Loot Protection v16.6'...
+[14:21:34] [Server thread/INFO]: [CombatLogX] [Loot Protection] The loot protection expansion requires Spigot 1.16.5 or higher.
+[14:21:34] [Server thread/INFO]: [CombatLogX] Disabling expansion 'Loot Protection v16.6'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Newbie Helper v16.12'...
+[14:21:34] [Server thread/INFO]: [CombatLogX]  
+[14:21:34] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Rewards v16.7'...
+[14:21:35] [Server thread/INFO]: [CombatLogX] [Rewards] Successfully found a dependency: Vault v1.7.3-b131
+[14:21:35] [Server thread/INFO]: [CombatLogX] [Rewards] Successfully hooked into economy handler 'EssentialsX Economy' from plugin 'Essentials v2.19.7'.
+[14:21:35] [Server thread/INFO]: [CombatLogX] [Rewards] Successfully loaded 2 reward(s).
+[14:21:35] [Server thread/INFO]: [CombatLogX]  
+[14:21:35] [Server thread/INFO]: [CombatLogX] Enabling expansion 'Scoreboard v16.12'...
+[14:21:35] [Server thread/INFO]: [CombatLogX]  
+[14:21:35] [Server thread/INFO]: [CombatLogX] Successfully enabled 13 expansions.
+[14:21:35] [Server thread/INFO]: CombatLogX was enabled successfully.
+[14:21:35] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.20.0-dev+40-996285c
+[14:21:35] [Server thread/WARN]: §4Version mismatch! Please update all Essentials jars to the same version.
+[14:21:35] [Server thread/INFO]: Starting Metrics. Opt-out using the global bStats config.
+[14:21:35] [Server thread/INFO]: [MongoSK] Enabling MongoSK v2.3.0
+[14:21:35] [Server thread/INFO]: [MongoSK] Checking the availability of Skript...
+[14:21:35] [Server thread/INFO]: [MongoSK] Registration of the MongoSK syntaxes...
+[14:21:35] [Server thread/INFO]: [MongoSK] Loading MongoSK adapters and codecs...
+[14:21:35] [Server thread/ERROR]: [MongoSK] Oops, the return class of the fr.romitou.mongosk.adapters.codecs.DamageCauseCodec codec doesn't exists! Skipping registration.
+[14:21:35] [Server thread/INFO]: [MongoSK] Loaded 23 codecs!
+[14:21:35] [Server thread/INFO]: [MongoSK] MongoSK has been activated and the syntaxes has been loaded successfully in 474ms!
+[14:21:35] [Server thread/INFO]: [MongoSK] If you need help, go to GitHub or to our Discord: https://discord.com/invite/6jeQkRcMkk
+[14:21:35] [Server thread/INFO]: [EssentialsDiscord] Enabling EssentialsDiscord v2.20.0-dev+40-996285c
+[14:21:35] [Server thread/WARN]: §4Version mismatch! Please update all Essentials jars to the same version.
+[14:21:35] [Server thread/WARN]: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+[14:21:35] [Server thread/WARN]: SLF4J: Defaulting to no-operation (NOP) logger implementation
+[14:21:35] [Server thread/WARN]: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[14:21:35] [Server thread/INFO]: Starting Metrics. Opt-out using the global bStats config.
+[14:21:36] [Server thread/INFO]: Attempting to login to Discord...
+[14:21:37] [JDA RateLimit-Worker 1/WARN]: [JDA RateLimit-Worker 1] ERROR Requester - There was an I/O error while executing a REST request: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[14:21:37] [Server thread/ERROR]: An error occurred while logging into Discord, which has caused the plugin to disable itself: 
+-1: javax.net.ssl.SSLHandshakeException
+[14:21:37] [Server thread/INFO]: [HoloMobHealth] Enabling HoloMobHealth v2.3.2.0
+[14:21:46] [Server thread/INFO]: [HoloMobHealth] Loading languages...
+[14:21:46] [Server thread/INFO]: [HoloMobHealth] Hooked into Shopkeepers!
+[14:21:46] [Server thread/INFO]: [HoloMobHealth] Hooked into PlaceholderAPI!
+[14:21:46] [Server thread/INFO]: [HoloMobHealth] Opened Sqlite database successfully
+[14:21:46] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: holomobhealth [1.0.0]
+[14:21:46] [Server thread/INFO]: [HoloMobHealth] HoloMobHealth has been Enabled!
+[14:21:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:21:48] [Server thread/INFO]: Done (72.450s)! For help, type "help" or "?"
+[14:21:48] [Server thread/INFO]: Timings Reset
+[14:21:48] [Server thread/INFO]: Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[14:21:48] [Craft Scheduler Thread - 0/INFO]: [DecentHolograms] Loading holograms... 
+[14:21:48] [Craft Scheduler Thread - 4/INFO]: §6Fetching version information...
+[14:21:48] [Server thread/INFO]: ------------------------
+[14:21:48] [Server thread/INFO]: Server is saved ...
+[14:21:48] [Server thread/WARN]: A manual (plugin-induced) save has been detected while server is configured to auto-save. This may affect performance.
+[14:21:48] [Craft Scheduler Thread - 2/INFO]: 
+A newer version of DecentHolograms is available. Download it from: https://www.spigotmc.org/resources/96927/
+[14:21:48] [Craft Scheduler Thread - 5/INFO]: [LibsDisguises] Failed to check for a update on spigot. Now checking bukkit..
+[14:21:48] [Craft Scheduler Thread - 0/INFO]: [DecentHolograms] Loaded 9 holograms!
+[14:21:48] [Server thread/INFO]: Successfully saved.
+[14:21:48] [Server thread/INFO]: ------------------------
+[14:21:48] [Craft Scheduler Thread - 2/INFO]: [InventoryRollbackPlus] Checking for updates...
+[14:21:49] [Craft Scheduler Thread - 2/INFO]: [InventoryRollbackPlus] You are running the latest version.
+[14:21:49] [Server thread/INFO]: [Skript] Loading variables...
+[14:21:49] [Server thread/INFO]: [Skript] Loaded 208 variables in 0.2 seconds
+[14:21:56] [Server thread/INFO]: [Skript] Line 11: (block head.sk)
+[14:21:56] [Server thread/INFO]:     Items do not have numeric ids on Minecraft 1.13 or newer. This script will not work on those versions!
+[14:21:56] [Server thread/INFO]:     Line: id of argument 1 is greater than 255:
+[14:21:56] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 20: (kill counter.sk)
+[14:21:59] [Server thread/INFO]:     Use 'attacker' and/or 'victim' in damage/death events
+[14:21:59] [Craft Scheduler Thread - 7/INFO]: [HoloMobHealth] Loaded all 1 languages!
+[14:21:59] [Server thread/INFO]:     Line: set {kill counter.%player%.kills_session} to 0
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 0 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 6 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 9 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 10 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 11 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 27 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 28 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 31 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 32 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 37 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 38 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 39 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 40 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 50 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 51 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 55 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 59 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 65 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 66 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 75 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 76 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 77 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 78 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 83 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 90 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 93 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 94 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 104 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 105 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 106 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 111 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 115 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:21:59] [Server thread/INFO]: [Skript] Line 10: (plant with hoe.sk)
+[14:21:59] [Server thread/INFO]:     Minecraft id 119 is not valid
+[14:21:59] [Server thread/INFO]:     Line: allowed next to cactus: 0, 6, 9, 10, 11, 27, 28, 31, 32, 37, 38, 39, 40, 50, 51, 55, 59, 65, 66, 75, 76, 77, 78, 83, 90, 93, 94, 104, 105, 106, 111, 115, 119
+[14:21:59] [Server thread/INFO]:  
+[14:22:00] [Server thread/INFO]: [Skript] Line 16: (plant with hoe.sk)
+[14:22:00] [Server thread/INFO]:     a block can't be set to 'crops' because the latter is not an item type
+[14:22:00] [Server thread/INFO]:     Line: set block above to crops
+[14:22:00] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 28: (plant with hoe.sk)
+[14:22:04] [Server thread/INFO]:     Can't understand this condition/effect: blocks north above, east above, south above and west above are allowed next to cactus
+[14:22:04] [Server thread/INFO]:     Line: blocks north above, east above, south above and west above are allowed next to cactus
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 0 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 6 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 27 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 28 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 30 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 31 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 32 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 37 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 38 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 39 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 40 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 50 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 55 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 59 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 63 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 64 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 65 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 66 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 68 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 69 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 70 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 71 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 72 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 75 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 76 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 77 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 78:0 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 83 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 85:4-7 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 104 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 105 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 106 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 111 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 115 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 131 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 132 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 141 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 142 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 143 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 147 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 148 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 8: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Minecraft id 157 is not valid
+[14:22:04] [Server thread/INFO]:     Line: nonsolid: 0, 6, 27, 28, 30, 31, 32, 37, 38, 39, 40, 50, 55, 59, 63, 64, 65, 66, 68, 69, 70, 71, 72, 75, 76, 77, 78:0, 83, 85:4-7, 104, 105, 106, 111, 115, 131, 132, 141, 142, 143, 147, 148, 157
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 13: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Can't compare a block with 'nonsolid'
+[14:22:04] [Server thread/INFO]:     Line: loop-block is nonsolid
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Line 14: (teleport with compass.sk)
+[14:22:04] [Server thread/INFO]:     Can't compare a block with 'nonsolid'
+[14:22:04] [Server thread/INFO]:     Line: block above loop-block is nonsolid
+[14:22:04] [Server thread/INFO]:  
+[14:22:04] [Server thread/INFO]: [Skript] Loaded 16 scripts with a total of 27 triggers and 9 commands in 14.9 seconds
+[14:22:04] [Server thread/INFO]: [Skript] Finished loading.
+[14:22:04] [Server thread/INFO]: [CombatLogX] Successfully enabled 0 late-load expansions.
+[14:22:04] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[14:22:04] [Server thread/INFO]: [SuperVanish] Your current version of SuperVanish is outdated - New version: '6.2.15'; Currently: '6.2.14'
+[14:22:04] [Craft Scheduler Thread - 6/INFO]: §3[§bskDragon§3] §aChecking for updates now!
+[14:22:04] [Craft Scheduler Thread - 0/INFO]: [Vault] Checking for Updates ... 
+[14:22:04] [Craft Scheduler Thread - 6/INFO]: §3[§bskDragon§3] §avnull is available
+[14:22:05] [Craft Scheduler Thread - 7/INFO]: [Blue Slime Core]  
+[14:22:05] [Craft Scheduler Thread - 7/INFO]: [Blue Slime Core] [Update Checker] A possible update was found for plugin 'BlueSlimeCore'.
+[14:22:05] [Craft Scheduler Thread - 7/INFO]: [Blue Slime Core] [Update Checker] Current Version: 2.6.1.222-Beta
+[14:22:05] [Craft Scheduler Thread - 7/INFO]: [Blue Slime Core] [Update Checker] New Version: 2.6.1.238
+[14:22:05] [Craft Scheduler Thread - 7/INFO]: [Blue Slime Core] [Update Checker] Download Link: https://www.spigotmc.org/resources/83189/
+[14:22:05] [Craft Scheduler Thread - 7/INFO]: [Blue Slime Core]  
+[14:22:05] [Craft Scheduler Thread - 7/INFO]: [Blue Slime Core] [Update Checker] A possible update was found for plugin 'CombatLogX'.
+[14:22:05] [Craft Scheduler Thread - 7/INFO]: [Blue Slime Core] [Update Checker] Current Version: 11.1.0.7.1025
+[14:22:05] [Craft Scheduler Thread - 7/INFO]: [Blue Slime Core] [Update Checker] New Version: 11.1.0.8.1056
+[14:22:05] [Craft Scheduler Thread - 7/INFO]: [Blue Slime Core] [Update Checker] Download Link: https://www.spigotmc.org/resources/31689/
+[14:22:05] [Craft Scheduler Thread - 0/INFO]: [Vault] No new version available
+[14:22:07] [Server thread/INFO]: 0 placeholder hook(s) registered!
+[14:26:48] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[14:26:48] [Server thread/INFO]: ------------------------
+[14:26:48] [Server thread/INFO]: Server is saved ...
+[14:26:49] [Server thread/INFO]: Successfully saved.
+[14:26:49] [Server thread/INFO]: ------------------------
+[14:28:37] [Server thread/INFO]: [ProtocolLib] The updater found an update, and has readied it to be loaded the next time the server restarts/reloads.
+[14:29:28] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[14:30:28] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[14:31:48] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[14:31:48] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[14:31:48] [Server thread/INFO]: ------------------------
+[14:31:48] [Server thread/INFO]: Server is saved ...
+[14:31:48] [Server thread/INFO]: Successfully saved.
+[14:31:48] [Server thread/INFO]: ------------------------
+[14:32:48] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[14:33:18] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[14:33:38] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[14:33:47] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[14:33:48] [Server thread/INFO]: Killed 0 mobs.
+[14:33:48] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[14:33:48] [Server thread/INFO]: Command Help: /mobkill
+[14:33:48] [Server thread/INFO]: Description: Removes entities in your world.
+[14:33:48] [Server thread/INFO]: Usage(s);
+[14:33:48] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[14:33:48] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[14:36:48] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[14:36:48] [Server thread/INFO]: ------------------------
+[14:36:48] [Server thread/INFO]: Server is saved ...
+[14:36:48] [Server thread/INFO]: Successfully saved.
+[14:36:49] [Server thread/INFO]: ------------------------
+[14:37:08] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[14:38:08] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[14:41:48] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[14:41:48] [Server thread/INFO]: ------------------------
+[14:41:48] [Server thread/INFO]: Server is saved ...
+[14:41:49] [Server thread/INFO]: Successfully saved.
+[14:41:49] [Server thread/INFO]: ------------------------
+[14:43:48] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[14:44:48] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[14:44:48] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[14:45:18] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[14:45:38] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[14:45:47] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[14:45:48] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[14:45:48] [Server thread/INFO]: Killed 0 mobs.
+[14:45:48] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[14:45:48] [Server thread/INFO]: Command Help: /mobkill
+[14:45:48] [Server thread/INFO]: Description: Removes entities in your world.
+[14:45:48] [Server thread/INFO]: Usage(s);
+[14:45:48] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[14:45:48] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[14:46:48] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[14:46:48] [Server thread/INFO]: ------------------------
+[14:46:48] [Server thread/INFO]: Server is saved ...
+[14:46:49] [Server thread/INFO]: Successfully saved.
+[14:46:49] [Server thread/INFO]: ------------------------
+[14:51:48] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[14:51:48] [Server thread/INFO]: ------------------------
+[14:51:48] [Server thread/INFO]: Server is saved ...
+[14:51:48] [Server thread/INFO]: Successfully saved.
+[14:51:48] [Server thread/INFO]: ------------------------
+[14:52:28] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[14:53:28] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[14:55:48] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[14:56:48] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[14:56:48] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[14:56:48] [Server thread/INFO]: ------------------------
+[14:56:48] [Server thread/INFO]: Server is saved ...
+[14:56:49] [Server thread/INFO]: Successfully saved.
+[14:56:49] [Server thread/INFO]: ------------------------
+[14:57:18] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[14:57:38] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[14:57:47] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[14:57:48] [Server thread/INFO]: Killed 0 mobs.
+[14:57:48] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[14:57:48] [Server thread/INFO]: Command Help: /mobkill
+[14:57:48] [Server thread/INFO]: Description: Removes entities in your world.
+[14:57:48] [Server thread/INFO]: Usage(s);
+[14:57:48] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[14:57:48] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[15:00:08] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[15:01:08] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[15:01:48] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:01:48] [Server thread/INFO]: ------------------------
+[15:01:48] [Server thread/INFO]: Server is saved ...
+[15:01:48] [Server thread/INFO]: Successfully saved.
+[15:01:48] [Server thread/INFO]: ------------------------
+[15:05:07] [Thread-25/INFO]: UUID of player monkey_fucker69 is d5f616a9-3a62-3dc6-ae98-b85544fe788d
+[15:05:11] [Server thread/INFO]: monkey_fucker69[/172.31.128.1:50670] logged in with entity id 793 at ([world]2.0, 70.0, 3.0)
+[15:05:17] [Server thread/INFO]: monkey_fucker69 issued server command: /login 161039
+[15:05:18] [Server thread/INFO]: [AuthMe] §l[MEMBER] monkey_fucker69§r logged in!
+[15:06:48] [Server thread/INFO]: [NBTAPI] Found Spigot: v1_8_R3! Trying to find NMS support
+[15:06:48] [Server thread/INFO]: [NBTAPI] NMS support 'MC1_8_R3' loaded!
+[15:06:48] [Server thread/INFO]: [NBTAPI] Found Gson: class com.google.gson.Gson
+[15:06:49] [Thread-26/WARN]: [NBTAPI] The NBT-API located at 'package com.github.evancolewright.headdrops.nbtapi' seems to be outdated!
+[15:06:49] [Thread-26/WARN]: [NBTAPI] Current Version: '2.10.0' Newest Version: 2.11.1'
+[15:06:49] [Thread-26/WARN]: [NBTAPI] Please update the NBTAPI or the plugin that contains the api(nag the mod author when the newest release has an old version, not the NBTAPI dev)!
+[15:06:50] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:06:50] [Server thread/INFO]: ------------------------
+[15:06:50] [Server thread/INFO]: Server is saved ...
+[15:06:50] [Server thread/INFO]: Successfully saved.
+[15:06:50] [Server thread/INFO]: ------------------------
+[15:07:49] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[15:07:49] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[15:08:49] [Server thread/INFO]: [ClearLag] Removed 1 Entities!
+[15:08:49] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[15:09:19] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[15:09:39] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[15:09:48] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[15:09:49] [Server thread/INFO]: Killed 44 mobs.
+[15:09:49] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[15:09:49] [Server thread/INFO]: Command Help: /mobkill
+[15:09:49] [Server thread/INFO]: Description: Removes entities in your world.
+[15:09:49] [Server thread/INFO]: Usage(s);
+[15:09:49] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[15:09:49] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[15:11:50] [Server thread/INFO]: ------------------------
+[15:11:50] [Server thread/INFO]: Server is saved ...
+[15:11:50] [Server thread/INFO]: Successfully saved.
+[15:11:50] [Server thread/INFO]: ------------------------
+[15:11:50] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:15:30] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[15:16:30] [Server thread/INFO]: [ClearLag] Removed 1 Entities!
+[15:16:50] [Server thread/INFO]: ------------------------
+[15:16:50] [Server thread/INFO]: Server is saved ...
+[15:16:50] [Server thread/INFO]: Successfully saved.
+[15:16:50] [Server thread/INFO]: ------------------------
+[15:16:50] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:19:50] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[15:20:50] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[15:21:20] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[15:21:40] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[15:21:49] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[15:21:50] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:21:50] [Server thread/INFO]: ------------------------
+[15:21:50] [Server thread/INFO]: Server is saved ...
+[15:21:50] [Server thread/INFO]: Successfully saved.
+[15:21:50] [Server thread/INFO]: ------------------------
+[15:21:50] [Server thread/INFO]: Killed 29 mobs.
+[15:21:50] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[15:21:50] [Server thread/INFO]: Command Help: /mobkill
+[15:21:50] [Server thread/INFO]: Description: Removes entities in your world.
+[15:21:50] [Server thread/INFO]: Usage(s);
+[15:21:50] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[15:21:50] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[15:23:10] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[15:24:10] [Server thread/INFO]: [ClearLag] Removed 1 Entities!
+[15:26:50] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:26:50] [Server thread/INFO]: ------------------------
+[15:26:50] [Server thread/INFO]: Server is saved ...
+[15:26:50] [Server thread/INFO]: Successfully saved.
+[15:26:50] [Server thread/INFO]: ------------------------
+[15:28:12] [Server thread/INFO]: monkey_fucker69 lost connection: Disconnected
+[15:28:13] [Server thread/INFO]: monkey_fucker69 left the game.
+[15:30:50] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[15:31:50] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[15:31:50] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[15:31:50] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:31:50] [Server thread/INFO]: ------------------------
+[15:31:50] [Server thread/INFO]: Server is saved ...
+[15:31:50] [Server thread/INFO]: Successfully saved.
+[15:31:50] [Server thread/INFO]: ------------------------
+[15:32:50] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[15:33:20] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[15:33:40] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[15:33:49] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[15:33:50] [Server thread/INFO]: Killed 21 mobs.
+[15:33:50] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[15:33:50] [Server thread/INFO]: Command Help: /mobkill
+[15:33:50] [Server thread/INFO]: Description: Removes entities in your world.
+[15:33:50] [Server thread/INFO]: Usage(s);
+[15:33:50] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[15:33:50] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[15:36:50] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:36:50] [Server thread/INFO]: ------------------------
+[15:36:50] [Server thread/INFO]: Server is saved ...
+[15:36:51] [Server thread/INFO]: Successfully saved.
+[15:36:51] [Server thread/INFO]: ------------------------
+[15:38:30] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[15:39:30] [Thread-28/INFO]: UUID of player DarkAssassin is 8670ab0d-5b5f-36ca-abaf-741d818926eb
+[15:39:31] [Server thread/INFO]: DarkAssassin[/172.31.128.1:51552] logged in with entity id 3818 at ([world]2.0, 70.0, 3.0)
+[15:39:31] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[15:39:41] [Server thread/INFO]: DarkAssassin lost connection: Disconnected
+[15:39:42] [Server thread/INFO]: DarkAssassin left the game.
+[15:40:10] [Thread-29/INFO]: UUID of player GiggaNigga is 7b96af2e-739e-30ec-80a8-7d9ee3379d09
+[15:40:10] [Server thread/INFO]: GiggaNigga[/172.31.128.1:35458] logged in with entity id 3933 at ([world]2.0, 70.0, 3.0)
+[15:40:11] [Server thread/WARN]: Permissions lag notice with (LuckPermsHandler). Response took 28.163257ms. Summary: Getting prefix for GiggaNigga
+[15:40:14] [Server thread/INFO]: GiggaNigga lost connection: Disconnected
+[15:40:14] [Server thread/INFO]: GiggaNigga left the game.
+[15:40:30] [Thread-30/INFO]: UUID of player GigaNigga is eb1936d9-a999-31fb-8ab9-51f60db6c497
+[15:40:30] [Server thread/INFO]: GigaNigga[/172.31.128.1:43142] logged in with entity id 3974 at ([world]2.0, 70.0, 3.0)
+[15:40:30] [Server thread/WARN]: Permissions lag notice with (LuckPermsHandler). Response took 40.471465ms. Summary: Getting prefix for GigaNigga
+[15:40:34] [Server thread/INFO]: GigaNigga lost connection: Disconnected
+[15:40:34] [Server thread/INFO]: GigaNigga left the game.
+[15:41:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:41:51] [Server thread/INFO]: ------------------------
+[15:41:51] [Server thread/INFO]: Server is saved ...
+[15:41:51] [Server thread/INFO]: Successfully saved.
+[15:41:51] [Server thread/INFO]: ------------------------
+[15:43:51] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[15:44:51] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[15:45:21] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[15:45:41] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[15:45:50] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[15:45:51] [Server thread/INFO]: Killed 19 mobs.
+[15:45:51] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[15:45:51] [Server thread/INFO]: Command Help: /mobkill
+[15:45:51] [Server thread/INFO]: Description: Removes entities in your world.
+[15:45:51] [Server thread/INFO]: Usage(s);
+[15:45:51] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[15:45:51] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[15:46:11] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[15:46:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:46:51] [Server thread/INFO]: ------------------------
+[15:46:51] [Server thread/INFO]: Server is saved ...
+[15:46:51] [Server thread/INFO]: Successfully saved.
+[15:46:51] [Server thread/INFO]: ------------------------
+[15:47:11] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[15:51:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:51:51] [Server thread/INFO]: ------------------------
+[15:51:51] [Server thread/INFO]: Server is saved ...
+[15:51:51] [Server thread/INFO]: Successfully saved.
+[15:51:51] [Server thread/INFO]: ------------------------
+[15:53:51] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[15:54:51] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[15:55:51] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[15:56:51] [Server thread/INFO]: ------------------------
+[15:56:51] [Server thread/INFO]: Server is saved ...
+[15:56:51] [Server thread/INFO]: Successfully saved.
+[15:56:51] [Server thread/INFO]: ------------------------
+[15:56:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[15:56:51] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[15:57:21] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[15:57:41] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[15:57:50] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[15:57:51] [Server thread/INFO]: Killed 0 mobs.
+[15:57:51] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[15:57:51] [Server thread/INFO]: Command Help: /mobkill
+[15:57:51] [Server thread/INFO]: Description: Removes entities in your world.
+[15:57:51] [Server thread/INFO]: Usage(s);
+[15:57:51] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[15:57:51] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[16:01:31] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[16:01:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:01:51] [Server thread/INFO]: ------------------------
+[16:01:51] [Server thread/INFO]: Server is saved ...
+[16:01:51] [Server thread/INFO]: Successfully saved.
+[16:01:51] [Server thread/INFO]: ------------------------
+[16:02:31] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[16:06:51] [Server thread/INFO]: ------------------------
+[16:06:51] [Server thread/INFO]: Server is saved ...
+[16:06:51] [Server thread/INFO]: Successfully saved.
+[16:06:51] [Server thread/INFO]: ------------------------
+[16:06:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:07:51] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[16:08:51] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[16:09:11] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[16:09:21] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[16:09:41] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[16:09:50] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[16:09:51] [Server thread/INFO]: Killed 0 mobs.
+[16:09:51] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[16:09:51] [Server thread/INFO]: Command Help: /mobkill
+[16:09:51] [Server thread/INFO]: Description: Removes entities in your world.
+[16:09:51] [Server thread/INFO]: Usage(s);
+[16:09:51] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[16:09:51] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[16:10:11] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[16:11:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:11:51] [Server thread/INFO]: ------------------------
+[16:11:51] [Server thread/INFO]: Server is saved ...
+[16:11:51] [Server thread/INFO]: Successfully saved.
+[16:11:51] [Server thread/INFO]: ------------------------
+[16:16:51] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[16:16:51] [Server thread/INFO]: ------------------------
+[16:16:51] [Server thread/INFO]: Server is saved ...
+[16:16:51] [Server thread/INFO]: Successfully saved.
+[16:16:51] [Server thread/INFO]: ------------------------
+[16:16:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:17:51] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[16:19:51] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[16:20:51] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[16:21:21] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[16:21:41] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[16:21:50] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[16:21:51] [Server thread/INFO]: ------------------------
+[16:21:51] [Server thread/INFO]: Server is saved ...
+[16:21:51] [Server thread/INFO]: Successfully saved.
+[16:21:51] [Server thread/INFO]: ------------------------
+[16:21:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:21:51] [Server thread/INFO]: Killed 0 mobs.
+[16:21:51] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[16:21:51] [Server thread/INFO]: Command Help: /mobkill
+[16:21:51] [Server thread/INFO]: Description: Removes entities in your world.
+[16:21:51] [Server thread/INFO]: Usage(s);
+[16:21:51] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[16:21:51] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[16:24:31] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[16:25:31] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[16:26:51] [Server thread/INFO]: ------------------------
+[16:26:51] [Server thread/INFO]: Server is saved ...
+[16:26:51] [Server thread/INFO]: Successfully saved.
+[16:26:51] [Server thread/INFO]: ------------------------
+[16:26:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:31:51] [Server thread/INFO]: ------------------------
+[16:31:51] [Server thread/INFO]: Server is saved ...
+[16:31:51] [Server thread/INFO]: Successfully saved.
+[16:31:51] [Server thread/INFO]: ------------------------
+[16:31:51] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[16:31:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:32:11] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[16:32:51] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[16:33:11] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[16:33:21] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[16:33:41] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[16:33:50] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[16:33:51] [Server thread/INFO]: Killed 0 mobs.
+[16:33:51] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[16:33:51] [Server thread/INFO]: Command Help: /mobkill
+[16:33:51] [Server thread/INFO]: Description: Removes entities in your world.
+[16:33:51] [Server thread/INFO]: Usage(s);
+[16:33:51] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[16:33:51] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[16:36:51] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:36:51] [Server thread/INFO]: ------------------------
+[16:36:51] [Server thread/INFO]: Server is saved ...
+[16:36:51] [Server thread/INFO]: Successfully saved.
+[16:36:51] [Server thread/INFO]: ------------------------
+[16:39:51] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[16:40:51] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[16:41:51] [Server thread/INFO]: ------------------------
+[16:41:51] [Server thread/INFO]: Server is saved ...
+[16:41:52] [Server thread/INFO]: Successfully saved.
+[16:41:52] [Server thread/INFO]: ------------------------
+[16:41:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:43:51] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[16:44:51] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[16:45:21] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[16:45:41] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[16:45:50] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[16:45:51] [Server thread/INFO]: Killed 0 mobs.
+[16:45:51] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[16:45:51] [Server thread/INFO]: Command Help: /mobkill
+[16:45:51] [Server thread/INFO]: Description: Removes entities in your world.
+[16:45:51] [Server thread/INFO]: Usage(s);
+[16:45:51] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[16:45:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[16:46:51] [Server thread/INFO]: ------------------------
+[16:46:51] [Server thread/INFO]: Server is saved ...
+[16:46:52] [Server thread/INFO]: Successfully saved.
+[16:46:52] [Server thread/INFO]: ------------------------
+[16:46:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:47:31] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[16:48:31] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[16:51:51] [Server thread/INFO]: ------------------------
+[16:51:51] [Server thread/INFO]: Server is saved ...
+[16:51:52] [Server thread/INFO]: Successfully saved.
+[16:51:52] [Server thread/INFO]: ------------------------
+[16:51:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:55:11] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[16:55:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[16:56:11] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[16:56:52] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[16:56:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[16:56:52] [Server thread/INFO]: ------------------------
+[16:56:52] [Server thread/INFO]: Server is saved ...
+[16:56:52] [Server thread/INFO]: Successfully saved.
+[16:56:52] [Server thread/INFO]: ------------------------
+[16:57:21] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[16:57:41] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[16:57:50] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[16:57:51] [Server thread/INFO]: Killed 0 mobs.
+[16:57:51] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[16:57:51] [Server thread/INFO]: Command Help: /mobkill
+[16:57:51] [Server thread/INFO]: Description: Removes entities in your world.
+[16:57:51] [Server thread/INFO]: Usage(s);
+[16:57:51] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[16:57:51] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[17:01:52] [Server thread/INFO]: ------------------------
+[17:01:52] [Server thread/INFO]: Server is saved ...
+[17:01:52] [Server thread/INFO]: Successfully saved.
+[17:01:52] [Server thread/INFO]: ------------------------
+[17:01:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:02:51] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[17:03:51] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[17:06:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:06:52] [Server thread/INFO]: ------------------------
+[17:06:52] [Server thread/INFO]: Server is saved ...
+[17:06:52] [Server thread/INFO]: Successfully saved.
+[17:06:52] [Server thread/INFO]: ------------------------
+[17:07:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[17:08:52] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[17:09:22] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[17:09:42] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[17:09:51] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[17:09:52] [Server thread/INFO]: Killed 0 mobs.
+[17:09:52] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[17:09:52] [Server thread/INFO]: Command Help: /mobkill
+[17:09:52] [Server thread/INFO]: Description: Removes entities in your world.
+[17:09:52] [Server thread/INFO]: Usage(s);
+[17:09:52] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[17:09:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[17:10:31] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[17:11:31] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[17:11:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:11:52] [Server thread/INFO]: ------------------------
+[17:11:52] [Server thread/INFO]: Server is saved ...
+[17:11:52] [Server thread/INFO]: Successfully saved.
+[17:11:52] [Server thread/INFO]: ------------------------
+[17:16:52] [Server thread/INFO]: ------------------------
+[17:16:52] [Server thread/INFO]: Server is saved ...
+[17:16:52] [Server thread/INFO]: Successfully saved.
+[17:16:52] [Server thread/INFO]: ------------------------
+[17:16:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:18:12] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[17:19:12] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[17:19:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[17:20:52] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[17:21:22] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[17:21:42] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[17:21:51] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[17:21:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:21:52] [Server thread/INFO]: ------------------------
+[17:21:52] [Server thread/INFO]: Server is saved ...
+[17:21:52] [Server thread/INFO]: Successfully saved.
+[17:21:52] [Server thread/INFO]: ------------------------
+[17:21:52] [Server thread/INFO]: Killed 0 mobs.
+[17:21:52] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[17:21:52] [Server thread/INFO]: Command Help: /mobkill
+[17:21:52] [Server thread/INFO]: Description: Removes entities in your world.
+[17:21:52] [Server thread/INFO]: Usage(s);
+[17:21:52] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[17:21:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[17:25:52] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[17:26:52] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[17:26:52] [Server thread/INFO]: ------------------------
+[17:26:52] [Server thread/INFO]: Server is saved ...
+[17:26:52] [Server thread/INFO]: Successfully saved.
+[17:26:52] [Server thread/INFO]: ------------------------
+[17:26:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:31:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[17:31:52] [Server thread/INFO]: ------------------------
+[17:31:52] [Server thread/INFO]: Server is saved ...
+[17:31:52] [Server thread/INFO]: Successfully saved.
+[17:31:52] [Server thread/INFO]: ------------------------
+[17:31:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:32:52] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[17:33:22] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[17:33:32] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[17:33:42] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[17:33:51] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[17:33:52] [Server thread/INFO]: Killed 0 mobs.
+[17:33:52] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[17:33:52] [Server thread/INFO]: Command Help: /mobkill
+[17:33:52] [Server thread/INFO]: Description: Removes entities in your world.
+[17:33:52] [Server thread/INFO]: Usage(s);
+[17:33:52] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[17:33:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[17:34:32] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[17:36:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:36:52] [Server thread/INFO]: ------------------------
+[17:36:52] [Server thread/INFO]: Server is saved ...
+[17:36:52] [Server thread/INFO]: Successfully saved.
+[17:36:52] [Server thread/INFO]: ------------------------
+[17:41:12] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[17:41:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:41:52] [Server thread/INFO]: ------------------------
+[17:41:52] [Server thread/INFO]: Server is saved ...
+[17:41:52] [Server thread/INFO]: Successfully saved.
+[17:41:52] [Server thread/INFO]: ------------------------
+[17:42:12] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[17:43:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[17:44:52] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[17:45:22] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[17:45:42] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[17:45:51] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[17:45:52] [Server thread/INFO]: Killed 0 mobs.
+[17:45:52] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[17:45:52] [Server thread/INFO]: Command Help: /mobkill
+[17:45:52] [Server thread/INFO]: Description: Removes entities in your world.
+[17:45:52] [Server thread/INFO]: Usage(s);
+[17:45:52] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[17:45:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[17:46:52] [Server thread/INFO]: ------------------------
+[17:46:52] [Server thread/INFO]: Server is saved ...
+[17:46:52] [Server thread/INFO]: Successfully saved.
+[17:46:52] [Server thread/INFO]: ------------------------
+[17:46:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:48:52] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[17:49:52] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[17:51:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:51:52] [Server thread/INFO]: ------------------------
+[17:51:52] [Server thread/INFO]: Server is saved ...
+[17:51:52] [Server thread/INFO]: Successfully saved.
+[17:51:52] [Server thread/INFO]: ------------------------
+[17:55:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[17:56:32] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[17:56:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[17:56:52] [Server thread/INFO]: ------------------------
+[17:56:52] [Server thread/INFO]: Server is saved ...
+[17:56:52] [Server thread/INFO]: Successfully saved.
+[17:56:52] [Server thread/INFO]: ------------------------
+[17:56:52] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[17:57:22] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[17:57:32] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[17:57:42] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[17:57:51] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[17:57:52] [Server thread/INFO]: Killed 0 mobs.
+[17:57:52] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[17:57:52] [Server thread/INFO]: Command Help: /mobkill
+[17:57:52] [Server thread/INFO]: Description: Removes entities in your world.
+[17:57:52] [Server thread/INFO]: Usage(s);
+[17:57:52] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[17:57:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[18:01:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:01:52] [Server thread/INFO]: ------------------------
+[18:01:52] [Server thread/INFO]: Server is saved ...
+[18:01:52] [Server thread/INFO]: Successfully saved.
+[18:01:52] [Server thread/INFO]: ------------------------
+[18:04:12] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[18:05:12] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[18:06:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:06:52] [Server thread/INFO]: ------------------------
+[18:06:52] [Server thread/INFO]: Server is saved ...
+[18:06:52] [Server thread/INFO]: Successfully saved.
+[18:06:52] [Server thread/INFO]: ------------------------
+[18:07:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[18:08:52] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[18:09:22] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[18:09:42] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[18:09:51] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[18:09:52] [Server thread/INFO]: Killed 0 mobs.
+[18:09:52] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[18:09:52] [Server thread/INFO]: Command Help: /mobkill
+[18:09:52] [Server thread/INFO]: Description: Removes entities in your world.
+[18:09:52] [Server thread/INFO]: Usage(s);
+[18:09:52] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[18:09:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[18:11:52] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[18:11:52] [Server thread/INFO]: ------------------------
+[18:11:52] [Server thread/INFO]: Server is saved ...
+[18:11:52] [Server thread/INFO]: Successfully saved.
+[18:11:52] [Server thread/INFO]: ------------------------
+[18:11:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:12:52] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[18:16:52] [Server thread/INFO]: ------------------------
+[18:16:52] [Server thread/INFO]: Server is saved ...
+[18:16:52] [Server thread/INFO]: Successfully saved.
+[18:16:52] [Server thread/INFO]: ------------------------
+[18:16:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:19:32] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[18:19:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[18:20:32] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[18:20:52] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[18:21:22] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[18:21:42] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[18:21:51] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[18:21:52] [Server thread/INFO]: Killed 0 mobs.
+[18:21:52] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[18:21:52] [Server thread/INFO]: Command Help: /mobkill
+[18:21:52] [Server thread/INFO]: Description: Removes entities in your world.
+[18:21:52] [Server thread/INFO]: Usage(s);
+[18:21:52] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[18:21:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[18:21:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:21:52] [Server thread/INFO]: ------------------------
+[18:21:52] [Server thread/INFO]: Server is saved ...
+[18:21:52] [Server thread/INFO]: Successfully saved.
+[18:21:52] [Server thread/INFO]: ------------------------
+[18:26:52] [Server thread/INFO]: ------------------------
+[18:26:52] [Server thread/INFO]: Server is saved ...
+[18:26:52] [Server thread/INFO]: Successfully saved.
+[18:26:52] [Server thread/INFO]: ------------------------
+[18:26:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:27:12] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[18:28:12] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[18:31:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[18:31:52] [Server thread/INFO]: ------------------------
+[18:31:52] [Server thread/INFO]: Server is saved ...
+[18:31:52] [Server thread/INFO]: Successfully saved.
+[18:31:52] [Server thread/INFO]: ------------------------
+[18:31:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:32:52] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[18:33:22] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[18:33:42] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[18:33:51] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[18:33:52] [Server thread/INFO]: Killed 0 mobs.
+[18:33:52] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[18:33:52] [Server thread/INFO]: Command Help: /mobkill
+[18:33:52] [Server thread/INFO]: Description: Removes entities in your world.
+[18:33:52] [Server thread/INFO]: Usage(s);
+[18:33:52] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[18:33:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[18:34:52] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[18:35:52] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[18:36:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:36:52] [Server thread/INFO]: ------------------------
+[18:36:52] [Server thread/INFO]: Server is saved ...
+[18:36:52] [Server thread/INFO]: Successfully saved.
+[18:36:52] [Server thread/INFO]: ------------------------
+[18:41:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:41:52] [Server thread/INFO]: ------------------------
+[18:41:52] [Server thread/INFO]: Server is saved ...
+[18:41:52] [Server thread/INFO]: Successfully saved.
+[18:41:52] [Server thread/INFO]: ------------------------
+[18:42:32] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[18:43:32] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[18:43:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[18:44:52] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[18:45:22] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[18:45:42] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[18:45:51] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[18:45:52] [Server thread/INFO]: Killed 0 mobs.
+[18:45:52] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[18:45:52] [Server thread/INFO]: Command Help: /mobkill
+[18:45:52] [Server thread/INFO]: Description: Removes entities in your world.
+[18:45:52] [Server thread/INFO]: Usage(s);
+[18:45:52] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[18:45:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[18:46:52] [Server thread/INFO]: ------------------------
+[18:46:52] [Server thread/INFO]: Server is saved ...
+[18:46:52] [Server thread/INFO]: Successfully saved.
+[18:46:52] [Server thread/INFO]: ------------------------
+[18:46:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:50:12] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[18:51:12] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[18:51:52] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:51:52] [Server thread/INFO]: ------------------------
+[18:51:52] [Server thread/INFO]: Server is saved ...
+[18:51:52] [Server thread/INFO]: Successfully saved.
+[18:51:52] [Server thread/INFO]: ------------------------
+[18:55:52] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[18:56:52] [Server thread/INFO]: ------------------------
+[18:56:52] [Server thread/INFO]: Server is saved ...
+[18:56:53] [Server thread/INFO]: Successfully saved.
+[18:56:53] [Server thread/INFO]: ------------------------
+[18:56:53] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[18:56:53] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[18:57:22] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[18:57:42] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[18:57:51] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[18:57:52] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[18:57:52] [Server thread/INFO]: Killed 0 mobs.
+[18:57:52] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[18:57:52] [Server thread/INFO]: Command Help: /mobkill
+[18:57:52] [Server thread/INFO]: Description: Removes entities in your world.
+[18:57:52] [Server thread/INFO]: Usage(s);
+[18:57:52] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[18:57:52] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[18:58:52] [Server thread/INFO]: [ClearLag] Removed 0 Entities!
+[19:01:33] [Thread-38/INFO]: UUID of player monkey_fucker69 is d5f616a9-3a62-3dc6-ae98-b85544fe788d
+[19:01:33] [Server thread/INFO]: monkey_fucker69[/172.31.128.1:55532] logged in with entity id 4941 at ([world]2.0, 70.0, 3.0)
+[19:01:39] [Server thread/INFO]: monkey_fucker69 issued server command: /login 161039
+[19:01:39] [Server thread/INFO]: [AuthMe] §l[MEMBER] monkey_fucker69§r logged in!
+[19:01:50] [Server thread/INFO]: monkey_fucker69 issued server command: /gamemode creative
+[19:01:50] [Server thread/INFO]: §cmonkey_fucker69 §4was denied access to command.
+[19:01:53] [Server thread/INFO]: ------------------------
+[19:01:53] [Server thread/INFO]: Server is saved ...
+[19:01:53] [Server thread/INFO]: Successfully saved.
+[19:01:53] [Server thread/INFO]: ------------------------
+[19:01:53] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[19:02:47] [Server thread/INFO]: monkey_fucker69 lost connection: Disconnected
+[19:02:47] [Server thread/INFO]: monkey_fucker69 left the game.
+[19:05:33] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[19:06:33] [Server thread/INFO]: [ClearLag] Removed 3 Entities!
+[19:06:53] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[19:06:53] [Server thread/INFO]: ------------------------
+[19:06:53] [Server thread/INFO]: Server is saved ...
+[19:06:53] [Server thread/INFO]: Successfully saved.
+[19:06:53] [Server thread/INFO]: ------------------------
+[19:07:53] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[19:08:53] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[19:09:23] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[19:09:43] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[19:09:52] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[19:09:53] [Server thread/INFO]: Killed 30 mobs.
+[19:09:53] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[19:09:53] [Server thread/INFO]: Command Help: /mobkill
+[19:09:53] [Server thread/INFO]: Description: Removes entities in your world.
+[19:09:53] [Server thread/INFO]: Usage(s);
+[19:09:53] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[19:09:53] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[19:11:28] [Thread-39/INFO]: UUID of player monkey_fucker69 is d5f616a9-3a62-3dc6-ae98-b85544fe788d
+[19:11:28] [Server thread/INFO]: monkey_fucker69[/172.31.128.1:33586] logged in with entity id 5451 at ([world]2.0, 70.0, 3.0)
+[19:11:28] [Server thread/WARN]: Permissions lag notice with (LuckPermsHandler). Response took 35.990246ms. Summary: Getting prefix for monkey_fucker69
+[19:11:35] [Server thread/INFO]: monkey_fucker69 issued server command: /login 16120090218
+[19:11:35] [Server thread/INFO]: [AuthMe] §l[MEMBER] monkey_fucker69§r used the wrong password
+[19:11:42] [Server thread/INFO]: monkey_fucker69 issued server command: /login 161039
+[19:11:42] [Server thread/INFO]: [AuthMe] §l[MEMBER] monkey_fucker69§r logged in!
+[19:11:53] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[19:11:53] [Server thread/INFO]: ------------------------
+[19:11:53] [Server thread/INFO]: Server is saved ...
+[19:11:53] [Server thread/INFO]: Successfully saved.
+[19:11:53] [Server thread/INFO]: ------------------------
+[19:13:13] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[19:13:17] [Server thread/INFO]: monkey_fucker69 lost connection: Disconnected
+[19:13:17] [Server thread/INFO]: monkey_fucker69 left the game.
+[19:13:24] [Thread-40/INFO]: UUID of player monkey_fucker69 is d5f616a9-3a62-3dc6-ae98-b85544fe788d
+[19:13:24] [Server thread/INFO]: monkey_fucker69[/172.31.128.1:55892] logged in with entity id 6277 at ([world]2.0, 70.0, 3.0)
+[19:13:24] [Server thread/WARN]: Permissions lag notice with (LuckPermsHandler). Response took 32.698676ms. Summary: Getting prefix for monkey_fucker69
+[19:13:30] [Server thread/INFO]: monkey_fucker69 issued server command: /login 161039
+[19:13:30] [Server thread/INFO]: [AuthMe] §l[MEMBER] monkey_fucker69§r logged in!
+[19:14:13] [Server thread/INFO]: [ClearLag] Removed 3 Entities!
+[19:16:53] [Server thread/INFO]: ------------------------
+[19:16:53] [Server thread/INFO]: Server is saved ...
+[19:16:54] [Server thread/INFO]: Successfully saved.
+[19:16:54] [Server thread/INFO]: ------------------------
+[19:16:54] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[19:19:53] [Server thread/INFO]: [Autokill] killing mobs in 2 minutes
+[19:20:53] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[19:20:54] [Server thread/INFO]: [Autokill] killing mobs in 1 minute
+[19:21:24] [Server thread/INFO]: [Autokill] killing mobs in 30 seconds
+[19:21:44] [Server thread/INFO]: [Autokill] killing mobs in 10 seconds
+[19:21:53] [Server thread/INFO]: [Autokill] All mobs have been killed!
+[19:21:54] [Server thread/INFO]: [ClearLag] Removed 6 Entities!
+[19:21:54] [Server thread/INFO]: ------------------------
+[19:21:54] [Server thread/INFO]: Server is saved ...
+[19:21:54] [Server thread/INFO]: Successfully saved.
+[19:21:54] [Server thread/INFO]: ------------------------
+[19:21:54] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[19:21:54] [Server thread/INFO]: Killed 33 mobs.
+[19:21:54] [Server thread/INFO]: CONSOLE issued server command: /mobkill irongolem
+[19:21:54] [Server thread/INFO]: Command Help: /mobkill
+[19:21:54] [Server thread/INFO]: Description: Removes entities in your world.
+[19:21:54] [Server thread/INFO]: Usage(s);
+[19:21:54] [Server thread/INFO]: /mobkill <mob type> [world] - Removes all of the given mob type in the current world or another one if specified
+[19:21:54] [Server thread/INFO]: /mobkill <mob type> <radius> [world] - Removes the given mob type within the given radius in the current world or another one if specified
+[19:26:54] [Server thread/INFO]: [AutoTip] Use /pspawn during combat so you don't die in the void!
+[19:26:54] [Server thread/INFO]: ------------------------
+[19:26:54] [Server thread/INFO]: Server is saved ...
+[19:26:54] [Server thread/INFO]: Successfully saved.
+[19:26:54] [Server thread/INFO]: ------------------------
+[19:28:34] [Server thread/INFO]: [ClearLag] Warning Ground items will be removed in one minute!
+[19:29:34] [Server thread/INFO]: [ClearLag] Removed 1 Entities!

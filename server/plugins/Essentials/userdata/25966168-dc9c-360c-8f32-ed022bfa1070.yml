@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1676555945229
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1676574709669
+  login: 1677178511381
+money: '0'
+last-account-name: Herobrine
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -159.74591498337867
+  y: 86.0
+  z: 212.94964814386623
+  yaw: 167.8500213623047
+  pitch: 69.15000915527344
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 31.535393575851224
+  y: 94.0
+  z: 16.652518215976592
+  yaw: 117.593505859375
+  pitch: -88.19999694824219
+homes:
+  home:
+    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world-name: world
+    x: 90.37437591237439
+    y: 172.0
+    z: 133.65870577309386
+    yaw: -197.1983184814453
+    pitch: -27.15001106262207
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520948
+  expire: 1675386120700

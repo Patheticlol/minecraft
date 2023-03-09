@@ -1,0 +1,46 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1674533877266
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1674534445673
+  login: 1674530486008
+money: '0'
+last-account-name: phatass
+logoutlocation:
+  world: a2267596-09e9-44c2-8850-01b32a6f724c
+  world-name: world_nether
+  x: 179.27443871961918
+  y: 50.0
+  z: 20.313112218206363
+  yaw: 268.9447021484375
+  pitch: 6.899991989135742
+lastlocation:
+  world: acc1f447-5c3e-4384-83a9-55c9d6f81e2a
+  world-name: world
+  x: 497.75944942237925
+  y: 63.0
+  z: 537.8252745837515
+  yaw: 84.00000762939453
+  pitch: -6.000000476837158
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520996
+  expire: 1675386120700

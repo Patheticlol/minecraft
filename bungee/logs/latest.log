@@ -1,0 +1,90 @@
+[14:19:49] [main/INFO]: Using mbed TLS based native cipher.
+[14:19:49] [main/INFO]: Using zlib based native compressor.
+[14:19:49] [main/INFO]: Enabled Waterfall version git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513
+[14:19:49] [main/INFO]: Not on Windows, attempting to use enhanced EpollEventLoop
+[14:19:49] [main/INFO]: Epoll is working, utilising it!
+[14:19:51] [main/INFO]: Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+[14:19:51] [main/INFO]: Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+[14:19:51] [main/INFO]: Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+[14:19:51] [main/INFO]: Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+[14:19:51] [main/INFO]: Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+[14:19:51] [main/INFO]: Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+[14:19:52] [main/INFO]: Loaded plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:52] [main/INFO]: Loaded plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:52] [main/INFO]: Loaded plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:52] [main/INFO]: Loaded plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:52] [main/INFO]: Loaded plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:52] [main/INFO]: Loaded plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:52] [main/INFO] [EaglercraftXBungee]: Loading vanilla profile: lax1dude
+[14:19:58] [main/WARN] [EaglercraftXBungee]: Profile load timed out
+[14:19:58] [main/INFO]: Loaded plugin EaglercraftXBungee version 1.0.5 by lax1dude
+[14:19:59] [main/WARN]: Forced host server pvp is not defined
+[14:19:59] [main/INFO]: Enabled plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:59] [main/INFO]: Enabled plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:59] [main/INFO]: Enabled plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:59] [main/INFO]: Enabled plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:59] [main/INFO]: Enabled plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:59] [main/INFO]: Enabled plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[14:19:59] [main/ERROR] [EaglercraftXBungee]: Online mode is set to false! Authentication system has been disabled
+[14:19:59] [Netty Worker IO Thread #0/INFO] [EaglercraftXBungee]: Eaglercraft is listening on: /0.0.0.0:8081
+[14:20:01] [main/INFO] [EaglercraftXBungee]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
+[14:20:01] [Skin Download Thread #1/INFO] [EaglercraftXBungee]: Loaded vanilla profile: lax1dude
+[14:20:01] [main/INFO]: Enabled plugin EaglercraftXBungee version 1.0.5 by lax1dude
+[14:20:01] [Netty Boss IO Thread #0/INFO]: Listening on /127.0.0.1:25577
+[15:05:04] [Netty Worker IO Thread #1/INFO] [EaglercraftXBungee]: [/172.31.128.1:45958]: Connected via websocket
+[15:05:04] [Netty Worker IO Thread #1/INFO] [EaglercraftXBungee]: [/172.31.128.1:45958]: Origin header is null
+[15:05:05] [Netty Worker IO Thread #1/INFO] [EaglercraftXBungee]: [/172.31.128.1:45958]: Logged in as 'monkey_fucker69'
+[15:05:05] [Netty Worker IO Thread #1/INFO]: [/172.31.128.1:45958|monkey_fucker69] -> UpstreamBridge has connected
+[15:05:05] [Netty Worker IO Thread #1/WARN]: Event LoginEvent(cancelled=false, cancelReasonComponents=null, loginResult=null, connection=[/172.31.128.1:45958|monkey_fucker69] <-> InitialHandler) took 294ms to process!
+[15:05:05] [Netty Worker IO Thread #1/WARN]: Event PreLoginEvent(cancelled=false, cancelReasonComponents=null, connection=[/172.31.128.1:45958|monkey_fucker69] <-> InitialHandler) took 296ms to process!
+[15:05:05] [Netty Worker IO Thread #1/INFO]: [monkey_fucker69|/172.31.128.1:45958] <-> ServerConnector [lobby] has connected
+[15:28:12] [Netty Worker IO Thread #1/WARN]: [/172.31.128.1:45958|monkey_fucker69] -> UpstreamBridge - NativeIoException: recvAddress(..) failed: Connection reset by peer
+[15:28:12] [Netty Worker IO Thread #1/INFO]: [monkey_fucker69] disconnected with: NativeIoException : recvAddress(..) failed: Connection reset by peer
+[15:28:12] [Netty Worker IO Thread #1/INFO]: [/172.31.128.1:45958|monkey_fucker69] <-> DownstreamBridge <-> [lobby] has disconnected
+[15:28:12] [Netty Worker IO Thread #1/INFO]: [/172.31.128.1:45958|monkey_fucker69] -> UpstreamBridge has disconnected
+[15:39:30] [Netty Worker IO Thread #2/INFO] [EaglercraftXBungee]: [/172.31.128.1:34978]: Connected via websocket
+[15:39:30] [Netty Worker IO Thread #2/INFO] [EaglercraftXBungee]: [/172.31.128.1:34978]: Origin header is null
+[15:39:30] [Netty Worker IO Thread #2/INFO] [EaglercraftXBungee]: [/172.31.128.1:34978]: Logged in as 'DarkAssassin'
+[15:39:30] [Netty Worker IO Thread #2/INFO]: [/172.31.128.1:34978|DarkAssassin] -> UpstreamBridge has connected
+[15:39:30] [Netty Worker IO Thread #2/INFO]: [DarkAssassin|/172.31.128.1:34978] <-> ServerConnector [lobby] has connected
+[15:39:41] [Netty Worker IO Thread #2/INFO]: [/172.31.128.1:34978|DarkAssassin] -> UpstreamBridge has disconnected
+[15:39:41] [Netty Worker IO Thread #2/INFO]: [DarkAssassin] disconnected with: Proxy lost connection to server.
+[15:39:41] [Netty Worker IO Thread #2/INFO]: [/172.31.128.1:34978|DarkAssassin] <-> DownstreamBridge <-> [lobby] has disconnected
+[15:40:10] [Netty Worker IO Thread #5/INFO] [EaglercraftXBungee]: [/172.31.128.1:45272]: Connected via websocket
+[15:40:10] [Netty Worker IO Thread #5/INFO] [EaglercraftXBungee]: [/172.31.128.1:45272]: Origin header is null
+[15:40:10] [Netty Worker IO Thread #5/INFO] [EaglercraftXBungee]: [/172.31.128.1:45272]: Logged in as 'GiggaNigga'
+[15:40:10] [Netty Worker IO Thread #5/INFO]: [/172.31.128.1:45272|GiggaNigga] -> UpstreamBridge has connected
+[15:40:10] [Netty Worker IO Thread #5/INFO]: [GiggaNigga|/172.31.128.1:45272] <-> ServerConnector [lobby] has connected
+[15:40:14] [Netty Worker IO Thread #5/INFO]: [/172.31.128.1:45272|GiggaNigga] -> UpstreamBridge has disconnected
+[15:40:14] [Netty Worker IO Thread #5/INFO]: [GiggaNigga] disconnected with: Proxy lost connection to server.
+[15:40:14] [Netty Worker IO Thread #5/INFO]: [/172.31.128.1:45272|GiggaNigga] <-> DownstreamBridge <-> [lobby] has disconnected
+[15:40:30] [Netty Worker IO Thread #4/INFO] [EaglercraftXBungee]: [/172.31.128.1:56932]: Connected via websocket
+[15:40:30] [Netty Worker IO Thread #4/INFO] [EaglercraftXBungee]: [/172.31.128.1:56932]: Origin header is null
+[15:40:30] [Netty Worker IO Thread #4/INFO] [EaglercraftXBungee]: [/172.31.128.1:56932]: Logged in as 'GigaNigga'
+[15:40:30] [Netty Worker IO Thread #4/INFO]: [/172.31.128.1:56932|GigaNigga] -> UpstreamBridge has connected
+[15:40:30] [Netty Worker IO Thread #4/INFO]: [GigaNigga|/172.31.128.1:56932] <-> ServerConnector [lobby] has connected
+[15:40:34] [Netty Worker IO Thread #4/INFO]: [/172.31.128.1:56932|GigaNigga] -> UpstreamBridge has disconnected
+[15:40:34] [Netty Worker IO Thread #4/INFO]: [GigaNigga] disconnected with: Proxy lost connection to server.
+[15:40:34] [Netty Worker IO Thread #4/INFO]: [/172.31.128.1:56932|GigaNigga] <-> DownstreamBridge <-> [lobby] has disconnected
+[19:01:33] [Netty Worker IO Thread #2/INFO] [EaglercraftXBungee]: [/172.31.128.1:40220]: Connected via websocket
+[19:01:33] [Netty Worker IO Thread #2/INFO] [EaglercraftXBungee]: [/172.31.128.1:40220]: Origin header is null
+[19:01:33] [Netty Worker IO Thread #2/INFO] [EaglercraftXBungee]: [/172.31.128.1:40220]: Logged in as 'monkey_fucker69'
+[19:01:33] [Netty Worker IO Thread #2/INFO]: [/172.31.128.1:40220|monkey_fucker69] -> UpstreamBridge has connected
+[19:01:33] [Netty Worker IO Thread #2/INFO]: [monkey_fucker69|/172.31.128.1:40220] <-> ServerConnector [lobby] has connected
+[19:02:47] [Netty Worker IO Thread #2/INFO]: [/172.31.128.1:40220|monkey_fucker69] -> UpstreamBridge has disconnected
+[19:02:47] [Netty Worker IO Thread #2/INFO]: [monkey_fucker69] disconnected with: Proxy lost connection to server.
+[19:02:47] [Netty Worker IO Thread #2/INFO]: [/172.31.128.1:40220|monkey_fucker69] <-> DownstreamBridge <-> [lobby] has disconnected
+[19:11:28] [Netty Worker IO Thread #2/INFO] [EaglercraftXBungee]: [/172.31.128.1:43678]: Connected via websocket
+[19:11:28] [Netty Worker IO Thread #2/INFO] [EaglercraftXBungee]: [/172.31.128.1:43678]: Origin header is null
+[19:11:28] [Netty Worker IO Thread #2/INFO] [EaglercraftXBungee]: [/172.31.128.1:43678]: Logged in as 'monkey_fucker69'
+[19:11:28] [Netty Worker IO Thread #2/INFO]: [/172.31.128.1:43678|monkey_fucker69] -> UpstreamBridge has connected
+[19:11:28] [Netty Worker IO Thread #2/INFO]: [monkey_fucker69|/172.31.128.1:43678] <-> ServerConnector [lobby] has connected
+[19:13:17] [Netty Worker IO Thread #2/WARN]: [/172.31.128.1:43678|monkey_fucker69] -> UpstreamBridge - NativeIoException: recvAddress(..) failed: Connection reset by peer
+[19:13:17] [Netty Worker IO Thread #2/INFO]: [monkey_fucker69] disconnected with: NativeIoException : recvAddress(..) failed: Connection reset by peer
+[19:13:17] [Netty Worker IO Thread #2/INFO]: [/172.31.128.1:43678|monkey_fucker69] <-> DownstreamBridge <-> [lobby] has disconnected
+[19:13:17] [Netty Worker IO Thread #2/INFO]: [/172.31.128.1:43678|monkey_fucker69] -> UpstreamBridge has disconnected
+[19:13:23] [Netty Worker IO Thread #3/INFO] [EaglercraftXBungee]: [/172.31.128.1:36880]: Connected via websocket
+[19:13:23] [Netty Worker IO Thread #3/INFO] [EaglercraftXBungee]: [/172.31.128.1:36880]: Origin header is null
+[19:13:24] [Netty Worker IO Thread #3/INFO] [EaglercraftXBungee]: [/172.31.128.1:36880]: Logged in as 'monkey_fucker69'
+[19:13:24] [Netty Worker IO Thread #3/INFO]: [/172.31.128.1:36880|monkey_fucker69] -> UpstreamBridge has connected
+[19:13:24] [Netty Worker IO Thread #3/INFO]: [monkey_fucker69|/172.31.128.1:36880] <-> ServerConnector [lobby] has connected

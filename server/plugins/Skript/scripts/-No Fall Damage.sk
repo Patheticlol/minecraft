@@ -1,0 +1,47 @@
+						#╔═════════════════════════════════════════════╗
+						#                 ✖ WELCOME ✖
+						#╚═════════════════════════════════════════════╝
+
+# Author: Andrea Di Marco
+# Version: No Fall Damage 3.0
+# Skype: adimarco@live.it
+
+# MultiWorld support:
+#    Permissions allow you to config No Fall Damage per world
+#    If you have pex you can add world permission in this way
+#    /Pex user USERNAME add skript.nofall WORLDNAME
+#    In this way USERNAME will avoid fall damage in WORLDNAME
+
+# Worldguard support
+#     Create a Worldguard region and name it "NoFallDamage".
+#     Players inside the region won't receive fall damage.
+#     You can have multiple regions just name it "NoFallDamage1", "NoFallDamage2" etc (Without "")
+
+
+#  Do you need more scripts? Check my page!
+#       http://www.spigotmc.org/resources/authors/andrea.12597/
+
+#  If this script helped you, review it 5 stars here! Thanks in advice!
+#       http://www.spigotmc.org/resources/no-fall-damage-skript.4416/
+
+
+
+#╔═════════════════════════════════════════════════════════════╗
+#               ✖ Section 2: Script code ✖
+#                    Do not edit this!
+#╚═════════════════════════════════════════════════════════════╝
+
+
+on damage:
+	damage cause is fall:
+		cancel the event
+			
+on damage:
+	damage cause is void:
+		victim has permission "skript.novoid":
+			cancel the event
+			
+on damage:
+	damage cause is fall:
+		"%region at victim%" contains "NoFallDamage":
+			cancel the event

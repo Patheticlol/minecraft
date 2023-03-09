@@ -1,0 +1,14 @@
+location: voidworld:72.996:72.531:0.549
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&5&lVanillaSMP'
+    height: 0.3
+  - content: '&e&lShop'
+    height: 0.3
+  actions: {}

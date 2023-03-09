@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1676477930222
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1677539531117
+  login: 1677539463092
+money: '0'
+last-account-name: azpen_trees
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -155.0659296111038
+  y: 75.0
+  z: -67.4459432385356
+  yaw: 93.27059936523438
+  pitch: 11.31658935546875
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: 3.096906953713243
+  y: 70.0
+  z: -0.4011389749139315
+  yaw: 45.985084533691406
+  pitch: -90.0
+homes:
+  home:
+    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world-name: world
+    x: -121.5
+    y: 57.0
+    z: 175.5
+    yaw: 176.4840087890625
+    pitch: 53.999996185302734
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520776
+  expire: 1675386120700

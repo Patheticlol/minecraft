@@ -1,0 +1,32 @@
+#Made By Dex
+
+variables:
+	{%player%.random} = true
+	
+options:
+	SoundR: BLOCK_NOTE_BLOCK_PLING
+	SoundR-Volume: 1
+	SoundR-Pitch: 2
+	SoundRF-Pitch: -5
+
+every 2.5 second in "world":
+ loop all players in "world":
+  if {%loop-player%.random} = true:
+   give loop-player a random element of all items
+   remove end portal frame from loop-player's inventory
+   remove spawn egg from loop-player's inventory
+   remove bedrock from loop-player's inventory
+   remove barrier from loop-player's inventory
+   remove command block from loop-player's inventory
+   remove spawner from loop-player's inventory
+   wait 1 tick
+ 
+command /toggle:
+  aliases: /te
+  trigger:
+    if {%player%.random} = true:
+      send action bar "&c&lDISABLED &dYou will no longer receive a random items every 2.5 seconds" to player
+      set {%player%.random} to false
+    else:
+      send action bar "&a&lENABLED &dYou will now receive a random item every 2.5 seconds" to player
+      set {%player%.random} to true

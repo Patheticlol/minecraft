@@ -1,0 +1,129 @@
+[January 29, 2023 00:43:40.565AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled true.
+[January 29, 2023 00:43:40.949AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled true.
+[January 29, 2023 00:43:41.250AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled true.
+[January 29, 2023 00:43:41.448AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled true.
+[January 29, 2023 00:43:41.548AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled true.
+[January 29, 2023 00:43:49.966AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:43:49.983AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:43:50.001AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:43:50.006AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:43:50.012AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:00.439AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:44:00.441AM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[January 29, 2023 00:44:00.444AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:44:00.445AM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[January 29, 2023 00:44:03.638AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:03.640AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:03.641AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:03.644AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:03.646AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:13.137AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:13.139AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:13.139AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:13.140AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:13.140AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:13.738AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:13.739AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:13.739AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:13.739AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:13.740AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:15.337AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:15.338AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:15.339AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:15.339AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:15.339AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:16.636AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:16.637AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:16.637AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:16.638AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:16.640AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:25.253AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:44:25.317AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:44:25.317AM GMT] PlayerUntagEvent was triggered on {player_name} with reason ENEMY_DEATH and expire set to true.
+[January 29, 2023 00:44:25.328AM GMT] PlayerUntagEvent was triggered on {player_name} with reason QUIT and expire set to false.
+[January 29, 2023 00:44:40.145AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:40.147AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:40.148AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:40.149AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:40.150AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:47.247AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:47.247AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:47.250AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:47.251AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:47.251AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:48.047AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:48.048AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:48.048AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:48.049AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:48.049AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:55.347AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:55.347AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:55.348AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:55.348AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:55.348AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:55.848AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:55.848AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:55.849AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:55.850AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:55.850AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:56.545AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:56.546AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:56.548AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:56.549AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:56.549AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:57.046AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:57.046AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:57.047AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:57.047AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:57.047AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:57.146AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:57.147AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:57.147AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:57.148AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:57.148AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:57.545AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:57.546AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:57.546AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:57.546AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:57.546AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:57.748AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:57.749AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:57.749AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:57.749AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:57.750AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:44:58.046AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:44:58.047AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:44:58.047AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:44:58.047AM GMT] PlayerReTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:44:58.048AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael, damager PLAYER Michael2 and cancelled false.
+[January 29, 2023 00:45:08.447AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:45:08.447AM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[January 29, 2023 00:45:08.449AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:45:08.449AM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[January 29, 2023 00:45:18.947AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:45:18.951AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:45:18.952AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:45:18.954AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:45:18.954AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael2, damager PLAYER Michael and cancelled false.
+[January 29, 2023 00:45:29.447AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:45:29.448AM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[January 29, 2023 00:45:29.450AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:45:29.450AM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[January 29, 2023 00:46:23.258AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:46:23.260AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:46:23.261AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:46:23.263AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:46:23.263AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael2, damager PLAYER Michael and cancelled false.
+[January 29, 2023 00:46:33.459AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:46:33.460AM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[January 29, 2023 00:46:33.461AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:46:33.462AM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[January 29, 2023 00:46:34.458AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled false.
+[January 29, 2023 00:46:34.459AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKER.
+[January 29, 2023 00:46:34.460AM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled false.
+[January 29, 2023 00:46:34.461AM GMT] PlayerTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER and reason ATTACKED.
+[January 29, 2023 00:46:34.462AM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER Michael2, damager PLAYER Michael and cancelled false.
+[January 29, 2023 00:46:44.461AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:46:44.462AM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.
+[January 29, 2023 00:46:44.464AM GMT] PlayerUntagEvent was triggered on {player_name} with reason {untag_reason} and expire set to {was_expire}.
+[January 29, 2023 00:46:44.464AM GMT] PlayerUntagEvent was triggered on {player_name} with reason EXPIRE and expire set to true.

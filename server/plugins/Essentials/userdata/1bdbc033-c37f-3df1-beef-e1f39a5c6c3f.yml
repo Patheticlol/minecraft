@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1676594330477
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1677076908677
+  login: 1677076887914
+money: '0'
+last-account-name: Opfire
+lastlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -5.6196088481083795
+  y: 103.0
+  z: 8.817932155188352
+  yaw: 122.10001373291016
+  pitch: 46.20000457763672
+logoutlocation:
+  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world-name: world
+  x: -19.70732624888888
+  y: 67.0
+  z: 179.69999998807907
+  yaw: -224.1660614013672
+  pitch: 19.79999542236328
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520933
+  expire: 1675386120700
+homes:
+  home:
+    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world-name: world
+    x: -6.8780268368071695
+    y: 70.0
+    z: -0.7109359809354532
+    yaw: 1.4339518547058105
+    pitch: 29.699995040893555

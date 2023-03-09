@@ -1,0 +1,56 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1674738487427
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1675100751501
+  login: 1675100698818
+money: '0'
+last-account-name: cocksucker3000
+lastlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: 1.5929109047846532
+  y: -214.27556380324177
+  z: 38.19931187886948
+  yaw: -0.300018310546875
+  pitch: 6.000000476837158
+logoutlocation:
+  world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+  world-name: world
+  x: 3.679480206743543
+  y: 73.0
+  z: -1.0539251464722175
+  yaw: -193.7161407470703
+  pitch: 18.150009155273438
+nickname: zane
+homes:
+  home:
+    world: 2c1fa41f-6d83-47b9-9aad-8af63a548133
+    world-name: world
+    x: 842.6013784579432
+    y: 62.0
+    z: 703.510963191316
+    yaw: -11.32757568359375
+    pitch: 5.999992370605469
+mail:
+- legacy: false
+  read: false
+  message: hi
+  sender-name: Michael
+  sender-uuid: 106e3fd9-b482-3bcb-b696-8bdf133c4f4c
+  timestamp: 1675382520788
+  expire: 1675386120700
