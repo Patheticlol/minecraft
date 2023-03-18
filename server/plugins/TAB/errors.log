@@ -6,3 +6,73 @@
 16.02.2023 - 19:29:11 - [TAB v3.2.4] Failed to schedule task due to java.lang.OutOfMemoryError: Java heap space. Threads created by TAB: 5
 16.02.2023 - 22:30:38 - [TAB v3.2.4] Failed to schedule task due to java.lang.OutOfMemoryError: Java heap space. Threads created by TAB: 5
 22.02.2023 - 17:50:45 - [TAB v3.2.4] Failed to schedule task due to java.lang.OutOfMemoryError: Java heap space. Threads created by TAB: 4
+10.03.2023 - 14:17:46 - [TAB v3.2.4] Tried to update score (808) without the existence of its requested objective 'TAB-YellowNumber' to player 808
+10.03.2023 - 14:17:46 - [TAB v3.2.4] Tried to unregister non-existing objective TAB-BelowName for player 808
+10.03.2023 - 14:17:46 - [TAB v3.2.4] Tried to update score (808) without the existence of its requested objective 'TAB-YellowNumber' to player 808
+11.03.2023 - 23:07:43 - [TAB v3.2.4] Tried to modify non-existing team 6azpen_treesA for player 808
+11.03.2023 - 23:07:43 - [TAB v3.2.4] Tried to modify non-existing team 6azpen_treesA for player azpen_trees
+13.03.2023 - 00:41:37 - [TAB v3.2.4] Feature HeaderFooter failed to process player joopy123
+13.03.2023 - 00:41:37 - java.lang.OutOfMemoryError: GC overhead limit exceeded
+13.03.2023 - 00:41:37 - [TAB v3.2.4] An error was thrown when executing task
+13.03.2023 - 00:41:37 - java.lang.NullPointerException: null
+13.03.2023 - 00:41:37 - 	at me.neznamy.tab.shared.features.HeaderFooter.refresh(HeaderFooter.java:87)
+13.03.2023 - 00:41:37 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:79)
+13.03.2023 - 00:41:37 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:71)
+13.03.2023 - 00:41:37 - 	at me.neznamy.tab.shared.CpuManager.lambda$runMeasuredTask$8(CpuManager.java:354)
+13.03.2023 - 00:41:37 - 	at me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:111)
+13.03.2023 - 00:41:37 - 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+13.03.2023 - 00:41:37 - 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+13.03.2023 - 00:41:37 - 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+13.03.2023 - 00:41:37 - 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+13.03.2023 - 00:41:37 - 	at java.lang.Thread.run(Thread.java:750)
+13.03.2023 - 00:41:37 - [TAB v3.2.4] An error was thrown when executing task
+13.03.2023 - 00:41:37 - java.lang.NullPointerException: null
+13.03.2023 - 00:41:37 - 	at me.neznamy.tab.shared.features.HeaderFooter.refresh(HeaderFooter.java:87)
+13.03.2023 - 00:41:37 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:79)
+13.03.2023 - 00:41:37 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:71)
+13.03.2023 - 00:41:37 - 	at me.neznamy.tab.shared.CpuManager.lambda$runMeasuredTask$8(CpuManager.java:354)
+13.03.2023 - 00:41:37 - 	at me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:111)
+13.03.2023 - 00:41:37 - 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+13.03.2023 - 00:41:37 - 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+13.03.2023 - 00:41:37 - 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+13.03.2023 - 00:41:37 - 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+13.03.2023 - 00:41:37 - 	at java.lang.Thread.run(Thread.java:750)
+13.03.2023 - 00:41:38 - [TAB v3.2.4] An error was thrown when executing task
+13.03.2023 - 00:41:38 - java.lang.NullPointerException: null
+13.03.2023 - 00:41:38 - 	at me.neznamy.tab.shared.features.HeaderFooter.refresh(HeaderFooter.java:87)
+13.03.2023 - 00:41:38 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:79)
+13.03.2023 - 00:41:38 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:71)
+13.03.2023 - 00:41:38 - 	at me.neznamy.tab.shared.CpuManager.lambda$runMeasuredTask$8(CpuManager.java:354)
+13.03.2023 - 00:41:38 - 	at me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:111)
+13.03.2023 - 00:41:38 - 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+13.03.2023 - 00:41:38 - 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+13.03.2023 - 00:41:38 - 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+13.03.2023 - 00:41:38 - 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+13.03.2023 - 00:41:38 - 	at java.lang.Thread.run(Thread.java:750)
+13.03.2023 - 00:41:39 - [TAB v3.2.4] An error was thrown when executing task
+13.03.2023 - 00:41:39 - java.lang.NullPointerException: null
+13.03.2023 - 00:41:39 - 	at me.neznamy.tab.shared.features.HeaderFooter.refresh(HeaderFooter.java:87)
+13.03.2023 - 00:41:39 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:79)
+13.03.2023 - 00:41:39 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:71)
+13.03.2023 - 00:41:39 - 	at me.neznamy.tab.shared.CpuManager.lambda$runMeasuredTask$8(CpuManager.java:354)
+13.03.2023 - 00:41:39 - 	at me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:111)
+13.03.2023 - 00:41:39 - 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+13.03.2023 - 00:41:39 - 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+13.03.2023 - 00:41:39 - 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+13.03.2023 - 00:41:39 - 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+13.03.2023 - 00:41:39 - 	at java.lang.Thread.run(Thread.java:750)
+13.03.2023 - 00:41:39 - [TAB v3.2.4] An error was thrown when executing task
+13.03.2023 - 00:41:39 - java.lang.NullPointerException: null
+13.03.2023 - 00:41:39 - 	at me.neznamy.tab.shared.features.HeaderFooter.refresh(HeaderFooter.java:87)
+13.03.2023 - 00:41:39 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:79)
+13.03.2023 - 00:41:39 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:71)
+13.03.2023 - 00:41:39 - 	at me.neznamy.tab.shared.CpuManager.lambda$runMeasuredTask$8(CpuManager.java:354)
+13.03.2023 - 00:41:39 - 	at me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:111)
+13.03.2023 - 00:41:39 - 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+13.03.2023 - 00:41:39 - 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+13.03.2023 - 00:41:39 - 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+13.03.2023 - 00:41:39 - 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+13.03.2023 - 00:41:39 - 	at java.lang.Thread.run(Thread.java:750)
+13.03.2023 - 21:46:52 - [TAB v3.2.4] Failed to schedule task due to java.lang.OutOfMemoryError: Java heap space. Threads created by TAB: 4
+15.03.2023 - 17:23:06 - [TAB v3.2.4] An error occurred when creating PacketPlayOutPlayerListHeaderFooter
+15.03.2023 - 17:23:59 - java.lang.OutOfMemoryError: Java heap space

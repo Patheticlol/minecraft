@@ -16,26 +16,26 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1676589122785
-  login: 1676588779388
+  logout: 1678678796682
+  login: 1678678783082
 money: '0'
 last-account-name: Weather_I_Guess
 lastlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: 2.693739364734543
-  y: 70.0
-  z: 3.3499495971893545
-  yaw: 91.4339599609375
-  pitch: -0.7500081062316895
+  x: -241.0
+  y: 63.0
+  z: 328.0
+  yaw: 0.0
+  pitch: 0.0
 logoutlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: 334.30000001192093
-  y: 92.0
-  z: -402.42501401899966
-  yaw: 12.098987579345703
-  pitch: 32.111351013183594
+  x: -240.5
+  y: 63.0
+  z: 328.5
+  yaw: 355.8150329589844
+  pitch: -7.37607479095459E-6
 mail:
 - legacy: false
   read: false
@@ -46,7 +46,7 @@ mail:
   expire: 1675386120700
 homes:
   home:
-    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world: 01cf1421-329a-422a-a272-58ae41bc5938
     world-name: world
     x: 331.2120690017291
     y: 85.0

@@ -115,8 +115,8 @@ bossbar:
     ServerInfo:
       style: "PROGRESS" # for 1.9+: PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
       color: "BLUE" # for 1.9+: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
-      progress: "50" # in %
-      text: "&c&lTime until Season 3"
+      progress: "45" # in %
+      text: "&c&lTime until Season 4"
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Scoreboard
 scoreboard:
@@ -150,7 +150,7 @@ scoreboard:
         - "* &bDate&7: &f%date%"
         - "* &bTime&7: &f%time%"
         - " "
-        - "&6Season: &b2Ⅱ V.1.0"
+        - "&6Season: &c3Ⅲ V.1.0"
     scoreboard1:
       title: "&c&lSPMS Minecraft Server"
       lines:
@@ -166,7 +166,7 @@ scoreboard:
         - "* &bDate&7: &f%date%"
         - "* &bTime&7: &f%time%"
         - " "
-        - "&6Season: &b2Ⅱ V.1.0"
+        - "&6Season: &c3Ⅲ V.1.0"
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Ping-Spoof
 ping-spoof:

@@ -16,21 +16,21 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1676559425516
-  login: 1676662101804
+  logout: 1678889280107
+  login: 1678889102322
 money: '0'
 last-account-name: moo
 logoutlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: -127.02440616872103
-  y: 67.0
-  z: 184.86757974032912
-  yaw: -285.56524658203125
-  pitch: 16.118093490600586
+  x: -232.5437562582288
+  y: 72.0
+  z: 278.8803830509686
+  yaw: -217.23948669433594
+  pitch: -24.920684814453125
 homes:
   home:
-    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world: 01cf1421-329a-422a-a272-58ae41bc5938
     world-name: world
     x: 641.446636370033
     y: 113.0
@@ -38,13 +38,13 @@ homes:
     yaw: -1.615064263343811
     pitch: 34.649993896484375
 lastlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: 3.9313722905939956
-  y: 102.0
-  z: 0.30000001192092884
-  yaw: 54.11026382446289
-  pitch: 9.150009155273438
+  x: -241.0
+  y: 63.0
+  z: 328.0
+  yaw: 0.0
+  pitch: 0.0
 mail:
 - legacy: false
   read: false

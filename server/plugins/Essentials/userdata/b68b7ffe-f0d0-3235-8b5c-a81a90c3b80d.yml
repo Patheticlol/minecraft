@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1678407512082
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1678407515783
+  login: 1678407448815
+money: '0'
+last-account-name: Eighto
+lastlocation:
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
+  world-name: world
+  x: 4402.014796841544
+  y: 66.0
+  z: -4329.7666883099655
+  yaw: 135.90008544921875
+  pitch: 7.500001907348633
+homes:
+  home:
+    world: 01cf1421-329a-422a-a272-58ae41bc5938
+    world-name: world
+    x: 4549.5
+    y: 51.0
+    z: -4186.5
+    yaw: -123.907470703125
+    pitch: 22.949993133544922
+logoutlocation:
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
+  world-name: world
+  x: 4549.5
+  y: 51.0
+  z: -4186.5
+  yaw: -123.907470703125
+  pitch: 22.949993133544922

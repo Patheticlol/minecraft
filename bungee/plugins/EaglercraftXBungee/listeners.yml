@@ -10,7 +10,7 @@ listener_01:
   redirect_legacy_clients_to: 'null'
   server_icon: server-icon.png
   server_motd:
-  - '&c&lOfficial &nSPMS&r &a&o&lMinecraft &e&lServer...&4                     &b&l(Season 2Ⅱ) &4&l&mCan you not block this'
+  - '&c&lOfficial &nSPMS&r &a&o&lMinecraft &e&lServer...&4                     &b&l(Season 3Ⅲ) &4&l&mNEW SEASON'
   allow_motd: true
   allow_query: true
   request_motd_cache:

@@ -1,0 +1,3 @@
+[March 17, 2023 19:18:42.986PM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKER, and cancelled true.
+[March 17, 2023 19:18:42.988PM GMT] PlayerPreTagEvent was triggered on {player_name} by {enemy_name} with type PLAYER, reason ATTACKED, and cancelled true.
+[March 17, 2023 19:18:42.989PM GMT] EntityDamageByEntityEvent was triggered by damaged PLAYER joopy123, damager PRIMED_TNT Block of TNT and cancelled false.

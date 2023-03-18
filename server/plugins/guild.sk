@@ -1,0 +1,1278 @@
+options:
+
+	perms-msg:&7You don't have permission to do the command.
+
+	prefix: &b[&aGuild&b]
+	
+	times: 30
+	
+	formatGuildChatSpy: &8[&6Spy&8] &8[&a%{_guild}%&8] &e%player% &f»&e
+
+	formatGuildChatLeader: &4Leader %player% &8»&b
+
+	formatGuildChatMod: &cModerator %player% &8»&b
+
+	formatGuildChatMember: &bMember %player% &8»&b
+
+	Enable: &aEnable
+
+	Disable: &cDisable
+
+
+# LIST PERMISSION (guild.* to enable all permission)
+# 1) guild.create - access command /guild create 
+# 2) guild.delete - access command /guild delete
+# 3) guild.join - access command /guild join
+# 4) guild.leave - access command /guild leave
+# 5) guild.invite - access command /guild invite
+# 6) guild.accept - access command /guild accept
+# 7) guild.decline - access command /guild decline
+# 8) guild.invite - access command /guild invite
+# 9) guild.home.set - access command /guild sethome 
+# 10) guild.home.teleport - access command /guild delete
+# 11) guild.promote - access command /guild promote
+# 12) guild.demote - access command /guild demote
+# 13) guild.list - access command /guild list 
+# 14) guild.info - access command /guild info
+# 15) guild.admin - access command /guild chatspy
+# 16) guild.chat - access command /guild chat
+
+command /guild [<text>] [<text>]:
+	aliases: g
+	trigger:
+		if arg-1 is set:
+			if arg-1 is "create":
+				if player has permission "guild.create":
+					if {guildHas::%player%} is not set:
+						if arg-2 is set:
+							if {guildList::*} contains arg-2:
+								send "{@prefix} &7The &e%arg-2% is already exist." to player
+								stop
+							else if arg-2 contains "&":
+								send "{@prefix} &7You can't use '&' in your guild name." to player
+								stop
+							else:
+								set {guildLeader::%player%} to player
+								set {guildDateCreate::%arg-2%} to now
+								add arg-2 to {guildList::*}
+								set {guildName::%arg-2%} to player
+								set {guildName::%player%} to arg-2
+								set {guildDescription::%player%} to "&fNo Description"
+								set {guildHas::%player%} to true
+								set {guildWarWin::%{guildName::%player%}%} to 0
+								send "{@prefix} &7Successfully create guild with name &e%arg-2%." to player
+						else:
+							send "{@prefix} &7Please input the guild's name." to player
+					else if {guildHas::%player%} is set:
+						send "{@prefix} &7You already have guild." to player
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+			else if arg-1 is "delete":
+				if player has permission "guild.delete":
+					if {guildHas::%player%} is set:
+						if {guildLeader::%player%} = "%player%":
+							if {guildList::*} contains {guildName::%player%}:
+								guildDeleteConfirm(player, {guildName::%player%})
+							else:
+								send "{@prefix} &e%arg-2% &7doesn't exist." to player
+						else:
+							send "{@prefix} &7You are not a leader in your guild." to player
+					else:
+						send "{@prefix} &7You don't have guild." to player
+				else:
+					send "{@prefix} &7You don't have permission."
+
+			else if arg-1 is "join":
+				if player has permission "guild.join":
+					if {guildHas::%player%} is set:
+						send "{@prefix} &7You already have guild." to player
+						stop
+					if arg-2 is set:
+						if {guildList::*} contains arg-2:
+							if {guildStatus::%{guildName::%arg-2%}%} is set:
+								send "{@prefix} &7You can't join private guild." to player
+								stop
+							if {guildJoin::%player%::%{guildName::%arg-2%}%} is not set:
+								if {guildName::%arg-2%} is online:
+									send "&6[+]--------------------------[+]" to {guildName::%arg-2%}
+									send "" to {guildName::%arg-2%}
+									send "  &e%player% &7wants to join your guild." to {guildName::%arg-2%}
+									send "" to {guildName::%arg-2%}
+									send formatted "  <tooltip:&aClick to accept><run command:/g accept %player%>&2[&aAccept&2]<reset>  <tooltip:&cClick to decline><run command:/g decline %player%>&4[&cDecline&4]<reset>" to {guildName::%arg-2%}
+									send "" to {guildName::%arg-2%}
+									send "&6[+]--------------------------[+]" to {guildName::%arg-2%}
+									send "{@prefix} &7You have sent your join request to &e%arg-2%." to player
+									set {guildJoin::%player%::%{guildName::%arg-2%}%} to true
+									wait {@times} seconds
+									if {guildJoin::%player%::%{guildName::%arg-2%}%} is set:
+										delete {guildJoin::%player%::%{guildName::%arg-2%}%}
+										send "{@prefix} &7Your join request was expired." to player
+								else:
+									send "{@prefix} &7The Leader of the guild is not online." to player
+							else:
+								send "{@prefix} &7You already send your request to their guild's Leader" to player
+						else:
+							send "{@prefix} &7Guild with name &e%arg-2% &7doesn't exist." to player
+					else:
+						send "{@prefix} &7Please input the guild's name" to player
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+			else if arg-1 is "leave":
+				if player has permission "guild.leave":
+					if {guildHas::%player%} is set:
+						if {guildLeader::%player%} != "%player%":
+							if arg-2 is set:
+								if {guildList::*} contains arg-2:
+									if {guild::%{guildName::%arg-2%}%::*} contains "%player%":
+										send "{@prefix} &eYou leave from the guild" to player
+										remove player from {guild::%{guildName::%arg-2%}%::*}
+										send "{@prefix} &e%player%&7 leave the guild." to {guild::%player%::*}, {guildMod::%player%::*} and {guildLeader::%player%}
+										loop {guild::%{guildName::%arg-2%}%::*}:
+											delete {guild::%loop-value%::*}
+											delete {guildMod::%loop-value%::*}
+											set {guild::%loop-value%::*} to {guild::%{guildName::%arg-2%}%::*}
+											set {guildMod::%loop-value%::*} to {guildMod::%{guildName::%arg-2%}%::*}
+										loop {guildMod::%{guildName::%arg-2%}%::*}:
+											delete {guild::%loop-value%::*}
+											delete {guildMod::%loop-value%::*}
+											set {guild::%loop-value%::*} to {guild::%{guildName::%arg-2%}%::*}
+											set {guildMod::%loop-value%::*} to {guildMod::%{guildName::%arg-2%}%::*}
+										delete {guildHas::%player%}
+										delete {guildLeader::%player%}
+										delete {guild::%player%::*}
+										delete {guildMod::%player%::*}
+										delete {gchat::%player%}
+										delete {guildIcon::%player%}
+										delete {guildStatus::%player%}
+										delete {guildName::%player%}
+										delete {guildDescription::%player%}
+									else if {guildMod::%{guildName::%arg-2%}%::*} contains "%player%":
+										send "{@prefix} &eYou leave from the guild" to player
+										remove player from {guildMod::%{guildName::%arg-2%}%::*}
+										send "{@prefix} &e%player%&7 leave the guild." to {guild::%player%::*}, {guildMod::%player%::*} and {guildLeader::%player%}
+										loop {guild::%{guildName::%arg-2%}%::*}:
+											delete {guild::%loop-value%::*}
+											delete {guildMod::%loop-value%::*}
+											set {guild::%loop-value%::*} to {guild::%{guildName::%arg-2%}%::*}
+											set {guildMod::%loop-value%::*} to {guildMod::%{guildName::%arg-2%}%::*}
+										loop {guildMod::%{guildName::%arg-2%}%::*}:
+											delete {guild::%loop-value%::*}
+											delete {guildMod::%loop-value%::*}
+											set {guild::%loop-value%::*} to {guild::%{guildName::%arg-2%}%::*}
+											set {guildMod::%loop-value%::*} to {guildMod::%{guildName::%arg-2%}%::*}
+										delete {guildHas::%player%}
+										delete {guildLeader::%player%}
+										delete {guild::%player%::*}
+										delete {guildMod::%player%::*}
+										delete {gchat::%player%}
+										delete {guildIcon::%player%}
+										delete {guildStatus::%player%}
+										delete {guildName::%player%}
+										delete {guildDescription::%player%}
+									else:
+										send "{@prefix} &e%arg-2% &7is not your guild." to player
+								else:
+									send "{@prefix} &7There's not a guild with name &e%arg-2%." to player
+							else:
+								send "{@prefix} &7Please input the guild's name." to player
+						else:
+							send "{@prefix} &7You can't leave your own guild." to player
+					else:
+						send "{@prefix} &7You don't have guild." to player
+				else:
+					send "{@prefix} &7You don't have permission."
+
+
+			else if arg-1 is "invite":
+				if player has permission "guild.invite":
+					if {guildHas::%player%} is set:
+						if arg-2 is set:
+							set {_p} to arg-2 parsed as offline players
+							set {_guild} to {guildName::%player%}
+							if {_p} is online:
+								if {guildLeader::%player%} = "%player%":
+									if {guildHas::%{_p}%} is not set:
+										if {_p} is online:
+											if {guildInvite::%player%::%{_p}%} is set:
+												send "{@prefix} &7You have invited the player." to player
+												stop
+											set {guildInvite::%player%::%{_p}%} to true
+											send "{@prefix} &7You send invite request to &e%{_p}%." to player
+											send "{@prefix} &e%{_p}% &7has &e{@times} seconds &7to &eaccept&7/&edecline &7it." to player
+											send "&6[+]--------------------------[+]" to {_p}
+											send "" to {_p}
+											send "  &e%player% &7invite you to join their guild." to {_p}
+											send "" to {_p}
+											send formatted "  <tooltip:&aClick to accept><run command:/g accept %{guildName::%player%}%>&2[&aAccept&2]<reset>  <tooltip:&cClick to decline><run command:/g decline %{guildName::%player%}%>&4[&cDecline&4]<reset>" to {_p}
+											send "" to {_p}
+											send "&6[+]--------------------------[+]" to {_p}
+											wait {@times} seconds
+											if {guildInvite::%player%::%{_p}%} is set:
+												send "{@prefix} &7Your invite request from &e%{_guild}% &7was expired." to {_p}
+												delete {guildInvite::%player%::%{_p}%}
+												stop
+										else:
+											send "{@prefix} &e%arg-2% &7doesn't exist." to player
+									else:
+										send "{@prefix} &e%arg-2%&7 already has guild." to player
+								else if {guildMod::%player%::*} contains "%player%":
+									if {guildHas::%{_p}%} is not set:
+										if {_p} is online:
+											if {guild::%player%::*} contains {_p}:
+												send "{@prefix} &e%arg-2% &7already has guild."
+												stop
+											if {guildInvite::%player%::%{_p}%} is set:
+												send "{@prefix} &7You have invited the player." to player
+												stop
+											set {guildInvite::%player%::%{_p}%} to true
+											send "{@prefix} &7You send invite request to &e%{_p}%." to player
+											send "{@prefix} &e%{_p}% &7has &e{@times} seconds &7to &eaccept&7/&edecline &7it." to player
+											send "&6[+]--------------------------[+]" to {_p}
+											send "" to {_p}
+											send "  &e%player% &7invite you to join their guild." to {_p}
+											send "" to {_p}
+											send formatted "  <tooltip:&aClick to accept><run command:/g accept %{guildName::%player%}%>&2[&aAccept&2]<reset>  <tooltip:&cClick to decline><run command:/g decline %{guildName::%player%}%>&4[&cDecline&4]<reset>" to {_p}
+											send "" to {_p}
+											send "&6[+]--------------------------[+]" to {_p}
+											wait {@times} seconds
+											if {guildInvite::%player%::%{_p}%} is set:
+												send "{@prefix} &7Your invite request from &e%{guildName::%player%}% &7was expired." to {_p}
+												delete {guildInvite::%player%::%{_p}%}
+												stop
+										else:
+											send "{@prefix} &e%arg-2% &7doesn't exist." to player
+									else:
+										send "{@prefix} &e%arg-2% &7already has guild." to player
+								else:
+									send "{@prefix} &7You are not a moderator in your guild." to player
+							else:
+								send "{@prefix} &e%arg-2% &7doesn't exist." to player
+						else:
+							send "{@prefix} &7Please input the player's name." to player
+					else:
+						send "{@prefix} &7You don't have guild." to player
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+
+			else if arg-1 is "accept":
+				if player has permission "guild.accept":
+					if {guildHas::%player%} is set:
+						if {guildLeader::%player%} = "%player%":
+							if arg-2 is set:
+								set {_p} to arg-2 parsed as offline players
+								if {_p} is offline:
+									send "{@prefix} &e%arg-2% &7doesn't exist." to player
+								else if {guildJoin::%{_p}%::%player%} is set:
+									delete {guildJoin::%{_p}%::%player%}
+									send "{@prefix} &7Successfully accept join request from &e%{_p}%" to player
+									send "{@prefix} &7Your request have accepted by &e%player%" to {_p}
+									send "{@prefix} &e%{_p}% &7join the guild." to {guild::%{guildName::%arg-2%}%::*}, {guildMod::%{guildName::%arg-2%}%::*} and {guildLeader::%{guildName::%arg-2%}%}
+									add {_p} to {guild::%player%::*}
+									set {guildHas::%{_p}%} to true
+									set {guildName::%{_p}%} to {guildName::%player%}
+									set {guildDescription::%{_p}%} to {guildDescription::%player%}
+									set {guildLeader::%{_p}%} to {guildLeader::%player%}
+									set {guild::%{_p}%::*} to {guild::%player%::*}
+									set {guildMod::%{_p}%::*} to {guildMod::%player%::*}
+									loop {guild::%player%::*}:
+										delete {guild::%loop-value%::*}
+										set {guild::%loop-value%::*} to {guild::%player%::*}
+									loop {guildMod::%player%::*}:
+										delete {guild::%loop-value%::*}
+										set {guild::%loop-value%::*} to {guild::%player%::*}
+								else:
+									send "{@prefix} &7You don't have join request from&e %arg-2%&7." to player
+							else:
+								send "{@prefix} &7Please input the player's name." to player
+						else:
+							send "{@prefix} &7You are not a leader in your guild." to player
+					else: # if the player doesn't have guild, then accept the invite request from the other guild's leader.
+						if arg-2 is set:
+							if {guildList::*} contains arg-2:
+								if {guildInvite::%{guildName::%arg-2%}%::%player%} is set:
+									delete {guildInvite::%{guildName::%arg-2%}%::%player%}
+									set {guildHas::%player%} to true
+									add player to {guild::%{guildName::%arg-2%}%::*}
+									set {guild::%player%::*} to {guild::%{guildName::%arg-2%}%::*}
+									set {guildName::%player%} to {guildName::%{guildName::%arg-2%}%}
+									set {guildDescription::%player%} to {guildDescription::%{guildName::%arg-2%}%}
+									set {guildMod::%player%::*} to {guildMod::%{guildName::%arg-2%}%::*}
+									set {guildLeader::%player%} to {guildLeader::%{guildName::%arg-2%}%}
+									set {guildIcon::%player%} to {guildIcon::%{guildName::%arg-2%}%}
+									send "{@prefix} &7Successfully accept invite request from &e%{_p}%" to {_p}
+									send "{@prefix} &7Your invite request have accepted by &e%player%" to {guildName::%arg-2%}
+									loop {guild::%{guildName::%arg-2%}%::*}:
+										delete {guild::%loop-value%::*}
+										set {guild::%loop-value%::*} to {guild::%{guildName::%arg-2%}%::*}
+									loop {guildMod::%{guildName::%arg-2%}%::*}:
+										delete {guild::%loop-value%::*}
+										set {guild::%loop-value%::*} to {guild::%{guildName::%arg-2%}%::*}
+									send "{@prefix} &e%player% &7join the guild." to {guild::%{guildName::%arg-2%}%::*}, {guildMod::%{guildName::%arg-2%}%::*} and {guildLeader::%{guildName::%arg-2%}%}
+									stop
+								else if size of {guildMod::%{guildName::%arg-2%}%::*} >= 1:
+									loop {guildMod::%{guildName::%arg-2%}%::*}:
+										if {guildInvite::%loop-value%::%player%} is set:
+											delete {guildInvite::%loop-value%::%player%}
+											set {guildHas::%player%} to true
+											add player to {guild::%{guildName::%arg-2%}%::*}
+											set {guild::%player%::*} to {guild::%{guildName::%arg-2%}%::*}
+											set {guildName::%player%} to {guildName::%{guildName::%arg-2%}%}
+											set {guildDescription::%player%} to {guildDescription::%{guildName::%arg-2%}%}
+											set {guildMod::%player%::*} to {guildMod::%{guildName::%arg-2%}%::*}
+											set {guildLeader::%player%} to {guildLeader::%{guildName::%arg-2%}%}
+											send "{@prefix} &7Successfully accept invite request from &e%{_p}%" to player
+											send "{@prefix} &7Your invite request have accepted by &e%player%" to loop-value
+											loop {guild::%{guildName::%arg-2%}%::*}:
+												delete {guild::%loop-value-2%::*}
+												set {guild::%loop-value-2%::*} to {guild::%{guildName::%arg-2%}%::*}
+											loop {guildMod::%{guildName::%arg-2%}%::*}:
+												delete {guild::%loop-value-2%::*}
+												set {guild::%loop-value-2%::*} to {guild::%{guildName::%arg-2%}%::*}
+											send "{@prefix} &e%player% &7join the guild." to {guild::%{guildName::%arg-2%}%::*}, {guildMod::%{guildName::%arg-2%}%::*} and {guildLeader::%{guildName::%arg-2%}%}
+								else:
+									send "{@prefix} &7You don't have invite request from guild &e%arg-2%." to player
+							else:
+								send "{@prefix} &e%arg-2% &7doesn't exist." to player					
+						else:
+							send "{@prefix} &7Please input the guild's name." to player
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+			else if arg-1 is "decline":
+				if player has permission "guild.decline":
+					if {guildHas::%player%} is set:
+						if {guildLeader::%player%} = "%player%":
+							if arg-2 is set:
+								set {_p} to arg-2 parsed as offline players
+								if {guild::%player%::*} or {guildLeader::%player%} or {guildMod::%player%::*} contains {_p}:
+									send "{@prefix} &e%{_p}%&7 is already in your guild" to player
+								else:
+									if {guildHas::%{_p}%} is not set:
+										if {guildJoin::%{_p}%::%player%} is set:
+											delete {guildJoin::%{_p}%::%player%}
+											send "{@prefix} &7You have declined join request from player &e%{_p}%." to player
+											send "{@prefix} &7Your join request have declined by &e%player%." to {_p}
+										else:
+											send "{@prefix} &7You don't have join request from player &e%arg-2%." to player
+									else:
+										send "{@prefix} &e%arg-2%&7 already has guild." to player
+							else:
+								send "{@prefix} &7You must enter the player name." to player
+						else if size of {guildMod::%{guildName::%arg-2%}%::*} >= 1:
+							if arg-2 is set:
+								set {_p} to arg-2 parsed as offline players
+								if {guild::%player%::*} or {guildLeader::%player%} or {guildMod::%player%::*} contains {_p}:
+									send "{@prefix} &e%{_p}%&7 is already in your guild" to player
+									stop
+								loop {guildMod::%{guildName::%arg-2%}%::*}:
+									if {guildInvite::%loop-value%::%player%} is set:
+										delete {guildInvite::%loop-value%::%player%}
+										send "{@prefix} &7Decline join request from guild &e%arg-2%." to loop-value
+										stop loop
+										send "{@prefix} &7Your join request have declined by &e%player%." to player
+										stop
+						else:
+							send "{@prefix} &7You are not a Moderator in the guild." to player
+					else:
+						if arg-2 is set:
+							set {_p} to arg-2
+							if {guildInvite::%{guildName::%{_p}%}%::%player%} is set:
+								delete {guildInvite::%{guildName::%{_p}%}%::%player%}
+								send "{@prefix} &7Decline invite request from guild &e%arg-2%&7." to player
+								send "{@prefix} &7Your invite request have declined by &e%player%&7." to {guildName::%{_p}%}
+								stop
+							else if size of {guildMod::%{guildName::%arg-2%}%::*} >= 1:
+								loop {guildMod::%{guildName::%arg-2%}%::*}:
+									if {guildInvite::%loop-value%::%player%} is set:
+										delete {guildInvite::%loop-value%::%player%}
+										send "{@prefix} &7Your invite request have declined by &e%player%." to loop-value
+										stop loop
+										send "{@prefix} &7Decline invite request from guild &e%arg-2%." to player
+										stop
+							else:
+								send "{@prefix} &7You don't have invite request from guild &e%arg-2%."
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+			else if arg-1 is "kick":
+				if player has permission "guild.kick":
+					if {guildHas::%player%} is set:
+						if arg-2 is set:
+							set {_p} to arg-2 parsed as offline players
+							if {_p} is offline:
+								send "{@prefix} &e%{_p}% &7is offline." to player
+								stop
+							else if {guildHas::%{_p}%} is set:
+								if {guildLeader::%player%} = "%player%":
+									if {guildLeader::%player%} != "%{_p}%":
+										send "{@prefix} &7You kick player &e%arg-2% &7from your guild." to player
+										send "{@prefix} &e%player% &7kicked &e%{_p}% &7from the guild." to {guildMod::%player%::*}, {guild::%player%::*} and {guildLeader::%player%}
+										remove {_p} from {guild::%player%::*}
+										remove {_p} from {guildMod::%player%::*}
+										delete {guildHas::%{_p}%}
+										delete {gchat::%{_p}%}
+										delete {guild::%{_p}%::*}
+										delete {guildMod::%{_p}%::*}
+										delete {guildLeader::%{_p}%}
+										delete {guildName::%{_p}%}
+										delete {guildDescription::%{_p}%}
+										delete {guildMod::%{_p}%}
+										delete {guildIcon::%{_p}%}
+										delete {guildStatus::%{_p}%}
+										loop {guild::%player%::*}:
+											delete {guild::%loop-value%::*}
+											delete {guildMod::%loop-value%::*}
+											set {guild::%loop-value%::*} to {guild::%player%::*}
+											set {guildMod::%loop-value%::*} to {guildMod::%player%::*}
+										loop {guildMod::%player%::*}:
+											delete {guild::%loop-value%::*}
+											delete {guildMod::%loop-value%::*}
+											set {guild::%loop-value%::*} to {guild::%player%::*}
+											set {guildMod::%loop-value%::*} to {guildMod::%player%::*}
+									else:
+										send "{@prefix} &7You can't kick a Leader of your guild" to player
+								else if {guildMod::%player%::*} contains "%player%":
+									if {guildLeader::%player%} != arg-2:
+										if {guildMod::%player%::*} contains "%{_p}%":
+											send "{@prefix} &7You can't kick a Moderator of your guild." to player
+											stop
+										send "{@prefix} &7You kick player &e%arg-2% &7from your guild." to player
+										send "{@prefix} &e%player% &7kicked &e%{_p}% &7from the guild." to {guildMod::%player%::*}, {guild::%player%::*} and {guildLeader::%player%}
+										remove {_p} from {guild::%player%::*}
+										delete {guildHas::%{_p}%}
+										delete {gchat::%{_p}%}
+										delete {guild::%{_p}%::*}
+										delete {guildMod::%{_p}%::*}
+										delete {guildLeader::%{_p}%}
+										delete {guildName::%{_p}%}
+										delete {guildDescription::%{_p}%}
+										delete {guildMod::%{_p}%}
+										delete {guildIcon::%{_p}%}
+										delete {guildStatus::%{_p}%}
+										loop {guild::%player%::*}:
+											delete {guild::%loop-value%::*}
+											set {guild::%loop-value%::*} to {guild::%player%::*}
+										loop {guildMod::%player%::*}:
+											delete {guild::%loop-value%::*}
+											set {guild::%loop-value%::*} to {guild::%player%::*}
+										delete {guild::%{guildLeader::%player%}%::*}
+										set {guild::%{guildLeader::%player%}%::*} to {guild::%player%::*}
+
+									else:
+										send "{@prefix} &7You can't kick a Leader of your guild." to player
+								else:
+									send "{@prefix} &7Your are not a moderator in your guild." to player
+							else:
+								send "{@prefix} &e%{_p}% &7doesn't have guild." to player
+						else:
+							send "{@prefix} &7Please input the player's name."
+					else:
+						send "{@prefix} &7You don't have guild." to player
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+#			WAR SYSTEM
+
+			else if arg-1 is "topwar":
+				if player has permission "guild.war.top":
+					if {guildList::*} is set:
+						loop {guildWarWin::*}:
+							add 1 to {_size}
+							if {_low.to.high.list::%loop-value%} is not set:
+								set {_low.to.high.list::%loop-value%} to loop-index
+							else:
+								set {_n} to 0
+								loop {_size} times:
+									set {_n} to {_n}+1
+									{_low.to.high.list::%loop-value-1%.%{_n}%} is not set
+									set {_low.to.high.list::%loop-value-1%.%{_n}%} to loop-index
+									stop loop
+						wait 1 tick
+						set {_n} to size of {_low.to.high.list::*}
+						loop {_low.to.high.list::*}:
+							set {_high.to.low.list::%{_n}%} to loop-value
+							set {_n} to {_n}-1
+						wait 1 tick
+						send "&7&m-----------&8< &6Top 5 Guild War &8>&7&m-----------"
+						loop {_high.to.low.list::*}:
+							add 1 to {_top}
+							set {_guild} to loop-value
+							set {_guildWin} to "%{guildWarWin::%{_guild}%}%"
+							replace all "<none>" with "0" in {_guildWin}
+							send "  &a%{_top}% &8|| &6%{_guild}% &8» &e%{_guildWin}% &ewin"
+							if {_top} >= 5:
+								stop loop
+						send "&7&m--------------------------------------"
+					else:
+						send "{@prefix} There are not guild here." to player
+				else:
+					send "{@prefix} &7You don't have permission."
+
+			else if arg-1 is "warinvite":
+				if player has permission "guild.war.invite":
+					if {guildHas::%player%} is set:
+						if {guildLeader::%player%} = "%player%":
+							if arg-2 is set:
+								set {_p} to {guildName::%arg-2%} parsed as offline player
+								if {guildList::*} contains arg-2:
+									if {guildName::%player%} != arg-2:
+										if {guildName::%arg-2%} is online:
+											if {guildWar::%player%::%{guildName::%arg-2%}%} is not set:
+												set {guildWar::%player%::%{guildName::%arg-2%}%} to true
+												send "{@prefix} &7You are invited to start guild war with guild &e%{guildName::%player%}%&7, type &e/guild warAccept %{guildName::%player%}% or &e/guild warDecline %{guildName::%player%}%&7." to {guildName::%arg-2%}
+												send "{@prefix} &7You have &e{@times} seconds &7to accept/decline it." to {guildName::%arg-2%}
+												send "{@prefix} &7Successfully invite guild &e%arg-2% &7 to join your guild war&7." to player
+												send "{@prefix} &7They have time &e{@times} seconds &7to accept/decline it." to player
+												wait {@times} seconds
+												if {guildWar::%player%::%{guildName::%arg-2%}%} is set:
+													delete {guildWar::%player%::%{guildName::%arg-2%}%}
+													send "{@prefix} &7Time's up...." to {guildName::%arg-2%}
+											else:
+												send "{@prefix} &7You already sent the war request to &e%arg-2% &7." to player
+										else:
+											send "{@prefix} &7Leader of &e%arg-2% &7is not online." to player
+									else:
+										send "{@prefix} &7You can't invite your own guild to declarate war." to player
+								else:
+									send "{@prefix} &7Guild with name &e%arg-2% &7doesn't exist." to player
+							else:
+								send "{@prefix} &7Please input the guild's name." to player
+						else:
+							send "{@prefix} &7You are not a leader in your guild." to player
+					else:
+						send "{@prefix} &7You don't have guild." to player
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+			else if arg-1 is "waraccept":
+				if player has permission "guild.war.accept":
+					if {guildHas::%player%} is set:
+						if {guildLeader::%player%} = "%player%":
+							if arg-2 is set:
+								if {guildList::*} contains arg-2:
+									if {guildWar::%{guildName::%arg-2%}%::%player%} is set:
+										if {guildName::%arg-2%} is online:
+											delete {guildWar::%{guildName::%arg-2%}%::%player%}
+											set {_guild} to {guildName::%player%}
+											send "{@prefix} &7Guild &e%{_guild}% &7accept your guild war request, be ready!." to {guild::%{guildName::%arg-2%}%::*}, {guildMod::%{guildName::%arg-2%}%::*} and {guildLeader::%{guildName::%arg-2%}%}
+											wait 1 second
+											send "{@prefix} &7Guild war with &e%{_guild}%&7 will start in &e{@times} seconds&7." to {guild::%{guildName::%arg-2%}%::*},{guildMod::%{guildName::%arg-2%}%::*} and {guildLeader::%{guildName::%arg-2%}%}
+											send "{@prefix} &7Guild war with &e%arg-2%&7 will start in &e{@times} seconds&7." to {guild::%player%::*}, {guildMod::%player%::*} and {guildLeader::%player%}
+											wait 15 seconds
+											send title "&8[&6!&8] &6Guild war" with subtitle "&ewill start in 3 seconds" to {guild::%player%::*}, {guildMod::%player%::*}, {guildLeader::%player%}, {guildLeader::%{guildName::%arg-2%}%}, {guild::%{guildName::%arg-2%}%::*} and {guildMod::%{guildName::%arg-2%}%::*}
+											wait 1 second
+											send title "&8[&6!&8] &6Guild war" with subtitle "&ewill start in 2 seconds" to {guild::%player%::*}, {guildMod::%player%::*}, {guildLeader::%player%}, {guildLeader::%{guildName::%arg-2%}%}, {guild::%{guildName::%arg-2%}%::*} and {guildMod::%{guildName::%arg-2%}%::*}
+											wait 1 second
+											send title "&8[&6!&8] &6Guild war" with subtitle "&ewill start in 1 second" to {guild::%player%::*}, {guildMod::%player%::*}, {guildLeader::%player%}, {guildLeader::%{guildName::%arg-2%}%}, {guild::%{guildName::%arg-2%}%::*} and {guildMod::%{guildName::%arg-2%}%::*}
+											wait 0.5 seconds
+											send title "&8[&6!&8] &6Guild war" with subtitle "&6Start." to {guild::%player%::*}, {guildMod::%player%::*}, {guildLeader::%player%}, {guildLeader::%{guildName::%arg-2%}%}, {guild::%{guildName::%arg-2%}%::*} and {guildMod::%{guildName::%arg-2%}%::*}
+											wait 0.2 seconds
+											set {guildWar::%player%} to player
+											set {guildWar::%{guildName::%arg-2%}%} to {guildName::%arg-2%}
+											loop {guild::%player%::*}:
+												set {guildWar::%loop-value%} to {guildWar::%player%}
+											loop {guildMod::%player%::*}:
+												set {guildWar::%loop-value%} to {guildWar::%player%}
+											loop {guild::%{_p}%::*}:
+												set {guildWar::%loop-value%} to {guildWar::%{guildName::%arg-2%}%}
+											loop {guildMod::%{_p}%::*}:
+												set {guildWar::%loop-value%} to {guildWar::%{guildName::%arg-2%}%}
+											send "{@prefix} &7Protect your guild Leader from dies, if he dies the guild war will be over." to {guild::%player%::*} and {guildMod::%player%::*}
+											send "{@prefix} &7You have to survive until the enemy guild Leader dies." to player
+											send "{@prefix} &7You have to survive until the enemy guild Leader dies." to {guildName::%arg-2%}
+										else:
+											send "{@prefix} &7Leader of &e%arg-2%&7 is not online" to player
+									else:
+										send "{@prefix} &7You don't have war request from guild &e%arg-2%." to player
+								else:
+									send "{@prefix} &e%arg-2% &7doesn't exist." to player
+							else:
+								send "{@prefix} &7Please input the guild's name." to player
+						else:
+							send "{@prefix} &7You are not a leader in your guild." to player
+					else:
+						send "{@prefix} &7You don't have guild." to player
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+
+			else if arg-1 is "wardecline":
+				if player has permission "guild.war.decline":
+					if {guildHas::%player%} is set:
+						if {guildLeader::%player%} is set:
+							if arg-2 is set:
+								set {_p} to {guildName::%arg-2%} parsed as offline player
+								if {guildList::*} contains arg-2:
+									if {guildWar::%{guildName::%arg-2%}%::%player%} is set:
+										delete {guildWar::%{guildName::%arg-2%}%::%player%}
+										send "{@prefix} &7Your war request was denied." to {guildName::%arg-2%}
+										send "{@prefix} &7Successfully decline the war request from &e%arg-2% &7." to player
+									else:
+										send "{@prefix} &7You don't have war request from &e%arg-2%." to player
+								else:
+									send "{@prefix} &e%arg-2% &7doesn't exist." to player
+							else:
+								send "{@prefix} &7Please input the guild's name." to player
+						else:
+							send "{@prefix} &7You are not a leader in your guild." to player
+					else:
+						send "{@prefix} &7You don't have guild." to player
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+#			HOME SYSTEM
+			else if arg-1 is "sethome":
+				if player has permission "guild.home.set":
+					if {guildHas::%player%} is set:
+						if {guildLeader::%player%} = "%player%":
+							delete {guildHome::%player%}
+							set {guildHome::%player%} to player's location
+							send "{@prefix} &7Successfully set the guild's home to your location." to player
+							loop {guild::%player%::*}:
+								delete {guildHome::%loop-value%}
+								set {guildHome::%loop-value%} to player's location
+							loop {guildMod::%player%::*}:
+								delete {guildHome::%loop-value%}
+								set {guildHome::%loop-value%} to player's location
+						else:
+							send "{@prefix} &7You are not a Leader in your guild." to player
+					else:
+						send "{@prefix} &7You don't have guild." to player
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+
+			else if arg-1 is "tphome":
+				if player has permission "guild.home.teleport":
+					if {guildHome::%player%} is not set:
+						send "{@prefix} &7The home is not set yet." to player
+						stop
+					teleport player to {guildHome::%player%}
+					send "{@prefix} &7Teleport you to the home of your guild." to player
+
+
+			else if arg-1 is "chat":
+				if player has permission "guild.chat":
+					if {guildHas::%player%} is set:
+						if arg-2 is set:
+							set {_guild} to the first characters of {guildName::%player%}
+							send "{@formatGuildChatSpy} %arg-2%" to {guildChatSpy::*}
+							if {guildLeader::%player%} = "%player%":
+								send "{@prefix} {@formatGuildChatLeader} %arg-2%" to {guild::%player%::*}, {guildLeader::%player%} and {guildMod::%player%::*}
+								stop
+							else if "%{guildMod::%player%::*}%" contains "%player%":
+								send "{@prefix} {@formatGuildChatMod} %arg-2%" to {guild::%player%::*}, {guildLeader::%player%} and {guildMod::%player%::*}
+								stop
+							else if "%{guild::%player%::*}%" contains "%player%":
+								send "{@prefix} {@formatGuildChatMember} %arg-2%" to {guild::%player%::*}, {guildLeader::%player%} and {guildMod::%player%::*}
+								stop
+						else if arg-2 is not set:
+							if {gchat::%player%} is not set:
+								set {gchat::%player%} to true
+								send "{@prefix} &7Guild chat {@Enable}" to player
+							else:
+								delete {gchat::%player%}
+								send "{@prefix} &7Guild chat {@Disable}"
+					else:
+						send "{@prefix} &7You don't have guild."
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+
+			else if arg-1 is "manage":
+				if player has permission "guild.manage" or "guild.manage" or "*":
+					if {guildHas::%player%} is set:
+						if {guildLeader::%player%} = "%player%":
+							set metadata tag "guild_manage" of player to chest inventory with 5 rows named "&6Guild Mange."
+							set slot 11 of metadata tag "guild_manage" of player to diamond helmet named "&6Guild Name" with lore "&6Name: &e%{guildName::%player%}%" and "&aClick &7to change."
+							if {guildIcon::%player%} is not set:
+								set slot 13 of metadata tag "guild_manage" of player to grass block named "&6Guild Icon" with lore "&6icon: &fgrass block" and "&aClick &7to change."
+							else:
+								set slot 13 of metadata tag "guild_manage" of player to {guildIcon::%player%} named "&6Guild Icon" with lore "&6icon: %{guildIcon::%player%}%" and "&aClick &7to change."
+							set slot 15 of metadata tag "guild_manage" of player to diamond chestplate named "&6Promote player" with lore "" and "&aClick &7to use."
+							set slot 29 of metadata tag "guild_manage" of player to diamond leggings named "&6Guild Description" with lore "&6Description: %{guildDescription::%player%}%" and "&aClick &7to change."
+							if {guildStatus::%player%} is not set:
+								set slot 31 of metadata tag "guild_manage" of player to chest named "&6Guild Status" with lore "" and "&6Status: &a&lPublic" and "&6Description: can join your guild."
+							else:
+								set slot 31 of metadata tag "guild_manage" of player to ender chest named "&6Guild Status" with lore "" and "&6Status: &c&lPrivate" and "&6Description: can't join your guild."
+							set slot 33 of metadata tag "guild_manage" of player to diamond boots named "&6Demote player" with lore "" and "&aClick &7to use."
+							open (metadata tag "guild_manage" of player) to player
+						else:
+							send "{@prefix} &7You are not Leader in your guild." to player
+					else:
+						send "{@prefix} &7You don't have guild." to player
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+			else if arg-1 is "setname":
+				if player don't have permission "guild.set.name":
+					send "{@prefix} &7You don't have permission." to player
+					stop
+				if {guildHas::%player%} is set:
+					if {guildLeader::%player%} = "%player%":
+						if arg-2 is set:
+							if {guildList::*} contains arg-2:
+								send "{@prefix} &e%arg-2% &7is already exist." to player
+								stop
+							if arg-2 contains "&":
+								send "{@prefix} &7You can't use &e'&' &7in your guild name." to player
+								stop
+							add arg-2 to {guildList::*}
+							remove {guildName::%player%} from {guildList::*}
+							set {_warWin} to {guildWarWin::%{guildName::%player%}%}
+							set {_date} to {guildDateCreate::%{guildName::%player%}%}
+							delete {guildWarWin::%{guildName::%player%}%}
+							set {_before} to {guildName::%player%}
+							set {_after} to arg-2
+							send "{@prefix} &7You change the guild's name from &e%{_before}% &7to &e%{_after}%" to player
+							send "{@prefix} &e%player% &7change the guild's name to &e%arg-2%" to {guild::%player%::*} and {guildMod::%player%::*}
+							remove {_warWin} from {guildName::%player%}
+							set {guildName::%arg-2%} to player
+							set {guildName::%player%} to arg-2
+							set {guildDateCreate::%arg-2%} to {_date}
+							set {guildWarWin::%arg-2%} to {_warWin}
+							loop {guild::%player%::*}:
+								set {guildName::%loop-value%} to {guildName::%player%}
+							loop {guildMod::%player%::*}:
+								set {guildName::%loop-value%} to {guildName::%player%}
+						else:
+							send "{@prefix} &7Please input the new guild's name." to player
+					else:
+						send "{@prefix} &7You are not a Leader in your guild." to player
+				else:
+					send "{@prefix} &7You don't have guild." to player
+
+
+			else if arg-1 is "setdescription":
+				if player don't have permission "guild.set.description":
+					send "{@prefix} &7You don't have permission." to player
+					stop
+				if {guildHas::%player%} is set:
+					if {guildLeader::%player%} = "%player%":
+						if arg-2 is set:
+							send "{@prefix} &7You change the guild's description to &e%arg-2% &7." to player
+							send "{@prefix} &e%player% &7change the guild's description to &e%arg-2%" to {guild::%player%::*} and {guildMod::%player%::*}
+							set {guildDescription::%player%} to arg-2
+							loop {guild::%player%::*}:
+								set {guildDescription::%loop-value%} to {guildDescription::%player%}
+							loop {guildMod::%player%::*}:
+								set {guildDescription::%loop-value%} to {guildDescription::%player%}
+						else:
+							send "{@prefix} &7Please input the new guild's description." to player
+					else:
+						send "{@prefix} &7You are not a Leader in your guild." to player
+				else:
+					send "{@prefix} &7You don't have guild." to player
+
+
+			else if arg-1 is "seticon":
+				if player don't have permission "guild.set.icon":
+					send "{@prefix} &7You don't have permission." to player
+					stop
+				if {guildHas::%player%} is not set:
+					send "{@prefix} &7You don't have a guild."
+					stop
+				if {guildLeader::%player%} != "%player%":
+					send "{@prefix} &7You not a Leader in your guild."
+					stop
+				send "{@prefix} &7Successfully change your guild's icon to &e%type of player's tool%." to player
+				set {guildIcon::%player%} to type of player's tool
+				loop {guild::%player%::*}:
+					set {guildIcon::%loop-value%} to {guildIcon::%player%}
+				loop {guildMod::%player%::*}:
+					set {guildIcon::%loop-value%} to {guildIcon::%player%}
+
+
+			else if arg-1 is "setleader":
+				if player don't have permission "guild.setleader":
+					send "{@prefix} &7You don't have permission." to player
+					stop
+				if {guildHas::%player%} is set:
+					if {guildLeader::%player%} = "%player%":
+						if arg-2 is set:
+							set {_p} to arg-2 parsed as offline players
+							if {_p} is not online:
+								send "{@prefix} &e%arg-2% &7is not online." to player
+								stop
+							set {guildPlayer::%player%} to {_p}
+							if {guild::%player%::*} contains "%{_p}%":
+								set metadata tag "guild_leaderConfirm" of player to chest inventory with 5 rows named "&6Do you want set the guild's leader to &e%arg-2%"
+								set slot 20 of metadata tag "guild_leaderConfirm" of player to lime stained glass named "&aClick to confirm."
+								set slot 24 of metadata tag "guild_leaderConfirm" of player to red stained glass named "&cClick to cancel."
+								open (metadata tag "guild_leaderConfirm" of player) to player
+							else if {guildMod::%player%::*} contains "%{_p}%":
+								set metadata tag "guild_leaderConfirm" of player to chest inventory with 5 rows named "&6Do you want set the guild's leader to &e%arg-2%"
+								set slot 20 of metadata tag "guild_leaderConfirm" of player to lime stained glass named "&aClick to confirm."
+								set slot 24 of metadata tag "guild_leaderConfirm" of player to red stained glass named "&cClick to cancel."
+								open (metadata tag "guild_leaderConfirm" of player) to player
+							else:
+								send "{@prefix} &e%arg-2% &7is not in your guild."
+						else:
+							send "{@prefix} &7You must input the text." to player
+					else:
+						send "{@prefix} &7You are not a Leader in your guild." to player
+				else:
+					send "{@prefix} &7You don't have guild." to player
+
+#			RANK SYSTEM
+			else if arg-1 is "promote":
+				if player don't have permission "guild.promote":
+					send "{@prefix} &7You don't have permission." to player
+					stop
+				if {guildHas::%player%} is set:
+					if {guildLeader::%player%} = "%player%":
+						if arg-2 is set:
+							set {_p} to arg-2 parsed as offline players
+							if {_p} is online:
+								if {guildHas::%{_p}%} is set:
+									if {guild::%player%::*} contains "%{_p}%":
+										if {guildMod::%player%::*} doesn't contain "%{_p}%":
+											remove {_p} from {guild::%player%::*}
+											add {_p} to {guildMod::%player%::*}
+											set {guild::%{_p}%::*} to {guild::%player%::*}
+											set {guildMod::%{_p}%::*} to {guildMod::%player%::*}
+											send "{@prefix} &7You promote &e%arg-2% &7to be &eModerator &7in your guild." to player
+											send "{@prefix} &7You have promoted to be &eModerator &7in your guild." to {_p}
+											loop {guild::%player%::*}:
+												set {guildMod::%loop-value%::*} to {guildMod::%player%::*}
+												set {guild::%loop-value%::*} to {guild::%player%::*}
+											loop {guildMod::%player%::*}:
+												set {guildMod::%loop-value%::*} to {guildMod::%player%::*}
+												set {guild::%loop-value%::*} to {guild::%player%::*}
+										else:
+											send "{@prefix} &e%arg-2% &7is moderator in your guild." to player
+									else:
+										send "{@prefix} &e%arg-2%&7 is already in your guild." to player
+								else:
+									send "{@prefix} &e%arg-2% &7doesn't have guild." to player
+							else:
+								send "{@prefix} &e%arg-2% &7doesn't exist." to player
+						else:
+							send "{@prefix} &7Please input the player's name." to player
+					else:
+						send "{@prefix} &7You are not Leader in your guild." to player
+				else:
+					send "{@prefix} &7You don't have guild." to player
+
+
+			else if arg-1 is "demote":
+				if player don't have permission "guild.demote":
+					send "{@prefix} &7You don't have permission." to player
+					stop
+				if {guildHas::%player%} is set:
+					if {guildLeader::%player%} = "%player%":
+						if arg-2 is set:
+							set {_p} to arg-2 parsed as offline players
+							if {guildHas::%{_p}%} is set:
+								if {guildMod::%player%::*} contains "%{_p}%":
+									send "{@prefix} &7You demote player &e%arg-2% &7to Member." to player
+									send "{@prefix} &e%player% &7demote &e%{_p}%" to {guild::%player%::*} and {guildMod::%player%::*}
+									remove {_p} from {guildMod::%player%::*}
+									add {_p} to {guild::%player%::*}
+									delete {guildMod::%{_p}%::*}
+									delete {guild::%{_p}%::*}
+									set {guildMod::%{_p}%::*} to {guildMod::%player%::*}
+									set {guild::%{_p}%::*} to {guild::%player%::*}
+									loop {guild::%player%::*}:
+										set {guildMod::%loop-value%::*} to {guildMod::%player%::*}
+										set {guild::%loop-value%::*} to {guild::%player%::*}
+									loop {guildMod::%player%::*}:
+										set {guildMod::%loop-value%::*} to {guildMod::%player%::*}
+										set {guild::%loop-value%::*} to {guild::%player%::*}
+								else if {guild::%player%::*} contains "%{_p}%":
+									send "{@prefix} &e%arg-2% &7is Member in your guild." to player
+								else if {guildLeader::%player%} = "%player%":
+									send "{@prefix} &7You can't demote yourself."
+								else:
+									send "{@prefix} &e%arg-2% &7is not in your guild." to player
+							else:
+								send "{@prefix} &e%arg-2% &7doesn't have a guild." to player
+						else:
+							send "{@prefix} &7Please input the player's name." to player
+					else:
+						send "{@prefix} &7You are not a Leader in your guild." to player
+				else:
+					send "{@prefix} &7You don't have guild." to player
+
+
+			else if arg-1 is "info":
+				if player don't have permission "guild.info":
+					send "{@prefix} &7You don't have permission." to player
+					stop
+				if arg-2 is not set:
+					if {guildHas::%player%} is set:
+						guild_view(player, {guildName::%player%})
+					else:
+						send "{@prefix} &7You don't have guild." to player
+				else:
+					if {guildList::*} contains arg-2:
+						guild_view(player, arg-2)
+					else:
+						send "{@prefix} &7Guild with name &e%arg-2% &7doesn't exist."
+			else if arg-1 is "list":
+				if player has permission "guild.list":
+					guild_list(player, 0)
+				else:
+					send "{@prefix} &7You don't have permission." to player
+
+#==========================================================================================================
+
+			else if arg-1 is "chatspy":
+				if player has permission "guild.admin.chatspy" or "guild.admin":
+					if {guildChatSpy::*} contains "%player%":
+						send "{@prefix} &7Guild ChatSpy {@Disable}"
+						remove player from {guildChatSpy::*}
+					else:
+						send "{@prefix} &7Guild ChatSpy {@Enable}"
+						add player to {guildChatSpy::*}
+				else:
+					send "{@prefix} &7You don't have permission."
+			else if arg-1 is "help":
+				if arg-2 is set:
+					if arg-2 is "2":
+						send "" to player
+						send "&a&lLIST GUILD COMMANDS" to player
+						send "" to player
+						send "&e /g setname <text>" to player
+						send "&e /g setdescription <text>" to player
+						send "&e /g seticon" to player
+						send "&e /g warinvite <guild>" to player
+						send "&e /g waraccept <guild>" to player
+						send "&e /g wardecline <guild>" to player
+						send "&e /g topwar" to player
+						send "&e /g sethome" to player
+						send "&e /g tphome" to player
+						send "&e /g promote <player>" to player
+						send "&e /g demote <player>" to player
+						send "&e /g chat <text>" to player
+						if player has permission "guild.admin":
+							send "&b /g chatspy" to player
+						send "" to player
+					else:
+						execute player command "/g help"
+				else:		
+					send "" to player
+					send "&a&lLIST GUILD COMMANDS" to player
+					send "" to player
+					send "&e /g create <guild>" to player
+					send "&e /g delete" to player
+					send "&e /g invite <player>" to player
+					send "&e /g kick <player>" to player
+					send "&e /g decline <player>" to player
+					send "&e /g join <guild>" to player
+					send "&e /g leave <guild>" to player
+					send "&e /g info <guild>" to player
+					send "&e /g manage" to player
+					send "&e /g list" to player
+					send "" to player
+#==========================================================================================================
+
+			else if arg-1 is "reload":
+				if player doesn't have permission "skript.reload":
+					send "{@prefix} &7You don't have permission." to player
+					stop
+				execute player command "sk reload %script%"
+			else:
+				send "{@prefix} &7The command doesn't exist, type &e/guild help&7 to see guild commands."
+		else if arg-1 is not set:
+			send "{@prefix} &7Type &e/guild help&7 to see guild commands."
+
+on death:
+	if victim is a player:
+		if attacker is a player:
+			if {guildLeader::%victim%} = "%victim%":
+				if {guildWar::%victim%} is set:
+					if {guildWar::%attacker%} is set:
+						add 1 to {guildWarWin::%{guildName::%attacker%}%}
+						add 1 to {guildWarLose::%{guildName::%victim%}%}
+						loop {guild::%attacker%::*}:
+							delete {guildWar::%loop-value%}
+						loop {guildMod::%attacker%::*}:
+							delete {guildWar::%loop-value%}
+						loop {guild::%victim%::*}:
+							delete {guildWar::%loop-value%}
+						loop {guildMod::%victim%::*}:
+							delete {guildWar::%loop-value%}
+						wait 2 ticks
+						delete {guildWar::%attacker%}
+						delete {guildWar::%victim%}
+						broadcast "&7&m+                                   +"
+						broadcast "&7|         &8[&6&lGUILD WAR&8]"
+						broadcast "&7|"
+						broadcast "&7|  &6%{guildName::%victim%}% &eVs &6%{guildName::%attacker%}%"
+						broadcast "&7|  &6Winner: &e%{guildName::%attacker%}%"
+						broadcast "&7|  &6%victim% &ekilled by &6%attacker%"
+						broadcast "&7|"
+						broadcast "&7&m+                                   +"
+
+on damage:
+	if victim is a player:
+		if attacker is a player:
+			if {guildWar::%victim%} is set:
+				if {guildWar::%attacker%} is set:
+					if {guildLeader::%attacker%} = "%victim%":
+						cancel event
+						send "{@prefix} &7You can't hit your Leader" to attacker
+
+on quit:
+	if {guildLeader::%player%} = "%player%":
+		if {guildWar::%player%} is set:
+			broadcast "&8[&6Leader&8] &e%player% &ehas come out. Guild war &8[&cCanceled&8]."
+			loop {guild::%player%::*}:
+				delete {guildWar::%loop-value%}
+			loop {guildMod::%player%::*}:
+				delete {guildWar::%loop-value%}
+			delete {guildWar::%player%}
+
+function guild_list(p: player, page: number):
+	set {_pageStart} to 45*{_page}
+	set {_i} to 1
+	set {_a} to 0
+	set metadata tag "guilds" of {_p} to chest inventory with 6 rows named "&6List guilds"
+	open (metadata tag "guilds" of {_p}) to {_p}
+	wait 2 ticks
+	loop {guildList::*}:
+		(loop-index parsed as integer) > {_pageStart}
+		set {_status} to "%{guildStatus::%{guildName::%loop-value%}%}%"
+		replace all "<none>" with "&a&lPublic" in {_status}
+		replace all "true" with "&c&lPrivate" in {_status}
+		if {guildIcon::%{guildName::%loop-value%}%} is not set:
+			set slot {_a} of {_p}'s current inventory to grass block named "&6Guild &8» &c%loop-value%" with lore "", "&6Owner: &f%{guildName::%loop-value%}%", "&6Date Create: &f%{guildDateCreate::%loop-value%}%", "&6Status: %{_status}%" and "&aClick &7to more info"
+		else:
+			set slot {_a} of {_p}'s current inventory to {guildIcon::%{guildName::%loop-value%}%} named "&6Guild &8» &c%loop-value%" with lore "", "&6Owner: &f%{guildName::%loop-value%}%", "&6Date Create: &f%{guildDateCreate::%loop-value%}%", "&6Status: %{_status}%" and "&aClick &7to more info"
+		add 1 to {_a}
+		if {_a} = ((45*{_i})):
+			exit loop
+	set slot 45 of {_p}'s current inventory to barrier named "&cClose"
+	set slot 49 of {_p}'s current inventory to book named "&eMain Page"
+	if (amount of {guildList::*}) > {_pageStart} + 45:
+		set slot 51 of {_p}'s current inventory to arrow named "&aNext Page"
+	if {_page} > 0:
+		set slot 47 of {_p}'s current inventory to redstone dust named "&cPrevious Page"
+	set {page::%{_p}%} to {_page}
+
+on skript start:
+	send "{@prefix} &6Skript enable." to console
+
+on skript stop:
+	send "{@prefix} &6Skript disable." to console
+
+on inventory click:
+	if player's current inventory is (metadata tag "guilds" of player):
+		cancel event
+		if event-inventory is (metadata tag "guilds" of player):
+			cancel event
+			if index of event-slot is not 45 or 46 or 47 or 48 or 49 or 50 or 51 or 52 or 53 or 54:
+				if event-slot is not air:
+					set {_guild} to ".%name of event-slot%"
+					replace all ".&6Guild &8» &c" with "" in {_guild}
+					guild_view(player, {_guild})
+			else if index of event-slot is 45:
+				if event-slot is barrier:
+					close player's inventory
+			else if index of event-slot is 47:
+				if event-slot is redstone dust:
+					guild_list(player, {page::%player%} - 1)
+			else if index of event-slot is 49:
+				if event-slot is book:
+					guild_list(player, 0)
+			else if index of event-slot is 51:
+				if event-slot is arrow:
+					guild_list(player, {page::%player%} + 1)
+
+	else if player's current inventory is (metadata tag "guild_view" of player):
+		cancel event
+		if event-inventory is (metadata tag "guild_view" of player):
+			cancel event
+			if index of event-slot is 36:
+				guild_list(player, 0)
+
+	else if player's current inventory is (metadata tag "guild_leaderConfirm" of player):
+		cancel event
+		if event-inventory is (metadata tag "guild_leaderConfirm" of player):
+			cancel event
+			if index of event-slot is 20:
+				close player's inventory
+				set {guildName::%{guildName::%player%}%} to {guildPlayer::%player%}
+				set {guildName::%{guildPlayer::%player%}%} to {guildName::%player%}
+				remove {guildPlayer::%player%} from {guild::%{guildPlayer::%player%}%::*}
+				remove {guildPlayer::%player%} from {guildMod::%{guildPlayer::%player%}%::*}
+				set {guildLeader::%player%} to {guildPlayer::%player%}
+				set {guildLeader::%{guildPlayer::%player%}%} to {guildLeader::%player%}
+				add player to {guildMod::%{guildPlayer::%player%}%::*}
+				loop {guild::%{guildPlayer::%player%}%::*}:
+					delete {guildLeader::%loop-value%}
+					delete {guild::%loop-value%::*}
+					delete {guildMod::%loop-value%::*}
+					set {guildLeader::%loop-value%} to {guildLeader::%player%}
+					set {guild::%loop-value%::*} to {guild::%{guildPlayer::%player%}%::*}
+					set {guildMod::%loop-value%::*} to {guildMod::%{guildPlayer::%player%}%::*}
+					set {guildName::%loop-value%} to {guildName::%{guildPlayer::%player%}%}
+				loop {guildMod::%{guildPlayer::%player%}%::*}:
+					delete {guildLeader::%loop-value%}
+					delete {guild::%loop-value%::*}
+					delete {guildMod::%loop-value%::*}
+					set {guildLeader::%loop-value%} to {guildLeader::%player%}
+					set {guild::%loop-value%::*} to {guild::%{guildPlayer::%player%}%::*}
+					set {guildMod::%loop-value%::*} to {guildMod::%{guildPlayer::%player%}%::*}
+					set {guildName::%loop-value%} to {guildName::%{guildPlayer::%player%}%}
+				wait 3 ticks
+				send "{@prefix} &7Successfully set the Leader of your guild to &e%{guildPlayer::%player%}%" to player
+				delete {guildPlayer::%player%}
+			if index of event-slot is 24:
+				close player's inventory
+
+	else if player's current inventory is (metadata tag "guild_manage" of player):
+		cancel event
+		if index of event-slot is 11:
+			close player's inventory
+			set {message::%player%} to 1
+			send "{@prefix} &7Input the new guild's name." to player
+		else if index of event-slot is 13:
+			close player's inventory
+			execute player command "/g seticon"
+		else if index of event-slot is 15:
+			close player's inventory
+			set {message::%player%} to 2
+			send "{@prefix} &7Input the player's name." to player
+		else if index of event-slot is 29:
+			close player's inventory
+			set {message::%player%} to 3
+			send "{@prefix} &7Input the new guild's description." to player
+		else if index of event-slot is 31:
+			if {guildStatus::%player%} is set:
+				set slot 31 of metadata tag "guild_manage" of player to chest named "&6Guild Status" with lore "" and "&6Status: &a&lPublic" and "&6Description: can join your guild."
+				delete {guildStatus::%player%}
+				loop {guild::%player%::*}:
+					delete {guildStatus::%loop-value%}
+				loop {guildMod::%player%::*}:
+					delete {guildStatus::%loop-value%}
+			else:
+				set slot 31 of metadata tag "guild_manage" of player to ender chest named "&6Guild Status" with lore "" and "&6Status: &c&lPrivate" and "&6Description: can't join your guild."
+				set {guildStatus::%player%} to true
+				loop {guild::%player%::*}:
+					set {guildStatus::%loop-value%} to true
+				loop {guildMod::%player%::*}:
+					set {guildStatus::%loop-value%} to true
+
+		else if index of event-slot is 33:
+			close player's inventory
+			set {message::%player%} to 4
+			send "{@prefix} &7Input the player's name." to player
+
+	else if player's current inventory is (metadata tag "guildDeleteConfirm" of player):
+		cancel event
+		if index of event-slot is 20:
+			close player's inventory
+			remove {guildName::%player%} from {guildList::*}
+			delete {guildName::%{guildName::%player%}%}
+			delete {guildWarWin::%{guildName::%player%}%}
+			delete {guildWarLose::%{guildName::%player%}%}
+			send "{@prefix} &7Successfully delete your guild." to player
+			loop {guild::%player%::*}:
+				delete {guild::%loop-value%::*}
+				delete {guildHas::%loop-value%}
+				delete {guildIcon::%loop-value%}
+				delete {guildMod::%loop-value%::*}
+				delete {guildLeader::%loop-value%}
+				delete {guildStatus::%loop-value%}
+				remove loop-value from {guild::%player%::*}
+			loop {guildMod::%player%::*}:
+				delete {guild::%loop-value%::*}
+				delete {guildMod::%loop-value%::*}
+				delete {guild::%loop-value%::*}
+				delete {guildHas::%loop-value%}
+				delete {guildIcon::%loop-value%}
+				delete {guildStatus::%loop-value%}
+				delete {guildLeader::%loop-value%}
+				remove loop-value from {guildMod::%player%::*}
+			delete {guild::%player%::*}
+			delete {guildHas::%player%}
+			delete {guildName::%player%}
+			delete {guildIcon::%player%}
+			delete {guildStatus::%player%}
+			delete {guildDescription::%player%}
+			delete {guildWarWin::%{guildName::%player%}%}
+			delete {guildMod::%player%::*}
+			delete {guildLeader::%player%}
+		else if index of event-slot is 24:
+			close player's inventory
+
+
+function guild_view(p: player, guild: text):
+	set metadata tag "guild_view" of {_p} to chest inventory with 5 rows named "&6View guild &8» &e%{_guild}%"
+	set {_member::*} to "%{guild::%{guildName::%{_guild}%}%::*}%"
+	set {_guildMod::*} to "%{guildMod::%{guildName::%{_guild}%}%::*}%"
+	set {_lose} to "%{guildWarLose::%{_guild}%}%"
+	set {_status} to "%{guildStatus::%{guildName::%{_guild}%}%}%"
+	replace all "<none>" with "0" in {_lose}
+	replace all " and " with ", " in {_member::*}
+	replace all "<none>" with "No Member" in {_member::*}
+	replace all " and " with ", " in {_guildMod::*}
+	replace all "<none>" with "No Mod" in {_guildMod::*}
+	replace all "<none>" with "&a&lPublic" in {_status}
+	replace all "true" with "&c&lPrivate" in {_status}
+	set slot 36 of metadata tag "guild_view" of {_p} to barrier named "&cBack to menu."
+	set slot 20 of metadata tag "guild_view" of {_p} to ("%{guildName::%{_guild}%}%" parsed as offline player)'s skull named "&6Guild Members" with lore "" and "&6Leader: &f%{guildLeader::%{guildName::%{_guild}%}%}%" and "&6Mod: &f%{_guildMod::*}%" and "&6Member: &f%{_member::*}%"
+	set {_a} to "%{guildDateCreate::%{_guild}%}%"
+	set {_date::*} to {_a} split at ", "
+	if {guildIcon::%{guildName::%{_guild}%}%} is set:
+		set slot 22 of metadata tag "guild_view" of {_p} to {guildIcon::%{guildName::%{_guild}%}%} named "&6Guild Information" with lore "", "&6Icon: &f%{guildIcon::%{guildName::%{_guild}%}%}%" and "&6Description: &f%{guildDescription::%{guildName::%{_guild}%}%}%" and "&6Status: %{_status}%"
+	else:
+		set slot 22 of metadata tag "guild_view" of {_p} to grass block named "&6Guild Information" with lore "", "&6Icon: &fgrass block" and "&6Description: &f%{guildDescription::%{guildName::%{_guild}%}%}%" and "&6Date create: &f%{_date::1}%" and "&6Status: %{_status}%"
+	set slot 24 of metadata tag "guild_view" of {_p} to diamond sword named "&6Guild statistic" with lore "" and "&6Win:&f %{guildWarWin::%{_guild}%}%x" and "&6Lose: &f%{_lose}%x"
+	open (metadata tag "guild_view" of {_p}) to {_p}
+
+function guildDeleteConfirm(p: player, guild: text):
+	set metadata tag "guildDeleteConfirm" of {_p} to chest inventory with 5 rows named "&6Are you sure?"
+	set slot 20 of metadata tag "guildDeleteConfirm" of {_p} to lime dye named "&aClick to delete."
+	set slot 24 of metadata tag "guildDeleteConfirm" of {_p} to red dye named "&cCancel."
+	open (metadata tag "guildDeleteConfirm" of {_p}) to {_p}
+
+on chat:
+	if {gchat::%player%} is set:
+		cancel event
+		set {_guild} to the first characters of {guildName::%player%}
+		send "{@formatGuildChatSpy} %message%" to {guildChatSpy::*}
+		if {guildLeader::%player%} = "%player%":
+			send "{@prefix} {@formatGuildChatLeader} %message%" to {guild::%player%::*}, {guildLeader::%player%} and {guildMod::%player%::*}
+			stop
+		else if "%{guildMod::%player%::*}%" contains "%player%":
+			send "{@prefix} {@formatGuildChatMod} %message%" to {guild::%player%::*}, {guildLeader::%player%} and {guildMod::%player%::*}
+			stop
+		else if "%{guild::%player%::*}%" contains "%player%":
+			send "{@prefix} {@formatGuildChatMember} %message%" to {guild::%player%::*}, {guildLeader::%player%} and {guildMod::%player%::*}
+			stop
+
+on chat:
+	if {message::%player%} = 1:
+		cancel event
+		if message is empty:
+			send "{@prefix} &7Please input the player's name."
+			stop
+		execute player command "/g setname %message%"
+		delete {message::%player%}
+	else if {message::%player%} = 2:
+		cancel event
+		if message is empty:
+			send "{@prefix} &7Please input the player's name."
+			stop
+		execute player command "/g promote %message%"
+		delete {message::%player%}
+	else if {message::%player%} = 3:
+		cancel event
+		if message is empty:
+			send "{@prefix} &7Please input the player's name."
+			stop
+		execute player command "/g setdescription %message%"
+		delete {message::%player%}
+	else if {message::%player%} = 4:
+		cancel event
+		if message is empty:
+			send "{@prefix} &7Please input the player's name."
+			stop
+		execute player command "/g demote %message%"
+		delete {message::%player%}

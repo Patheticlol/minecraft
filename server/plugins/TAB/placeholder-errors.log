@@ -64,3 +64,29 @@
 19.02.2023 - 05:27:34 - [TAB v3.2.4] Player placeholder %luckperms-prefix% generated an error when setting for player 01000100_0100010
 19.02.2023 - 05:27:35 - java.lang.OutOfMemoryError: Java heap space
 23.02.2023 - 14:38:05 - [TAB v3.2.4] Player placeholder %luckperms-prefix% generated an error when setting for player IM_THE_GOAT
+13.03.2023 - 00:41:18 - [TAB v3.2.4] Player placeholder %afk% generated an error when setting for player Michael
+13.03.2023 - 00:41:18 - com.google.common.util.concurrent.ExecutionError: java.lang.OutOfMemoryError: GC overhead limit exceeded
+13.03.2023 - 00:41:18 - 	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2199)
+13.03.2023 - 00:41:18 - 	at com.google.common.cache.LocalCache.get(LocalCache.java:3934)
+13.03.2023 - 00:41:18 - 	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938)
+13.03.2023 - 00:41:18 - 	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821)
+13.03.2023 - 00:41:18 - 	at com.earth2me.essentials.UserMap.getUser(UserMap.java:129)
+13.03.2023 - 00:41:18 - 	at com.earth2me.essentials.Essentials.getUser(Essentials.java:945)
+13.03.2023 - 00:41:18 - 	at me.neznamy.tab.platforms.bukkit.BukkitPlaceholderRegistry.lambda$registerPlaceholders$5(BukkitPlaceholderRegistry.java:103)
+13.03.2023 - 00:41:18 - 	at me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.request(PlayerPlaceholderImpl.java:130)
+13.03.2023 - 00:41:18 - 	at me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.update(PlayerPlaceholderImpl.java:53)
+13.03.2023 - 00:41:18 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.updatePlayerPlaceholder(PlaceholderManagerImpl.java:117)
+13.03.2023 - 00:41:18 - 	at me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:68)
+13.03.2023 - 00:41:18 - 	at me.neznamy.tab.shared.CpuManager.lambda$runMeasuredTask$8(CpuManager.java:354)
+13.03.2023 - 00:41:18 - 	at me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:111)
+13.03.2023 - 00:41:18 - 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+13.03.2023 - 00:41:18 - 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+13.03.2023 - 00:41:18 - 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+13.03.2023 - 00:41:18 - 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+13.03.2023 - 00:41:18 - 	at java.lang.Thread.run(Thread.java:750)
+13.03.2023 - 00:41:26 - [TAB v3.2.4] Server placeholder %time% generated an error
+13.03.2023 - 00:41:26 - java.lang.OutOfMemoryError: GC overhead limit exceeded
+13.03.2023 - 13:53:56 - [TAB v3.2.4] Player placeholder %luckperms-prefix% generated an error when setting for player joopy123
+13.03.2023 - 13:53:57 - java.lang.OutOfMemoryError: Java heap space
+13.03.2023 - 17:11:11 - [TAB v3.2.4] Player placeholder %luckperms-prefix% generated an error when setting for player 808
+13.03.2023 - 17:11:35 - java.lang.OutOfMemoryError: Java heap space

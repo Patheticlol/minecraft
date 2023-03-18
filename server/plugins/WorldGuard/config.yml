@@ -122,7 +122,7 @@ player-damage:
     disable-contact-damage: false
     teleport-on-suffocation: false
     disable-void-damage: false
-    teleport-on-void-falling: false
+    teleport-on-void-falling: true
     disable-explosion-damage: false
     disable-mob-damage: false
     disable-death-messages: false

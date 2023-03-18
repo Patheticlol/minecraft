@@ -11,31 +11,31 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1675430241610
+  lastteleport: 1678467504387
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1676659824152
-  login: 1676659643073
+  logout: 1678467567395
+  login: 1678467252416
 money: '0'
 last-account-name: EPIKSONIC10
 lastlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: -152.0
-  y: 58.0
-  z: 212.0
-  yaw: 1.3500001430511475
-  pitch: 6.750000476837158
+  x: -240.14515109606796
+  y: 63.0
+  z: 328.3001033628377
+  yaw: 355.8150329589844
+  pitch: -7.37607479095459E-6
 logoutlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: 13.699999988079071
-  y: 70.0
-  z: 2.933776805943582
-  yaw: 211.43408203125
-  pitch: -37.20001220703125
+  x: -240.14515109606796
+  y: 63.0
+  z: 328.3001033628377
+  yaw: 355.8150329589844
+  pitch: -7.37607479095459E-6
 mail:
 - legacy: false
   read: false

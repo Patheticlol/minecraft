@@ -11,34 +11,34 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1677078959595
+  lastteleport: 1678889203439
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1677078998372
-  login: 1677078865130
-money: '0'
+  logout: 1679078880477
+  login: 1679077691568
+money: '281.300000000000014'
 last-account-name: Funky
 lastlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: 2.693739364734543
-  y: 70.0
-  z: 3.3499495971893545
-  yaw: 91.4339599609375
-  pitch: -0.7500081062316895
+  x: -265.9813983891339
+  y: 63.0
+  z: 344.69999998807907
+  yaw: 246.465087890625
+  pitch: -14.399996757507324
 logoutlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: -514.5317245490363
-  y: 114.0
-  z: 33.516242910750414
-  yaw: 18.286754608154297
-  pitch: 48.749996185302734
+  x: -532.5286410092215
+  y: 11.0
+  z: 310.5420784047975
+  yaw: 0.01806640625
+  pitch: 26.699995040893555
 homes:
   home:
-    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world: 01cf1421-329a-422a-a272-58ae41bc5938
     world-name: world
     x: -502.4663020215538
     y: 73.0

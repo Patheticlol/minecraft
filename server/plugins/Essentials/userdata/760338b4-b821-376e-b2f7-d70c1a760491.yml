@@ -16,23 +16,23 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1678250762044
-  login: 1678250691334
+  logout: 1678406507244
+  login: 1678406487054
 money: '0'
 last-account-name: 01_boyfriend_02
 lastlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: 2.0
-  y: 70.0
-  z: 3.0
+  x: 4402.0
+  y: 66.0
+  z: -4330.0
   yaw: 0.0
   pitch: 0.0
 logoutlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: -34.57188173338268
+  x: 4402.5
   y: 66.0
-  z: 4.711146627317814
-  yaw: 41.550048828125
-  pitch: 0.9000000953674316
+  z: -4329.5
+  yaw: 135.90008544921875
+  pitch: 7.500001907348633

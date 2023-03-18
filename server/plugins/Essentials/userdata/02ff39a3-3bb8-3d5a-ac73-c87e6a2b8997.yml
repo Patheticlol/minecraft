@@ -11,14 +11,14 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1676473941912
+  lastteleport: 1678889036478
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1677166870051
-  login: 1677166441998
-money: '0'
+  logout: 1678989307805
+  login: 1678989241100
+money: '1.08'
 mail:
 - legacy: false
   read: false
@@ -29,24 +29,24 @@ mail:
   expire: 1675386120700
 last-account-name: Dripz_
 lastlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: -152.0
-  y: 64.0
-  z: 212.0
-  yaw: 0.0
-  pitch: 0.0
+  x: -317.51713933859105
+  y: 10.0
+  z: 346.584746450785
+  yaw: 189.52745056152344
+  pitch: 20.9999942779541
 logoutlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: -545.7287547856935
-  y: 86.0
-  z: 21.395963331299047
-  yaw: 147.90011596679688
-  pitch: 16.199995040893555
+  x: 4424.376844784244
+  y: 5.0
+  z: -4058.56677962959
+  yaw: -188.20751953125
+  pitch: 29.399993896484375
 homes:
   home:
-    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world: 01cf1421-329a-422a-a272-58ae41bc5938
     world-name: world
     x: -65.5
     y: 137.0

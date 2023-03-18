@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.31.128.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1679081751431
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1679087328829
+  login: 1679081714922
+money: '571.62'
+last-account-name: DeluxZN
+lastlocation:
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
+  world-name: world
+  x: -241.0
+  y: 63.0
+  z: 328.0
+  yaw: 0.0
+  pitch: -0.15000002086162567
+homes:
+  home:
+    world: 01cf1421-329a-422a-a272-58ae41bc5938
+    world-name: world
+    x: -473.50876039618527
+    y: 12.0
+    z: 378.4401098801773
+    yaw: -90.77274322509766
+    pitch: 89.25
+logoutlocation:
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
+  world-name: world
+  x: -471.2724481136001
+  y: 12.0
+  z: 378.3109631801955
+  yaw: -83.72274780273438
+  pitch: 80.54999542236328

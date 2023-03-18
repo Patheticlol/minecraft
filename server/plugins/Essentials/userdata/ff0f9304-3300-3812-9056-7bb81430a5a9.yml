@@ -11,40 +11,40 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1677189382266
+  lastteleport: 1678895428892
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1677189398359
-  login: 1677189335974
-money: '0'
+  logout: 1679081092149
+  login: 1679080444220
+money: '3680.4399999999997864'
 last-account-name: joopy123
 logoutlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: 953.1042584886193
-  y: 250.0
-  z: 1024.6340516999658
-  yaw: -99.9034423828125
-  pitch: -0.8153332471847534
+  x: -608.3126755615573
+  y: 130.0
+  z: 351.9153896888423
+  yaw: 183.5313720703125
+  pitch: -46.598270416259766
 lastlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: 3.798504483171097
-  y: 70.0
-  z: 17.81573379117065
-  yaw: 112.58099365234375
-  pitch: 57.22642135620117
+  x: 4551.513584322445
+  y: 51.0
+  z: -4183.07936871672
+  yaw: 213.6608428955078
+  pitch: 17.447805404663086
 homes:
   home:
-    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world: 01cf1421-329a-422a-a272-58ae41bc5938
     world-name: world
-    x: 953.7234489689486
-    y: 250.0
-    z: 1024.7847066703425
-    yaw: -169.1942901611328
-    pitch: 15.696545600891113
+    x: 4553.648244120786
+    y: 51.0
+    z: -4181.110138098262
+    yaw: 269.45098876953125
+    pitch: 31.207704544067383
 mail:
 - legacy: false
   read: false

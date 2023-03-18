@@ -11,40 +11,40 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1676477930222
+  lastteleport: 1678654161556
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1677539531117
-  login: 1677539463092
-money: '0'
+  logout: 1678719874553
+  login: 1678719622792
+money: '79.7999999999991'
 last-account-name: azpen_trees
 lastlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: -155.0659296111038
-  y: 75.0
-  z: -67.4459432385356
-  yaw: 93.27059936523438
-  pitch: 11.31658935546875
+  x: 4497.300000011921
+  y: 10.0
+  z: -4147.36144750358
+  yaw: 11.52783203125
+  pitch: 26.92653465270996
 logoutlocation:
-  world: f6ae0af4-af56-42b7-90fc-52520420f626
+  world: 01cf1421-329a-422a-a272-58ae41bc5938
   world-name: world
-  x: 3.096906953713243
-  y: 70.0
-  z: -0.4011389749139315
-  yaw: 45.985084533691406
-  pitch: -90.0
+  x: 4557.5103524383985
+  y: 24.0
+  z: -4067.3483270741663
+  yaw: -268.70880126953125
+  pitch: 18.216838836669922
 homes:
   home:
-    world: f6ae0af4-af56-42b7-90fc-52520420f626
+    world: 01cf1421-329a-422a-a272-58ae41bc5938
     world-name: world
-    x: -121.5
-    y: 57.0
-    z: 175.5
-    yaw: 176.4840087890625
-    pitch: 53.999996185302734
+    x: 4484.415645043293
+    y: 72.0
+    z: -4058.1241709688347
+    yaw: -65.11834716796875
+    pitch: -3.6255085468292236
 mail:
 - legacy: false
   read: false

@@ -1,0 +1,59 @@
+################################
+#PLUGIN zPHMcMMOTags           #
+#VERSAO: v0.1                  #   
+#DESENVOLVEDOR: zPedroDev      #
+#CONTATO: pedro_rjpedro        #
+################################
+
+#Configuracoes
+Efeitos:
+  SoltarRaio:
+    Ativar: true
+    QuantidadeRaios: 1
+
+
+#Habilidades:
+#  Pescaria: < Nome da Skill
+#   Ativar: true < [true/false] para ativar/desativar essa skill
+#    Level: 100 < Nivel necessario para mandar no chat para todos
+#    Mensagem: "&3[McMMO] &bParabens &a%jogador% &bAlcancou &aLevel 100 &bem &aPescaria&b!" < Mensagem que ira aparecer
+
+Habilidades:
+  Pescaria:
+    Ativar: true
+    Level: 100
+    Mensagem: "&3[McMMO] &bParabens &a%jogador% &bAlcancou &aLevel 100 &bem &aPescaria&b!"
+  Escavacao:
+    Ativar: true
+    Level: 100
+    Mensagem: "&3[McMMO] &bParabens &a%jogador% &bAlcancou &aLevel 100 &bem &aEscavacao&b!"
+  Acrobacia:
+    Ativar: true
+    Level: 100
+    Mensagem: "&3[McMMO] &bParabens &a%jogador% &bAlcancou &aLevel 100 &bem &aAcrobacia&b!"
+  Espadas:
+    Ativar: true
+    Level: 100
+    Mensagem: "&3[McMMO] &bParabens &a%jogador% &bAlcancou &aLevel 100 &bem &aEspadas&b!"
+  Machados:
+    Ativar: true
+    Level: 100
+    Mensagem: "&3[McMMO] &bParabens &a%jogador% &bAlcancou &aLevel 100 &bem &aMachados&b!"
+  Mineracao:
+    Ativar: true
+    Level: 100
+    Mensagem: "&3[McMMO] &bParabens &a%jogador% &bAlcancou &aLevel 100 &bem &aMineracao&b!"
+  Arqueiro:
+    Ativar: true
+    Level: 100
+    Mensagem: "&3[McMMO] &bParabens &a%jogador% &bAlcancou &aLevel 100 &bem &aArqueiro&b!"
+  Herbalismo:
+    Ativar: true
+    Level: 100
+    Mensagem: "&3[McMMO] &bParabens &a%jogador% &bAlcancou &aLevel 100 &bem &aHerbalismo&b!"
+  Reparar:
+    Ativar: true
+    Level: 100
+    Mensagem: "&e[McMMO] &bParabens &a%jogador% &bAlcancou &aLevel 100 &bem &aReparaçao&b!"
+
+ 

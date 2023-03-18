@@ -1,0 +1,14 @@
+Cooldown:
+  enabled: true
+  seconds: 2
+AreaDamage:
+  enabled: true
+  #Block range nearby players
+  range: 3
+  #Percentage of the total damage for nearby players
+  damagePercentage: 20.0
+  #If you toggle off the cooldown function you are be able to set a custom cooldown in seconds for AreaDamage
+  cooldown: 3
+Messages:
+  reload: '&a&l[!] &aConfig reloaded'
+  no-permission: '&c&l[!] &cYou don''t have permission!'
